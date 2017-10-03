@@ -42,4 +42,13 @@ let kLoginNavigationControllerIdentifier = "LoginNavigationController"
 let sLoginViewControllerIdentifier = "LoginViewController"
 let sHomeTabBarControllerllerIdentifier = "sHomeTabBarController"
 let sEventTableViewControllerIdentifier = "sEventTableViewController"
+//MARK: Colors
 
+let blueColor = UIColor(red: 0, green: 110/255.0, blue: 190/255, alpha: 1.0)
+
+enum CharacterType {
+    case Teacher
+    case StudentChild
+    case Parent
+    case admin
+}
