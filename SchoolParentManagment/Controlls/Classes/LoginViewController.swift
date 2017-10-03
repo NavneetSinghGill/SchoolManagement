@@ -95,11 +95,11 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     //MARK:- PERFORM LOGIN
     func performLogIn() -> Void {
         
-        if isDataValid() {
+//        if isDataValid() {
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
             self.navigationController?.pushViewController(homeVC, animated: true)
-        }
+//        }
     }
     
     func isDataValid() -> Bool {
