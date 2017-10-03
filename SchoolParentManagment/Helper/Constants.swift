@@ -1,0 +1,43 @@
+//
+//  Constants.swift
+//  SchoolParentManagment
+//
+//  Created by Bestpeers on 03/10/17.
+//  Copyright © 2017 Bestpeers. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+//MARK: - ENUMs
+
+enum ImageSourceType : Int {
+    case none = 0
+    case gallery
+    case camera
+}
+
+// MARK: - Application
+
+let appDelegate = UIApplication.shared.delegate as! AppDelegate
+let kAppName = "SchoolParentManagment"
+
+//MARK: - Cell Identifiers
+let kMoreCellIdentifier = "moreCell"
+
+// MARK: - Segue Identifiers
+
+let kToProfilePhotoSegue = "toProfilePhoto"
+
+// MARK: - UserDefaults
+
+let kDidCompleteWalkthrough = "didCompleteWalkThrough"
+let kWebToken = "webtoken"
+
+//MARK: - Storyboard Identifiers
+
+let kLoginViewControllerIdentifier = "LoginViewController"
+let kLoginNavigationControllerIdentifier = "LoginNavigationController"
+
+let sLoginViewControllerIdentifier = "LoginViewController"
+let sHomeTabBarControllerllerIdentifier = "sHomeTabBarController"
