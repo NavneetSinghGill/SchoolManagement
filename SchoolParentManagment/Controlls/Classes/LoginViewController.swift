@@ -22,14 +22,14 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var txtPassword: UITextField!
     
     @IBOutlet weak var segment: UISegmentedControl!
-    
+    //MARK: Login Button Clicked Action
     @IBAction func btnLoginAction(_ sender: Any) {
         self.performLogIn()
     }
     
     @IBAction func btnForgotPasswordAction(_ sender: Any) {
     }
-    
+    //MARK:- SignUP Action
     @IBAction func btnSignUpAction(_ sender: Any) {
     }
     
@@ -46,6 +46,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             self.lblLoginUserType.text = "Login Teacher"
         }
     }
+    
+    // MARK:- View Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,6 +56,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.txtPassword?.delegate = self
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         self.segment.selectedSegmentIndex = 0
+        
+        self.txtEmail.text = "N@gamil.com"
+        self.txtPassword.text = "123456"
         
     }
     
@@ -85,8 +90,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
      // Pass the selected object to the new view controller.
      }
      */
-    //MARK:- TextField Delegate Method
     
+    //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
@@ -101,7 +106,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             self.navigationController?.pushViewController(homeVC, animated: true)
         }
     }
-    
+    //MARK:- Textfield validations And check Empty
     func isDataValid() -> Bool {
         var isValid = false
         var errorMsg : String?

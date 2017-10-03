@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230BFB451F839B8C008B9EE2 /* ChildrensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB441F839B8C008B9EE2 /* ChildrensTableViewController.swift */; };
+		230BFB471F83A589008B9EE2 /* AboutSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB461F83A589008B9EE2 /* AboutSchoolViewController.swift */; };
+		230BFB491F83A5A4008B9EE2 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB481F83A5A4008B9EE2 /* ActionViewController.swift */; };
+		230BFB4B1F83A5E3008B9EE2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */; };
 		2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBAF1F836BBB00C4D8FA /* Utility.swift */; };
 		2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBB11F836C1800C4D8FA /* Constants.swift */; };
 		234D72231F8356870040AF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72221F8356870040AF39 /* AppDelegate.swift */; };
@@ -15,12 +19,20 @@
 		234D722A1F8356870040AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D72291F8356870040AF39 /* Assets.xcassets */; };
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
 		234D723A1F83584C0040AF39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72391F83584C0040AF39 /* LoginViewController.swift */; };
+		23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */; };
+		23C845291F83C2DF000D16B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845281F83C2DF000D16B9 /* SignUpViewController.swift */; };
 		23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1B9D1F8370C00071B200 /* UIColorExtension.swift */; };
 		23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */; };
 		23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */; };
+		23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */; };
+		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230BFB441F839B8C008B9EE2 /* ChildrensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewController.swift; sourceTree = "<group>"; };
+		230BFB461F83A589008B9EE2 /* AboutSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSchoolViewController.swift; sourceTree = "<group>"; };
+		230BFB481F83A5A4008B9EE2 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2319FBAF1F836BBB00C4D8FA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2319FBB11F836C1800C4D8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		234D721F1F8356870040AF39 /* SchoolParentManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolParentManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,9 +43,13 @@
 		234D722C1F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234D722E1F8356870040AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234D72391F83584C0040AF39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewCell.swift; sourceTree = "<group>"; };
+		23C845281F83C2DF000D16B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		23FF1B9D1F8370C00071B200 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */ = {
+			isa = PBXGroup;
+			children = (
+				23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */,
+			);
+			path = ChildrenVCCell;
+			sourceTree = "<group>";
+		};
 		234D72161F8356870040AF39 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +114,8 @@
 		234D72351F8356960040AF39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */,
+				23FF1BAB1F837DCF0071B200 /* EventsVCCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,10 +141,20 @@
 		234D72381F8356AB0040AF39 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				23C845271F83C2BE000D16B9 /* SignUp */,
 				234D72391F83584C0040AF39 /* LoginViewController.swift */,
 				23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */,
+				23FF1BA31F837BCE0071B200 /* HomeScreens */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		23C845271F83C2BE000D16B9 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				23C845281F83C2DF000D16B9 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		23FF1B9C1F836FAA0071B200 /* Extensions */ = {
@@ -128,6 +164,66 @@
 				23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		23FF1BA31F837BCE0071B200 /* HomeScreens */ = {
+			isa = PBXGroup;
+			children = (
+				23FF1BA41F837BE40071B200 /* Event */,
+				23FF1BA51F837BED0071B200 /* Children */,
+				23FF1BA61F837C0F0071B200 /* Notifications */,
+				23FF1BA71F837C1E0071B200 /* Actions */,
+				23FF1BA81F837C2C0071B200 /* About School */,
+			);
+			path = HomeScreens;
+			sourceTree = "<group>";
+		};
+		23FF1BA41F837BE40071B200 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		23FF1BA51F837BED0071B200 /* Children */ = {
+			isa = PBXGroup;
+			children = (
+				230BFB441F839B8C008B9EE2 /* ChildrensTableViewController.swift */,
+			);
+			path = Children;
+			sourceTree = "<group>";
+		};
+		23FF1BA61F837C0F0071B200 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		23FF1BA71F837C1E0071B200 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				230BFB481F83A5A4008B9EE2 /* ActionViewController.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		23FF1BA81F837C2C0071B200 /* About School */ = {
+			isa = PBXGroup;
+			children = (
+				230BFB461F83A589008B9EE2 /* AboutSchoolViewController.swift */,
+			);
+			path = "About School";
+			sourceTree = "<group>";
+		};
+		23FF1BAB1F837DCF0071B200 /* EventsVCCell */ = {
+			isa = PBXGroup;
+			children = (
+				23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */,
+			);
+			path = EventsVCCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,12 +299,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
+				23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */,
+				23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */,
+				230BFB491F83A5A4008B9EE2 /* ActionViewController.swift in Sources */,
+				23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */,
 				2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */,
 				234D723A1F83584C0040AF39 /* LoginViewController.swift in Sources */,
 				234D72251F8356870040AF39 /* ViewController.swift in Sources */,
 				234D72231F8356870040AF39 /* AppDelegate.swift in Sources */,
 				23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */,
+				23C845291F83C2DF000D16B9 /* SignUpViewController.swift in Sources */,
+				230BFB471F83A589008B9EE2 /* AboutSchoolViewController.swift in Sources */,
+				230BFB4B1F83A5E3008B9EE2 /* NotificationViewController.swift in Sources */,
 				23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */,
+				230BFB451F839B8C008B9EE2 /* ChildrensTableViewController.swift in Sources */,
 				23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

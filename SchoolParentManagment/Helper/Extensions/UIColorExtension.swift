@@ -22,4 +22,10 @@ extension UIColor {
         return UIColor.init(red: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1.0)
     }
     
+    
+    class var appDarkBlueColor : UIColor {
+        return UIColor.init(red: 0, green: 37.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+    }
+   
+    
 }

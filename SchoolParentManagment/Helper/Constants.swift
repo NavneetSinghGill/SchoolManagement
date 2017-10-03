@@ -41,3 +41,5 @@ let kLoginNavigationControllerIdentifier = "LoginNavigationController"
 
 let sLoginViewControllerIdentifier = "LoginViewController"
 let sHomeTabBarControllerllerIdentifier = "sHomeTabBarController"
+let sEventTableViewControllerIdentifier = "sEventTableViewController"
+
