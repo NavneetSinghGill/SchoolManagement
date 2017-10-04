@@ -37,6 +37,10 @@
 		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
 		5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */; };
 		5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
+		5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396C0141F850EFB0077C7C0 /* HomeWork.swift */; };
+		5396C0181F850F900077C7C0 /* HomeWorkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396C0161F850F900077C7C0 /* HomeWorkTableViewCell.swift */; };
+		5396C0191F850F900077C7C0 /* HomeWorkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5396C0171F850F900077C7C0 /* HomeWorkTableViewCell.xib */; };
+		5396C01B1F8512470077C7C0 /* HomeWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396C01A1F8512470077C7C0 /* HomeWorkViewController.swift */; };
 		539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F60E71F84A9AF003E6B81 /* Teacher.storyboard */; };
 		539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */; };
 		539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */; };
@@ -76,6 +80,10 @@
 		23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		5396C0141F850EFB0077C7C0 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
+		5396C0161F850F900077C7C0 /* HomeWorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkTableViewCell.swift; sourceTree = "<group>"; };
+		5396C0171F850F900077C7C0 /* HomeWorkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeWorkTableViewCell.xib; sourceTree = "<group>"; };
+		5396C01A1F8512470077C7C0 /* HomeWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkViewController.swift; sourceTree = "<group>"; };
 		539F60E81F84A9AF003E6B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Teacher.storyboard; sourceTree = "<group>"; };
 		539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTableViewCell.swift; sourceTree = "<group>"; };
 		539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParentTableViewCell.xib; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 			children = (
 				23C845381F83CD88000D16B9 /* Parent.swift */,
 				23C8453A1F83CDB3000D16B9 /* StudentChild.swift */,
+				5396C0141F850EFB0077C7C0 /* HomeWork.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +160,8 @@
 				23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */,
 				539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */,
 				539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */,
+				5396C0161F850F900077C7C0 /* HomeWorkTableViewCell.swift */,
+				5396C0171F850F900077C7C0 /* HomeWorkTableViewCell.xib */,
 				230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */,
 				23FF1BAB1F837DCF0071B200 /* EventsVCCell */,
 			);
@@ -181,6 +192,7 @@
 				23C8452F1F83CC4D000D16B9 /* BaseViewController.swift */,
 				23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */,
 				23C8452D1F83CC4D000D16B9 /* StudentChildDetailsViewController.swift */,
+				5396C01A1F8512470077C7C0 /* HomeWorkViewController.swift */,
 				23C845271F83C2BE000D16B9 /* SignUpAndForgotPassword */,
 				234D72391F83584C0040AF39 /* LoginViewController.swift */,
 				23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */,
@@ -340,6 +352,7 @@
 				539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */,
 				23C929B31F86178E00093FF7 /* NotificationTableViewCell.xib in Resources */,
 				234D722A1F8356870040AF39 /* Assets.xcassets in Resources */,
+				5396C0191F850F900077C7C0 /* HomeWorkTableViewCell.xib in Resources */,
 				539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */,
 				234D72281F8356870040AF39 /* Main.storyboard in Resources */,
 			);
@@ -354,7 +367,9 @@
 			files = (
 				23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */,
 				23AA25401F8626D00095AA04 /* NotificationsVC.swift in Sources */,
+				5396C0181F850F900077C7C0 /* HomeWorkTableViewCell.swift in Sources */,
 				5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */,
+				5396C01B1F8512470077C7C0 /* HomeWorkViewController.swift in Sources */,
 				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
@@ -363,6 +378,7 @@
 				230BFB491F83A5A4008B9EE2 /* ActionViewController.swift in Sources */,
 				23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */,
 				23C845311F83CC5D000D16B9 /* BaseViewController.swift in Sources */,
+				5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */,
 				2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */,
 				234D723A1F83584C0040AF39 /* LoginViewController.swift in Sources */,
 				234D72251F8356870040AF39 /* ViewController.swift in Sources */,
