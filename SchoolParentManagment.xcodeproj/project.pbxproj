@@ -14,7 +14,6 @@
 		2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBAF1F836BBB00C4D8FA /* Utility.swift */; };
 		2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBB11F836C1800C4D8FA /* Constants.swift */; };
 		2344EF841F84B20400EA4215 /* FotgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344EF831F84B20400EA4215 /* FotgotPasswordViewController.swift */; };
-		2344EF8A1F84DAE500EA4215 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2344EF881F84DAE500EA4215 /* Teacher.storyboard */; };
 		2344EF8C1F84EFC900EA4215 /* ChildrenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344EF8B1F84EFC900EA4215 /* ChildrenDetail.swift */; };
 		234D72231F8356870040AF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72221F8356870040AF39 /* AppDelegate.swift */; };
 		234D72251F8356870040AF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72241F8356870040AF39 /* ViewController.swift */; };
@@ -44,7 +43,6 @@
 		2319FBAF1F836BBB00C4D8FA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2319FBB11F836C1800C4D8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2344EF831F84B20400EA4215 /* FotgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotgotPasswordViewController.swift; sourceTree = "<group>"; };
-		2344EF891F84DAE500EA4215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Teacher.storyboard; sourceTree = "<group>"; };
 		2344EF8B1F84EFC900EA4215 /* ChildrenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenDetail.swift; sourceTree = "<group>"; };
 		234D721F1F8356870040AF39 /* SchoolParentManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolParentManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D72221F8356870040AF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				234D72221F8356870040AF39 /* AppDelegate.swift */,
 				234D72241F8356870040AF39 /* ViewController.swift */,
 				234D72261F8356870040AF39 /* Main.storyboard */,
-				2344EF881F84DAE500EA4215 /* Teacher.storyboard */,
 				234D72291F8356870040AF39 /* Assets.xcassets */,
 				234D722B1F8356870040AF39 /* LaunchScreen.storyboard */,
 				234D722E1F8356870040AF39 /* Info.plist */,
@@ -314,7 +311,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */,
-				2344EF8A1F84DAE500EA4215 /* Teacher.storyboard in Resources */,
 				234D722A1F8356870040AF39 /* Assets.xcassets in Resources */,
 				234D72281F8356870040AF39 /* Main.storyboard in Resources */,
 			);
@@ -356,14 +352,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2344EF881F84DAE500EA4215 /* Teacher.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2344EF891F84DAE500EA4215 /* Base */,
-			);
-			name = Teacher.storyboard;
-			sourceTree = "<group>";
-		};
 		234D72261F8356870040AF39 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
