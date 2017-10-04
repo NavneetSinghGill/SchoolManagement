@@ -15,33 +15,23 @@ class HomeTabBarController: UITabBarController {
         
         // Do any additional setup after loading the view.
         //self.configureTabBar()
+        // self.tabBarController!.tabBar.isHidden = true
+        self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        
+       // self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        let selectedIndex = tabBarController!.selectedIndex
-//        switch selectedIndex {
-//        case 0:
-//            print("0")
-//        case 1:
-//            print("1")
-//        case 2:
-//            print("2")
-//        case 3:
-//            print("3")
-//        case 4:
-//            print("4")
-//        default:
-//            print("0")
-//        }
-        
-        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    
+    @objc func logoutTapped() -> Void {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
     /*
      // MARK: - Navigation
      

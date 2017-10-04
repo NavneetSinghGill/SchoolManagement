@@ -8,8 +8,9 @@
 
 import UIKit
 
-class EventTableViewController: UITableViewController {
+class EventTableViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource {
 
+    @IBOutlet var tableview: UITableView!
     
     let arrEventImges: [String] = ["event0", "event1", "event2", "event3", "event4","event5","event6","event7","event8","event9","event10","event11"]
     
@@ -18,9 +19,11 @@ class EventTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.tabBarItem.title = "School Events"
-       // self.tabBarItem.image = "image.png"
+        //addBackButton()
+        self.navigationItem.hidesBackButton = true
+        setNavigationTitle(title: "Events")
+        let barButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(logoutTapped))
+        self.navigationController?.topViewController?.navigationItem.rightBarButtonItem = barButton
         
 //        self.navigationController?.navigationBar.topItem?.title = "School Events"
 //        let nav = self.navigationController?.navigationBar
@@ -30,34 +33,29 @@ class EventTableViewController: UITableViewController {
         
     }
     
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//         self.navigationController?.navigationBar.topItem?.title = nil
-//    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
 
+    @objc func logoutTapped() -> Void {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.arrEventImges.count
     }
-
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       // let cell : EventTableViewController  = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath)
-        
-        let cell  = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! EventsTableViewCell!
-        
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+       
+        let cell  = tableview.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! EventsTableViewCell!
         //  let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as PlacesTableViewCell
         // Configure the cell...
         
@@ -69,8 +67,6 @@ class EventTableViewController: UITableViewController {
         cell?.btnComment.tag = indexPath.row
         return cell!
     }
-    
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

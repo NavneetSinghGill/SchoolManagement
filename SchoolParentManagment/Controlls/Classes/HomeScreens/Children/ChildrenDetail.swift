@@ -1,33 +1,23 @@
 //
-//  ActionViewController.swift
+//  ChildrenDetail.swift
 //  SchoolParentManagment
 //
-//  Created by Bestpeers on 03/10/17.
+//  Created by Bestpeers on 04/10/17.
 //  Copyright © 2017 Bestpeers. All rights reserved.
 //
 
 import UIKit
 
-class ActionViewController: BaseViewController {
-
+class ChildrenDetail: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
+      print("\(UserDefaults.standard.value(forKey: "childerns_details")!)")
         // Do any additional setup after loading the view.
-        //addBackButton()
-        self.navigationItem.hidesBackButton = true
-
-        setNavigationTitle(title: "Action")
-
-//        self.navigationController?.navigationBar.topItem?.title = "Actions"
-//        let nav = self.navigationController?.navigationBar
-//        nav?.barStyle = UIBarStyle.black
-//        nav?.tintColor = UIColor.white
-//        nav?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.appDarkBlueColor]
+        addBackButton()
+        setNavigationTitle(title: "Children Details")
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -43,7 +33,5 @@ class ActionViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func btnChatWithTeacherAction(_ sender: Any) {
-    }
-    
+
 }

@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ChildrensTableViewController: UITableViewController {
+class ChildrensTableViewController: BaseViewController, UITableViewDataSource,UITableViewDelegate {
 
     let arrEventImges: [String] = ["event0", "event1", "event2", "event3", "event4","event5","event6","event7","event8","event9","event10","event11"]
-    let arrChidrensName: [String] = ["Rajesh", "Vikash", "Mohit"]
+    let arrChidrensName: [String] = ["John Steev", "Peeter Ritso", "Calvin Harris"]
     let arrChidrensClass: [String] = ["10th", "5th", "LKG"]
-    let arrChidrensImages: [String] = ["Rajesh", "Vikash", "Mohit"]
+    let arrChidrensImages: [String] = ["John Steev", "Peeter Ritso", "calvin Harris"]
+    let arrRollNo: [String] = ["C10-12563", "C5-2226566", "LKG-56560"]
     
+    @IBOutlet var tableView: UITableView!
     
     
     // cell reuse id (cells that scroll out of view can be reused)
@@ -22,6 +24,9 @@ class ChildrensTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
+
+        setNavigationTitle(title: "Childrens")
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -51,33 +56,60 @@ class ChildrensTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return self.arrChidrensName.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! ChildrensTableViewCell
-     
-        let childImg = self.arrEventImges[indexPath.row]
+        
+         cell.accessoryType = .disclosureIndicator
+       
+      //  let childImg = self.arrEventImges[indexPath.row]
         let childernName = self.arrChidrensName[indexPath.row]
         let childrenClass = self.arrChidrensClass[indexPath.row]
-       
+        let childRollNoIs =  self.arrRollNo[indexPath.row]
+        
+        
         // cell.textLabel?.text = fruitName
         //cell.detailTextLabel?.text = "Event Is!"
        // cell.imgChildren?.image = UIImage(named: events)
         cell.lblCName.text = childernName
-        cell.lblCDetails.text = childrenClass
+        cell.lblCDetails.text = "Class  " + childrenClass
+        cell.lblRollNo.text = "RollNo " + childRollNoIs
+        
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.clear
+        cell.selectedBackgroundView = bgColorView
+        
         return cell
     }
- 
-
+   
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (indexPath.row % 2) == 0 {
+            cell.backgroundColor = UIColor.blue
+        }else{
+            cell.backgroundColor = UIColor.appDarkBlueColor
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cNmae = self.arrChidrensName[indexPath.row]
+        let cRoll = self.arrRollNo[indexPath.row]
+        let cClass = self.arrChidrensClass[indexPath.row]
+        var cDetails : NSDictionary = ["CNAME": cNmae, "CROLL": cRoll, "CCLASS": cClass ]
+        let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+        let cDetailVC = mainStoryBoard.instantiateViewController(withIdentifier:sChildrenDetailIdentifier)
+        UserDefaults.standard.setValue(cDetails, forKey: "childerns_details")
+        print("\(UserDefaults.standard.value(forKey: "childerns_details")!)")
+        self.navigationController?.pushViewController(cDetailVC, animated: false)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

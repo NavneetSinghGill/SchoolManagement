@@ -8,15 +8,17 @@
 
 import UIKit
 
-class AboutSchoolViewController: UIViewController {
+class AboutSchoolViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-         self.tabBarItem.title = "About School"
+        //addBackButton()
+        self.navigationItem.hidesBackButton = true
         
+        setNavigationTitle(title: "About School")
         //self.navigationController?.navigationBar.topItem?.title = "About School"
        // self.navigationController?.title = "About School"
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
 
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
@@ -22,9 +22,13 @@ class SignUpViewController: UIViewController {
     @IBAction func saveAction(_ sender: Any) {
     }
     
+    @IBAction func btnBackAction(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+          addBackButton()
         self.textFieldName.delegate = self
         self.textFieldEmail.delegate = self
         self.textFieldPassword.delegate = self

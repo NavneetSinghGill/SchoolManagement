@@ -11,7 +11,8 @@ import UIKit
 class BaseViewController: UIViewController {
 
     var backBarButton: UIBarButtonItem!
-    
+    var navigationTitleLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,5 +41,15 @@ class BaseViewController: UIViewController {
             navigationController?.popViewController(animated: true)
         }
     }
-
+    func setNavigationTitle(title:String) {
+        if (navigationTitleLabel == nil) {
+            navigationTitleLabel = UILabel()
+        }
+        navigationTitleLabel.textColor = UIColor.appBlueColor
+        navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+        navigationTitleLabel.text = title
+        navigationTitleLabel.sizeToFit()
+        
+        navigationItem.titleView = navigationTitleLabel
+    }
 }

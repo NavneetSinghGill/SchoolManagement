@@ -15,6 +15,7 @@ import UIKit
 
 class LoginViewController: UIViewController,UITextFieldDelegate {
     
+    let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
     
     @IBOutlet weak var lblLoginUserType: UILabel!
     
@@ -26,13 +27,18 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBAction func btnLoginAction(_ sender: Any) {
         self.performLogIn()
     }
-    
+    //MARK:- Forgot Password
     @IBAction func btnForgotPasswordAction(_ sender: Any) {
+        let forgotVC = mainStoryBoard.instantiateViewController(withIdentifier:sFotgotPasswordViewControllerIdentifier)
+        self.present(forgotVC, animated: true, completion: nil)
     }
     //MARK:- SignUP Action
     @IBAction func btnSignUpAction(_ sender: Any) {
+        let signUpVC = mainStoryBoard.instantiateViewController(withIdentifier: sSignUpViewControllerIdentifier)
+        self.present(signUpVC, animated: true, completion: nil)
     }
     
+    //MARK:- Segment Action
     @IBAction func segmentAction(_ sender: Any) {
         
         switch self.segment.selectedSegmentIndex {
@@ -80,17 +86,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
     //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -102,12 +97,32 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         
         if isDataValid() {
             let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let teacherStoryBoard = UIStoryboard(name: "Teacher", bundle: nil)
+            
+            print("ValueOfSEgmentIndex \(self.segment.selectedSegmentIndex)")
+            
+            switch self.segment.selectedSegmentIndex {
+            case 0: 
+                let techerHomeVC = teacherStoryBoard.instantiateViewController(withIdentifier: sHomeTabBarControllerllerIdentifier)
+                self.present(techerHomeVC, animated: true, completion: nil)
+            case 1:
+                let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
+                self.present(homeVC, animated: true, completion: nil)
+            case 2:
+                print("Working")
+            default:
+                self.lblLoginUserType.text = "Login Teacher"
+            }
+            
+            
             let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
-            self.navigationController?.pushViewController(homeVC, animated: true)
+           // self.navigationController?.pushViewController(homeVC, animated: true)
+            self.present(homeVC, animated: true, completion: nil)
+
         }
     }
     //MARK:- Textfield validations And check Empty
-    func isDataValid() -> Bool {
+ private func isDataValid() -> Bool {
         var isValid = false
         var errorMsg : String?
         

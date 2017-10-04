@@ -8,29 +8,27 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
+class NotificationViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-       /// self.navigationController?.navigationBar.topItem?.title = "Notification"
-//        self.navigationController?.title = "Notification"
-//        let nav = self.navigationController?.navigationBar
-//        nav?.barStyle = UIBarStyle.black
-//        nav?.tintColor = UIColor.white
-//        nav?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.appDarkBlueColor]
-        self.tabBarItem.title = "Notification"
+        //addBackButton()
+        self.navigationItem.hidesBackButton = true
+       let left = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
+       self.tabBarController?.navigationItem.leftBarButtonItem = left
+        setNavigationTitle(title: "Notification")
     }
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        self.navigationController?.navigationBar.topItem?.title = nil
-//    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @objc func logoutTapped() -> Void {
+        self.navigationController?.popToRootViewController(animated: false)
+    }
     //MARK:- Notification Buttons Clicked Action
     
     @IBAction func btnClickedAction(_ sender: Any) {
