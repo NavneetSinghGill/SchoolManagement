@@ -19,7 +19,7 @@
                         <color key="backgroundColor" red="1" green="0.24144223140000001" blue="0.039828679149999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="SOS-WY-9z5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notifications" id="IEc-Mk-q2m"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications" id="IEc-Mk-q2m"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wlA-Xl-rRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -35,7 +35,7 @@
                         <color key="backgroundColor" red="0.38956877550000002" green="0.40781933069999998" blue="0.23453841449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="trR-GH-bvF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Management" id="CcN-10-kcI"/>
+                    <tabBarItem key="tabBarItem" title="Management" image="management" id="CcN-10-kcI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yg2-lD-M1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -320,7 +320,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VQq-rx-37R"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Homework" id="NnI-8e-vWx"/>
+                    <tabBarItem key="tabBarItem" title="Homework" image="homework" id="NnI-8e-vWx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TjK-hj-3ci" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -337,7 +337,7 @@
                         <color key="backgroundColor" red="0.26727944609999998" green="0.40097433329999999" blue="0.99857598540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="iun-gb-vGS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Event" id="7m1-e4-SBR"/>
+                    <tabBarItem key="tabBarItem" title="Event" image="event" id="7m1-e4-SBR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUw-bm-pfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -369,7 +369,7 @@
         <scene sceneID="WD9-yt-MHz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lPu-eS-VFe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="9EF-nN-G9C"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search" id="9EF-nN-G9C"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nLU-0G-ma1">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -387,5 +387,10 @@
     </scenes>
     <resources>
         <image name="Add" width="42" height="42"/>
+        <image name="event" width="42" height="42"/>
+        <image name="homework" width="42" height="42"/>
+        <image name="management" width="42" height="42"/>
+        <image name="notifications" width="42" height="42"/>
+        <image name="search" width="42" height="42"/>
     </resources>
 </document>
