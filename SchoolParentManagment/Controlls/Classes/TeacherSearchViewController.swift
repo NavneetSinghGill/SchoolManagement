@@ -12,6 +12,7 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var segmentControl: UISegmentedControl!
     
     var studentChilds: [StudentChild] = []
     var parents: [Parent] = []
@@ -40,14 +41,16 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         tableView.reloadData()
     }
     
-    //MARK: Tableview datasource methods
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.isHidden = true
     }
     
+    //MARK: Tableview datasource methods
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        if segmentControl.selectedSegmentIndex == 0 {
             return self.studentChilds.count
         } else {
             return self.parents.count
@@ -57,7 +60,7 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SearchTableViewCell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell", for: indexPath) as! SearchTableViewCell
         
-        if indexPath.section == 0 {
+        if segmentControl.selectedSegmentIndex == 0 {
             cell.setUIFor(characterType: .StudentChild, with: studentChilds[indexPath.row])
         } else {
             cell.setUIFor(characterType: .Parent, with: parents[indexPath.row])
@@ -69,7 +72,7 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
     //MARK: Tableview delegate methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.section == 0 { // ChildStudents
+        if segmentControl.selectedSegmentIndex == 0 { // ChildStudents
             let studentChildDetailsVC = getStudentChildsVC()
             studentChildDetailsVC.shouldShowBackButton = true
             studentChildDetailsVC.studentChild = studentChilds[indexPath.row]
@@ -87,7 +90,7 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         
         let whiteLabel = UILabel()
         whiteLabel.textColor = UIColor.white
-        if section == 0 {
+        if segmentControl.selectedSegmentIndex == 0 {
             whiteLabel.text = "Students"
         } else {
             whiteLabel.text = "Parents"
@@ -116,6 +119,12 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         let studentChildDetailsVC: StudentChildDetailsViewController = teacherStoryBoard.instantiateViewController(withIdentifier: "StudentChildDetailsViewController") as! StudentChildDetailsViewController
         
         return studentChildDetailsVC
+    }
+    
+    //MARK: IBAction methods
+    
+    @IBAction func segmentValueChanged(segmentControl: UISegmentedControl) {
+        tableView.reloadData()
     }
 
 }

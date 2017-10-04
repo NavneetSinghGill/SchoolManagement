@@ -33,6 +33,10 @@
 		23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */; };
 		23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */; };
 		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
+		539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F60E71F84A9AF003E6B81 /* Teacher.storyboard */; };
+		539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */; };
+		539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */; };
+		539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,9 @@
 		23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		539F60E81F84A9AF003E6B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Teacher.storyboard; sourceTree = "<group>"; };
+		539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentTableViewCell.swift; sourceTree = "<group>"; };
+		539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,7 @@
 				234D72221F8356870040AF39 /* AppDelegate.swift */,
 				234D72241F8356870040AF39 /* ViewController.swift */,
 				234D72261F8356870040AF39 /* Main.storyboard */,
+				539F60E71F84A9AF003E6B81 /* Teacher.storyboard */,
 				234D72291F8356870040AF39 /* Assets.xcassets */,
 				234D722B1F8356870040AF39 /* LaunchScreen.storyboard */,
 				234D722E1F8356870040AF39 /* Info.plist */,
@@ -132,10 +140,12 @@
 		234D72351F8356960040AF39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */,
 				23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */,
+				539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */,
+				539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */,
 				230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */,
 				23FF1BAB1F837DCF0071B200 /* EventsVCCell */,
-				23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,9 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				23C8452F1F83CC4D000D16B9 /* BaseViewController.swift */,
-				23C8452D1F83CC4D000D16B9 /* StudentChildDetailsViewController.swift */,
 				23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */,
 				23C845271F83C2BE000D16B9 /* SignUpAndForgotPassword */,
+				23C8452D1F83CC4D000D16B9 /* StudentChildDetailsViewController.swift */,
+				23C845271F83C2BE000D16B9 /* SignUp */,
 				234D72391F83584C0040AF39 /* LoginViewController.swift */,
 				23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */,
 				23FF1BA31F837BCE0071B200 /* HomeScreens */,
@@ -311,7 +322,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */,
+				539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */,
 				234D722A1F8356870040AF39 /* Assets.xcassets in Resources */,
+				539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */,
 				234D72281F8356870040AF39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
 				23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */,
 				23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */,
@@ -341,6 +355,7 @@
 				23C845291F83C2DF000D16B9 /* SignUpViewController.swift in Sources */,
 				230BFB471F83A589008B9EE2 /* AboutSchoolViewController.swift in Sources */,
 				23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */,
+				539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */,
 				230BFB4B1F83A5E3008B9EE2 /* NotificationViewController.swift in Sources */,
 				23C845321F83CC5D000D16B9 /* StudentChildDetailsViewController.swift in Sources */,
 				23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */,
@@ -366,6 +381,14 @@
 				234D722C1F8356870040AF39 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		539F60E71F84A9AF003E6B81 /* Teacher.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				539F60E81F84A9AF003E6B81 /* Base */,
+			);
+			name = Teacher.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
