@@ -33,6 +33,8 @@
 		23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */; };
 		23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */; };
 		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
+		5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */; };
+		5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
 		539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 539F60E71F84A9AF003E6B81 /* Teacher.storyboard */; };
 		539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */; };
 		539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */; };
@@ -173,9 +175,8 @@
 			children = (
 				23C8452F1F83CC4D000D16B9 /* BaseViewController.swift */,
 				23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */,
-				23C845271F83C2BE000D16B9 /* SignUpAndForgotPassword */,
 				23C8452D1F83CC4D000D16B9 /* StudentChildDetailsViewController.swift */,
-				23C845271F83C2BE000D16B9 /* SignUp */,
+				23C845271F83C2BE000D16B9 /* SignUpAndForgotPassword */,
 				234D72391F83584C0040AF39 /* LoginViewController.swift */,
 				23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */,
 				23FF1BA31F837BCE0071B200 /* HomeScreens */,
@@ -336,6 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */,
+				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
 				23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */,

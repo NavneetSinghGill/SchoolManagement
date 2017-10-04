@@ -600,6 +600,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="x9b-0j-Yhy" kind="relationship" relationship="viewControllers" id="jq8-On-qtI"/>
@@ -880,11 +881,11 @@
             </objects>
             <point key="canvasLocation" x="812" y="-684.10794602698661"/>
         </scene>
-        <!--Events-->
+        <!--Event-->
         <scene sceneID="36q-kw-YZO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x9b-0j-Yhy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="LmI-70-DeM"/>
+                    <tabBarItem key="tabBarItem" title="Event" image="event" id="LmI-70-DeM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aYW-o2-HTT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -903,7 +904,7 @@
         <scene sceneID="Z6U-Kp-9xz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A6d-mi-bFe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" id="yh3-mp-fRm"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications" id="yh3-mp-fRm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3hR-zJ-uAp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -922,7 +923,7 @@
         <scene sceneID="KgQ-1c-TZ5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iqx-r2-B2n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Childrens" id="ZYx-vX-Oxe"/>
+                    <tabBarItem key="tabBarItem" title="Childrens" image="children" id="ZYx-vX-Oxe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R9v-6B-j7y">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -941,7 +942,7 @@
         <scene sceneID="5EB-Yo-T41">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xjz-v0-ePg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Action" id="kfF-N3-F81"/>
+                    <tabBarItem key="tabBarItem" title="Action" image="management" id="kfF-N3-F81"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B56-97-nfM">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -960,7 +961,7 @@
         <scene sceneID="3fc-8L-dLO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sBo-yw-l1g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About School" id="dt3-vP-Di0"/>
+                    <tabBarItem key="tabBarItem" title="About School" image="school" id="dt3-vP-Di0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2nb-Em-1yc">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -996,6 +997,11 @@
     </scenes>
     <resources>
         <image name="backIcon" width="42" height="42"/>
+        <image name="children" width="42" height="42"/>
+        <image name="event" width="42" height="42"/>
         <image name="imgDeaultUser" width="225" height="225"/>
+        <image name="management" width="42" height="42"/>
+        <image name="notifications" width="42" height="42"/>
+        <image name="school" width="42" height="42"/>
     </resources>
 </document>
