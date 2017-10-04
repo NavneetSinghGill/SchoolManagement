@@ -38,7 +38,9 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
             addBackButton()
         }
         
-        setInfo(of: studentChild)
+        if studentChild != nil {
+            setInfo(of: studentChild)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

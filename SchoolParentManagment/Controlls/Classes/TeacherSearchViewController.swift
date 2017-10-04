@@ -126,5 +126,12 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
     @IBAction func segmentValueChanged(segmentControl: UISegmentedControl) {
         tableView.reloadData()
     }
+    
+    @IBAction func addChildButtonTapped() {
+        let studentChildDetailsVC = getStudentChildsVC()
+        studentChildDetailsVC.shouldShowBackButton = true
+        
+        self.navigationController?.pushViewController(studentChildDetailsVC, animated: true)
+    }
 
 }

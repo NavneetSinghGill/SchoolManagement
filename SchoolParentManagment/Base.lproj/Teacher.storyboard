@@ -66,6 +66,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cda-cb-S3C">
                                 <rect key="frame" x="318" y="561" width="42" height="42"/>
                                 <state key="normal" image="Add"/>
+                                <connections>
+                                    <action selector="addChildButtonTapped" destination="TJd-Au-3MP" eventType="touchUpInside" id="bPF-sK-P6r"/>
+                                </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EV9-4u-0PV">
                                 <rect key="frame" x="122" y="125" width="131" height="29"/>
@@ -101,7 +104,7 @@
                         <outlet property="searchBar" destination="LhR-ei-1KZ" id="aVl-Si-JYv"/>
                         <outlet property="segmentControl" destination="EV9-4u-0PV" id="KMD-oz-Ee0"/>
                         <outlet property="tableView" destination="u0o-mn-HgM" id="M4r-D3-zp9"/>
-                        <segue destination="dnl-EA-G8w" kind="show" id="wk1-2j-dhC"/>
+                        <segue destination="dnl-EA-G8w" kind="show" identifier="toStudentChildDetailsViewController" id="wk1-2j-dhC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmY-vt-Yhm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,6 +355,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="vOA-BT-3lZ" kind="relationship" relationship="viewControllers" id="T88-7M-6qj"/>
