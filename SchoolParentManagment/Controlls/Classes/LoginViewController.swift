@@ -114,7 +114,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 self.lblLoginUserType.text = "Login Teacher"
             }
             
-            
             let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
            // self.navigationController?.pushViewController(homeVC, animated: true)
             self.present(homeVC, animated: true, completion: nil)

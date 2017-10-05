@@ -52,4 +52,10 @@ class BaseViewController: UIViewController {
         
         navigationItem.titleView = navigationTitleLabel
     }
+    
+    func showAlert(title: String, msg: String) {
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 }

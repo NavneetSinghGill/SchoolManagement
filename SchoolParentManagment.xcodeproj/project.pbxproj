@@ -10,7 +10,6 @@
 		230BFB451F839B8C008B9EE2 /* ChildrensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB441F839B8C008B9EE2 /* ChildrensTableViewController.swift */; };
 		230BFB471F83A589008B9EE2 /* AboutSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB461F83A589008B9EE2 /* AboutSchoolViewController.swift */; };
 		230BFB491F83A5A4008B9EE2 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB481F83A5A4008B9EE2 /* ActionViewController.swift */; };
-		230BFB4B1F83A5E3008B9EE2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */; };
 		2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBAF1F836BBB00C4D8FA /* Utility.swift */; };
 		2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBB11F836C1800C4D8FA /* Constants.swift */; };
 		2344EF841F84B20400EA4215 /* FotgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344EF831F84B20400EA4215 /* FotgotPasswordViewController.swift */; };
@@ -21,6 +20,7 @@
 		234D722A1F8356870040AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D72291F8356870040AF39 /* Assets.xcassets */; };
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
 		234D723A1F83584C0040AF39 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72391F83584C0040AF39 /* LoginViewController.swift */; };
+		23AA25401F8626D00095AA04 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA253F1F8626D00095AA04 /* NotificationsVC.swift */; };
 		23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */; };
 		23C845291F83C2DF000D16B9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845281F83C2DF000D16B9 /* SignUpViewController.swift */; };
 		23C845311F83CC5D000D16B9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8452F1F83CC4D000D16B9 /* BaseViewController.swift */; };
@@ -28,6 +28,8 @@
 		23C845391F83CD88000D16B9 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845381F83CD88000D16B9 /* Parent.swift */; };
 		23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8453A1F83CDB3000D16B9 /* StudentChild.swift */; };
 		23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */; };
+		23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C929B01F86178E00093FF7 /* NotificationTableViewCell.swift */; };
+		23C929B31F86178E00093FF7 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23C929B11F86178E00093FF7 /* NotificationTableViewCell.xib */; };
 		23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1B9D1F8370C00071B200 /* UIColorExtension.swift */; };
 		23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */; };
 		23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */; };
@@ -45,7 +47,6 @@
 		230BFB441F839B8C008B9EE2 /* ChildrensTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewController.swift; sourceTree = "<group>"; };
 		230BFB461F83A589008B9EE2 /* AboutSchoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutSchoolViewController.swift; sourceTree = "<group>"; };
 		230BFB481F83A5A4008B9EE2 /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		2319FBAF1F836BBB00C4D8FA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2319FBB11F836C1800C4D8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2344EF831F84B20400EA4215 /* FotgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		234D722C1F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234D722E1F8356870040AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		234D72391F83584C0040AF39 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23AA253F1F8626D00095AA04 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewCell.swift; sourceTree = "<group>"; };
 		23C845281F83C2DF000D16B9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		23C8452D1F83CC4D000D16B9 /* StudentChildDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentChildDetailsViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,8 @@
 		23C845381F83CD88000D16B9 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		23C8453A1F83CDB3000D16B9 /* StudentChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentChild.swift; sourceTree = "<group>"; };
 		23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		23C929B01F86178E00093FF7 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		23C929B11F86178E00093FF7 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		23FF1B9D1F8370C00071B200 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 		234D72351F8356960040AF39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23C929AF1F86175E00093FF7 /* Notification */,
 				23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */,
 				23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */,
 				539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */,
@@ -193,6 +198,15 @@
 			path = SignUpAndForgotPassword;
 			sourceTree = "<group>";
 		};
+		23C929AF1F86175E00093FF7 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				23C929B01F86178E00093FF7 /* NotificationTableViewCell.swift */,
+				23C929B11F86178E00093FF7 /* NotificationTableViewCell.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		23FF1B9C1F836FAA0071B200 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +248,7 @@
 		23FF1BA61F837C0F0071B200 /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				230BFB4A1F83A5E3008B9EE2 /* NotificationViewController.swift */,
+				23AA253F1F8626D00095AA04 /* NotificationsVC.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -324,6 +338,7 @@
 			files = (
 				234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */,
 				539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */,
+				23C929B31F86178E00093FF7 /* NotificationTableViewCell.xib in Resources */,
 				234D722A1F8356870040AF39 /* Assets.xcassets in Resources */,
 				539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */,
 				234D72281F8356870040AF39 /* Main.storyboard in Resources */,
@@ -337,6 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */,
+				23AA25401F8626D00095AA04 /* NotificationsVC.swift in Sources */,
 				5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */,
 				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
@@ -359,7 +376,6 @@
 				230BFB471F83A589008B9EE2 /* AboutSchoolViewController.swift in Sources */,
 				23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */,
 				539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */,
-				230BFB4B1F83A5E3008B9EE2 /* NotificationViewController.swift in Sources */,
 				23C845321F83CC5D000D16B9 /* StudentChildDetailsViewController.swift in Sources */,
 				23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */,
 				230BFB451F839B8C008B9EE2 /* ChildrensTableViewController.swift in Sources */,

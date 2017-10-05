@@ -27,5 +27,10 @@ extension UIColor {
         return UIColor.init(red: 0, green: 37.0/255.0, blue: 80.0/255.0, alpha: 1.0)
     }
    
-    
+}
+extension UIImageView {
+    func setRounded() {
+        self.layer.cornerRadius = (self.frame.width / 2) //instead of let radius = CGRectGetWidth(self.frame) / 2
+        self.layer.masksToBounds = true
+    }
 }

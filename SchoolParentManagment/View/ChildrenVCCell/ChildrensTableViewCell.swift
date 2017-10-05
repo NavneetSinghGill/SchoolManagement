@@ -10,8 +10,8 @@ import UIKit
 
 class ChildrensTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblCDetails: UILabel!
     @IBOutlet weak var lblCName: UILabel!
+    @IBOutlet weak var lblCDetails: UILabel!
     @IBOutlet weak var lblRollNo: UILabel!
     
     @IBOutlet weak var imgChildren: UIImageView!

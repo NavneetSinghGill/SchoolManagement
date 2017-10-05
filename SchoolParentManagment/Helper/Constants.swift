@@ -46,6 +46,7 @@ let sEventTableViewControllerIdentifier = "sEventTableViewController"
 let sSignUpViewControllerIdentifier = "sSignUpViewController"
 let sFotgotPasswordViewControllerIdentifier = "sFotgotPasswordViewController"
 let sChildrenDetailIdentifier = "sChildrenDetail"
+let sNotificationsVCIdentifier = "sNotificationsVC"
 
 //MARK: Colors
 
