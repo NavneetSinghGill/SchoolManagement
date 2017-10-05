@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
@@ -26,6 +26,11 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         tableView.estimatedRowHeight = 40
         tableView.rowHeight = UITableViewAutomaticDimension
         
+        searchBar.barTintColor = Global.getColorForCurrentEnvironmentType()
+        segmentControl.tintColor = Global.getColorForCurrentEnvironmentType()
+        
+        setNavigationTitle(title: "SEARCH")
+                
         //Fake data
         let studentChildFake1 = StudentChild()
         studentChildFake1.fakeData(for: 0)
@@ -39,12 +44,6 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         parents.append(parentFake2)
         
         tableView.reloadData()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        self.navigationController?.navigationBar.isHidden = true
     }
     
     //MARK: Tableview datasource methods
@@ -83,28 +82,28 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
         }
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let blueView = UIView()
-        blueView.backgroundColor = blueColor
-        blueView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40)
-        
-        let whiteLabel = UILabel()
-        whiteLabel.textColor = UIColor.white
-        if segmentControl.selectedSegmentIndex == 0 {
-            whiteLabel.text = "Students"
-        } else {
-            whiteLabel.text = "Parents"
-        }
-        whiteLabel.sizeToFit()
-        whiteLabel.center = blueView.center
-        blueView.addSubview(whiteLabel)
-        
-        return blueView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let blueView = UIView()
+//        blueView.backgroundColor = blueColor
+//        blueView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40)
+//
+//        let whiteLabel = UILabel()
+//        whiteLabel.textColor = UIColor.white
+//        if segmentControl.selectedSegmentIndex == 0 {
+//            whiteLabel.text = "Students"
+//        } else {
+//            whiteLabel.text = "Parents"
+//        }
+//        whiteLabel.sizeToFit()
+//        whiteLabel.center = blueView.center
+//        blueView.addSubview(whiteLabel)
+//
+//        return blueView
+//    }
+//
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 40
+//    }
     
     //MARK: Search bar delegate methods
     
@@ -114,7 +113,7 @@ class TeacherSearchViewController: UIViewController, UITableViewDataSource, UITa
     
     //MARK: Private methods
     
-    func getStudentChildsVC() -> StudentChildDetailsViewController {
+    private func getStudentChildsVC() -> StudentChildDetailsViewController {
         let teacherStoryBoard = UIStoryboard(name: "Teacher", bundle: nil)
         let studentChildDetailsVC: StudentChildDetailsViewController = teacherStoryBoard.instantiateViewController(withIdentifier: "StudentChildDetailsViewController") as! StudentChildDetailsViewController
         

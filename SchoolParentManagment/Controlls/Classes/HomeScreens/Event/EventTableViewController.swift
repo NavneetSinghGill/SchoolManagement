@@ -21,7 +21,7 @@ class EventTableViewController: BaseViewController,UITableViewDelegate,UITableVi
         super.viewDidLoad()
         //addBackButton()
         self.navigationItem.hidesBackButton = true
-        setNavigationTitle(title: "Event")
+        setNavigationTitle(title: "EVENT")
         let barButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(logoutTapped))
         self.navigationController?.topViewController?.navigationItem.rightBarButtonItem = barButton
         

@@ -41,6 +41,15 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
         if studentChild != nil {
             setInfo(of: studentChild)
         }
+        if studentChild?.firstName != nil {
+            if studentChild?.lastName != nil {
+                setNavigationTitle(title: "\(studentChild?.firstName! ?? "") \(studentChild?.lastName! ?? "")".uppercased())
+            } else {
+                setNavigationTitle(title: "\(studentChild?.firstName ?? "")".uppercased())
+            }
+        } else {
+            setNavigationTitle(title: "")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

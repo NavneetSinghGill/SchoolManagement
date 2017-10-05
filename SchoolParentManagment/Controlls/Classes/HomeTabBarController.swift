@@ -20,6 +20,7 @@ class HomeTabBarController: UITabBarController {
         
        // self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logoutTapped))
         
+        self.tabBar.tintColor = Global.getColorForCurrentEnvironmentType()        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

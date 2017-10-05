@@ -796,11 +796,11 @@
             </objects>
             <point key="canvasLocation" x="2878" y="13"/>
         </scene>
-        <!--Childrens-->
+        <!--Children-->
         <scene sceneID="KgQ-1c-TZ5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Iqx-r2-B2n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Childrens" image="children" id="ZYx-vX-Oxe"/>
+                    <tabBarItem key="tabBarItem" title="Children" image="children" id="ZYx-vX-Oxe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R9v-6B-j7y">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

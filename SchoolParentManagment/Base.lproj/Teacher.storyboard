@@ -63,20 +63,13 @@
                                     <outlet property="delegate" destination="TJd-Au-3MP" id="Fgw-Aa-gFx"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cda-cb-S3C">
-                                <rect key="frame" x="318" y="561" width="42" height="42"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                <state key="normal" image="Add">
-                                    <color key="titleColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="addChildButtonTapped" destination="TJd-Au-3MP" eventType="touchUpInside" id="bPF-sK-P6r"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EV9-4u-0PV">
-                                <rect key="frame" x="122" y="125" width="131" height="29"/>
+                                <rect key="frame" x="62.5" y="125" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="mnn-DO-7Hj"/>
+                                </constraints>
                                 <segments>
-                                    <segment title="Children"/>
+                                    <segment title="Students"/>
                                     <segment title="Parents"/>
                                 </segments>
                                 <color key="tintColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
@@ -90,10 +83,8 @@
                             <constraint firstItem="LhR-ei-1KZ" firstAttribute="top" secondItem="SWJ-rK-KjF" secondAttribute="top" id="Cpj-mh-0rS"/>
                             <constraint firstItem="EV9-4u-0PV" firstAttribute="top" secondItem="LhR-ei-1KZ" secondAttribute="bottom" constant="5" id="G5q-N9-PBB"/>
                             <constraint firstItem="SWJ-rK-KjF" firstAttribute="trailing" secondItem="u0o-mn-HgM" secondAttribute="trailing" id="INI-dW-oW9"/>
-                            <constraint firstItem="SWJ-rK-KjF" firstAttribute="trailing" secondItem="cda-cb-S3C" secondAttribute="trailing" constant="15" id="INs-Bg-R22"/>
                             <constraint firstItem="SWJ-rK-KjF" firstAttribute="bottom" secondItem="u0o-mn-HgM" secondAttribute="bottom" id="JEE-R8-Jgd"/>
                             <constraint firstItem="LhR-ei-1KZ" firstAttribute="trailing" secondItem="SWJ-rK-KjF" secondAttribute="trailing" id="P0C-Ci-DRh"/>
-                            <constraint firstItem="SWJ-rK-KjF" firstAttribute="bottom" secondItem="cda-cb-S3C" secondAttribute="bottom" constant="15" id="aYE-5B-ybs"/>
                             <constraint firstItem="EV9-4u-0PV" firstAttribute="centerX" secondItem="jPR-Bi-rks" secondAttribute="centerX" id="ifs-F8-r8S"/>
                             <constraint firstItem="u0o-mn-HgM" firstAttribute="leading" secondItem="SWJ-rK-KjF" secondAttribute="leading" id="lMn-5A-PaN"/>
                             <constraint firstItem="LhR-ei-1KZ" firstAttribute="leading" secondItem="SWJ-rK-KjF" secondAttribute="leading" id="rMD-lp-lNQ"/>
@@ -436,11 +427,11 @@
             </objects>
             <point key="canvasLocation" x="2111" y="-698"/>
         </scene>
-        <!--Homework-->
+        <!--Actions-->
         <scene sceneID="j3D-eH-MMw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S5E-qB-zUU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Homework" image="homework" id="NnI-8e-vWx"/>
+                    <tabBarItem key="tabBarItem" title="Actions" image="homework" id="NnI-8e-vWx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lcT-es-yya">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>

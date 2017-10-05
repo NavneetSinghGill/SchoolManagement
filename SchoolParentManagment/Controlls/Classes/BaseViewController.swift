@@ -45,12 +45,15 @@ class BaseViewController: UIViewController {
         if (navigationTitleLabel == nil) {
             navigationTitleLabel = UILabel()
         }
-        navigationTitleLabel.textColor = UIColor.appBlueColor
-        navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
+
+        navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
         navigationTitleLabel.text = title
         navigationTitleLabel.sizeToFit()
+        navigationTitleLabel.textColor = UIColor.black// Global.getLightColorForCurrentEnvironmentType()
         
         navigationItem.titleView = navigationTitleLabel
+        
+        self.navigationController?.navigationBar.barTintColor = Global.getColorForCurrentEnvironmentType()
     }
     
     func showAlert(title: String, msg: String) {

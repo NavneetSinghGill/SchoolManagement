@@ -22,7 +22,7 @@ class HomeWorkViewController: BaseViewController , UITableViewDataSource, UITabl
         homeWorkTableView.estimatedRowHeight = 40
         homeWorkTableView.rowHeight = UITableViewAutomaticDimension
         
-        setNavigationTitle(title: "HomeWork")
+        setNavigationTitle(title: "ACTIONS")
         
         //Fake data
         let homwWorkFake1 = HomeWork()

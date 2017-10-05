@@ -51,6 +51,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         default:
             self.lblLoginUserType.text = "Login Teacher"
         }
+        updateEnvironmentCharacterType()
     }
     
     // MARK:- View Life cycle
@@ -66,6 +67,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.txtEmail.text = "N@gamil.com"
         self.txtPassword.text = "123456"
         
+        self.segment.selectedSegmentIndex = 0
+        updateEnvironmentCharacterType()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -159,5 +162,18 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
         
+    }
+    
+    //MARK: Private methods
+    
+    func updateEnvironmentCharacterType() {
+        switch segment.selectedSegmentIndex {
+        case 0:
+            appDelegate.environmentCharacterType = .Teacher
+        case 1:
+            appDelegate.environmentCharacterType = .Parent
+        default:
+            appDelegate.environmentCharacterType = .Parent
+        }
     }
 }

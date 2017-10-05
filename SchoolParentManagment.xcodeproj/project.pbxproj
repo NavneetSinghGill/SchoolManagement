@@ -15,7 +15,6 @@
 		2344EF841F84B20400EA4215 /* FotgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344EF831F84B20400EA4215 /* FotgotPasswordViewController.swift */; };
 		2344EF8C1F84EFC900EA4215 /* ChildrenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2344EF8B1F84EFC900EA4215 /* ChildrenDetail.swift */; };
 		234D72231F8356870040AF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72221F8356870040AF39 /* AppDelegate.swift */; };
-		234D72251F8356870040AF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234D72241F8356870040AF39 /* ViewController.swift */; };
 		234D72281F8356870040AF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D72261F8356870040AF39 /* Main.storyboard */; };
 		234D722A1F8356870040AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D72291F8356870040AF39 /* Assets.xcassets */; };
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
@@ -35,6 +34,7 @@
 		23FF1BA21F8372E60071B200 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */; };
 		23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */; };
 		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
+		5359D5EE1F860B7D0005DD7B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5359D5ED1F860B7D0005DD7B /* Global.swift */; };
 		5396C0121F8507080077C7C0 /* TeacherSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8452E1F83CC4D000D16B9 /* TeacherSearchViewController.swift */; };
 		5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
 		5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5396C0141F850EFB0077C7C0 /* HomeWork.swift */; };
@@ -57,7 +57,6 @@
 		2344EF8B1F84EFC900EA4215 /* ChildrenDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenDetail.swift; sourceTree = "<group>"; };
 		234D721F1F8356870040AF39 /* SchoolParentManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolParentManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D72221F8356870040AF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		234D72241F8356870040AF39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		234D72271F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		234D72291F8356870040AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234D722C1F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 		23FF1BA11F8372E60071B200 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		23FF1BA91F837C6A0071B200 /* EventTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		5359D5ED1F860B7D0005DD7B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5396C0141F850EFB0077C7C0 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
 		5396C0161F850F900077C7C0 /* HomeWorkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkTableViewCell.swift; sourceTree = "<group>"; };
 		5396C0171F850F900077C7C0 /* HomeWorkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeWorkTableViewCell.xib; sourceTree = "<group>"; };
@@ -132,7 +132,6 @@
 				234D72351F8356960040AF39 /* View */,
 				234D72341F83568D0040AF39 /* Models */,
 				234D72221F8356870040AF39 /* AppDelegate.swift */,
-				234D72241F8356870040AF39 /* ViewController.swift */,
 				234D72261F8356870040AF39 /* Main.storyboard */,
 				539F60E71F84A9AF003E6B81 /* Teacher.storyboard */,
 				234D72291F8356870040AF39 /* Assets.xcassets */,
@@ -182,6 +181,7 @@
 				23FF1B9C1F836FAA0071B200 /* Extensions */,
 				2319FBAF1F836BBB00C4D8FA /* Utility.swift */,
 				2319FBB11F836C1800C4D8FA /* Constants.swift */,
+				5359D5ED1F860B7D0005DD7B /* Global.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -375,13 +375,13 @@
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
 				23FF1BAA1F837C6A0071B200 /* EventTableViewController.swift in Sources */,
 				23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */,
+				5359D5EE1F860B7D0005DD7B /* Global.swift in Sources */,
 				230BFB491F83A5A4008B9EE2 /* ActionViewController.swift in Sources */,
 				23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */,
 				23C845311F83CC5D000D16B9 /* BaseViewController.swift in Sources */,
 				5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */,
 				2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */,
 				234D723A1F83584C0040AF39 /* LoginViewController.swift in Sources */,
-				234D72251F8356870040AF39 /* ViewController.swift in Sources */,
 				23C845391F83CD88000D16B9 /* Parent.swift in Sources */,
 				23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */,
 				234D72231F8356870040AF39 /* AppDelegate.swift in Sources */,
