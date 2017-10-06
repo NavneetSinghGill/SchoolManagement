@@ -46,7 +46,7 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
-        cell.setUIFor(strNotificationType: self.self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
+        cell.setUIFor(strNotificationType: self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
         cell.accessoryType = .disclosureIndicator
         
         // Cell Selection Clear color
@@ -57,7 +57,10 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Utility.showAlertWith(title: "School Managment", message: "This app feature is under working", inController: self)
+       // Utility.showAlertWith(title: "School Managment", message: "This app feature is under working", inController: self)
+        let alert = UIAlertController(title: "School Managment", message: "This app feature is under working", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     //func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
     //        return 49

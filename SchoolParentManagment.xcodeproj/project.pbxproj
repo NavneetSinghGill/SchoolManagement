@@ -13,6 +13,10 @@
 		234D72281F8356870040AF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D72261F8356870040AF39 /* Main.storyboard */; };
 		234D722A1F8356870040AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D72291F8356870040AF39 /* Assets.xcassets */; };
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
+		23AA25461F8662650095AA04 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25451F8662650095AA04 /* Event.swift */; };
+		23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25491F866D7D0095AA04 /* EventVC.swift */; };
+		23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA254E1F866E690095AA04 /* EventTableViewCell.swift */; };
+		23AA25511F866E690095AA04 /* EventTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AA254F1F866E690095AA04 /* EventTableViewCell.xib */; };
 		23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */; };
 		23C845391F83CD88000D16B9 /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C845381F83CD88000D16B9 /* Parent.swift */; };
 		23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C8453A1F83CDB3000D16B9 /* StudentChild.swift */; };
@@ -60,6 +64,10 @@
 		234D72291F8356870040AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234D722C1F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234D722E1F8356870040AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23AA25451F8662650095AA04 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		23AA25491F866D7D0095AA04 /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
+		23AA254E1F866E690095AA04 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		23AA254F1F866E690095AA04 /* EventTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableViewCell.xib; sourceTree = "<group>"; };
 		23C845251F83BF5E000D16B9 /* ChildrensTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewCell.swift; sourceTree = "<group>"; };
 		23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		23C845381F83CD88000D16B9 /* Parent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				23C845381F83CD88000D16B9 /* Parent.swift */,
 				23C8453A1F83CDB3000D16B9 /* StudentChild.swift */,
 				5396C0141F850EFB0077C7C0 /* HomeWork.swift */,
+				23AA25451F8662650095AA04 /* Event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 		234D72351F8356960040AF39 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23AA254B1F866E370095AA04 /* EventCell */,
 				23C929AF1F86175E00093FF7 /* Notification */,
 				23C8453C1F83CDF2000D16B9 /* SearchTableViewCell.swift */,
 				23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */,
@@ -194,6 +204,15 @@
 				5359D5ED1F860B7D0005DD7B /* Global.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		23AA254B1F866E370095AA04 /* EventCell */ = {
+			isa = PBXGroup;
+			children = (
+				23AA254E1F866E690095AA04 /* EventTableViewCell.swift */,
+				23AA254F1F866E690095AA04 /* EventTableViewCell.xib */,
+			);
+			path = EventCell;
 			sourceTree = "<group>";
 		};
 		23C929AF1F86175E00093FF7 /* Notification */ = {
@@ -241,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				53474EB61F864EF0009F92A1 /* EventTableViewController.swift */,
+				23AA25491F866D7D0095AA04 /* EventVC.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -398,6 +418,7 @@
 				23C929B31F86178E00093FF7 /* NotificationTableViewCell.xib in Resources */,
 				234D722A1F8356870040AF39 /* Assets.xcassets in Resources */,
 				5396C0191F850F900077C7C0 /* HomeWorkTableViewCell.xib in Resources */,
+				23AA25511F866E690095AA04 /* EventTableViewCell.xib in Resources */,
 				539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */,
 				234D72281F8356870040AF39 /* Main.storyboard in Resources */,
 			);
@@ -416,6 +437,7 @@
 				53474ED91F864EF3009F92A1 /* FotgotPasswordViewController.swift in Sources */,
 				53474ED31F864EF3009F92A1 /* LoginViewController.swift in Sources */,
 				53474EDD1F864EF3009F92A1 /* StudentChildDetailsViewController.swift in Sources */,
+				23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */,
 				53474ED11F864EF3009F92A1 /* ForgotPassViewController.swift in Sources */,
 				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */,
@@ -429,6 +451,7 @@
 				5359D5EE1F860B7D0005DD7B /* Global.swift in Sources */,
 				23C845261F83BF5E000D16B9 /* ChildrensTableViewCell.swift in Sources */,
 				5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */,
+				23AA25461F8662650095AA04 /* Event.swift in Sources */,
 				2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */,
 				23C845391F83CD88000D16B9 /* Parent.swift in Sources */,
 				23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */,
@@ -436,6 +459,7 @@
 				53474EDB1F864EF3009F92A1 /* HomeWorkViewController.swift in Sources */,
 				53474ED81F864EF3009F92A1 /* NotificationsVC.swift in Sources */,
 				234D72231F8356870040AF39 /* AppDelegate.swift in Sources */,
+				23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */,
 				23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */,
 				53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */,
 				53474EDA1F864EF3009F92A1 /* SignUpViewController.swift in Sources */,

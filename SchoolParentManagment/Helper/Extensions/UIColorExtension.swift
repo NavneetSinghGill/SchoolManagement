@@ -26,7 +26,12 @@ extension UIColor {
     class var appDarkBlueColor : UIColor {
         return UIColor.init(red: 0, green: 37.0/255.0, blue: 80.0/255.0, alpha: 1.0)
     }
-   
+    class var appbaseLightOrange : UIColor {
+        return UIColor.init(red: 240/255.0, green: 218/255.0, blue: 156/255, alpha: 1.0)
+    }
+    class var appbaseGreen : UIColor {
+        return UIColor.init(red: 73/255.0, green: 128/255.0, blue: 67/255, alpha: 1.0)
+    }
 }
 extension UIImageView {
     func setRounded() {

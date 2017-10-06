@@ -52,7 +52,6 @@ class BaseViewController: UIViewController {
         navigationTitleLabel.textColor = UIColor.black// Global.getLightColorForCurrentEnvironmentType()
         
         navigationItem.titleView = navigationTitleLabel
-        
         self.navigationController?.navigationBar.barTintColor = Global.getColorForCurrentEnvironmentType()
     }
     

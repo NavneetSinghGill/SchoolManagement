@@ -20,25 +20,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-Vv-F93">
-                        <rect key="frame" x="5" y="2" width="45" height="45"/>
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="45" id="MBJ-eR-A67"/>
-                            <constraint firstAttribute="height" constant="45" id="cqZ-4Q-6WK"/>
+                            <constraint firstAttribute="width" constant="40" id="MBJ-eR-A67"/>
+                            <constraint firstAttribute="height" constant="40" id="cqZ-4Q-6WK"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aW-gI-Lss">
                         <rect key="frame" x="62" y="14" width="250" height="20"/>
-                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="5ja-Vv-F93" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="5kp-gc-5XG"/>
+                    <constraint firstItem="5ja-Vv-F93" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5kp-gc-5XG"/>
                     <constraint firstItem="5ja-Vv-F93" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="Jcs-El-CGz"/>
-                    <constraint firstAttribute="bottom" secondItem="5ja-Vv-F93" secondAttribute="bottom" constant="1.5" id="jHi-cl-UxA"/>
+                    <constraint firstAttribute="bottom" secondItem="5ja-Vv-F93" secondAttribute="bottom" constant="3.5" id="jHi-cl-UxA"/>
                     <constraint firstItem="2aW-gI-Lss" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="l0T-yd-X9H"/>
-                    <constraint firstItem="2aW-gI-Lss" firstAttribute="leading" secondItem="5ja-Vv-F93" secondAttribute="trailing" constant="12" id="n17-VX-y5U"/>
+                    <constraint firstItem="2aW-gI-Lss" firstAttribute="leading" secondItem="5ja-Vv-F93" secondAttribute="trailing" constant="17" id="n17-VX-y5U"/>
                     <constraint firstItem="2aW-gI-Lss" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yyr-49-4Gr"/>
                 </constraints>
             </tableViewCellContentView>
@@ -47,7 +47,7 @@
                 <outlet property="imgCell" destination="5ja-Vv-F93" id="4GQ-b0-Te1"/>
                 <outlet property="lblNotificationType" destination="2aW-gI-Lss" id="AH1-rq-vTf"/>
             </connections>
-            <point key="canvasLocation" x="25" y="51.5"/>
+            <point key="canvasLocation" x="85" y="45.5"/>
         </tableViewCell>
     </objects>
 </document>

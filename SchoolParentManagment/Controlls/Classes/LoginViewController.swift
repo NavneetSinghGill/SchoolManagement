@@ -17,7 +17,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
     
-    @IBOutlet weak var lblLoginUserType: UILabel!
+    //@IBOutlet weak var lblLoginUserType: UILabel!
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
@@ -40,16 +40,16 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     //MARK:- Segment Action
     @IBAction func segmentAction(_ sender: Any) {
-        
         switch self.segment.selectedSegmentIndex {
         case 0:
-            self.lblLoginUserType.text = "Login Teacher"
+            print("segmentindex 0")
+            self.segment.tintColor = baseGreen
         case 1:
-            self.lblLoginUserType.text = "Login Parent"
-        case 2:
-            self.lblLoginUserType.text = "Login Student"
+            print("segmentindex 1")
+            self.segment.tintColor = baseOrange
         default:
-            self.lblLoginUserType.text = "Login Teacher"
+            print("segmentindex 0")
+            self.segment.tintColor = baseGreen
         }
         updateEnvironmentCharacterType()
     }
@@ -74,7 +74,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.segment.selectedSegmentIndex = 0
-        self.lblLoginUserType.text = "Login Teacher"
         self.navigationController?.setNavigationBarHidden(true, animated: false)
         // self.tabBarController!.tabBar.isHidden = true
     }
@@ -111,20 +110,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             case 1:
                 let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
                 self.present(homeVC, animated: true, completion: nil)
-            case 2:
-                print("Working")
             default:
-                self.lblLoginUserType.text = "Login Teacher"
+                let techerHomeVC = teacherStoryBoard.instantiateViewController(withIdentifier: sHomeTabBarControllerllerIdentifier)
+                self.present(techerHomeVC, animated: true, completion: nil)
             }
             
             let homeVC = mainStoryBoard.instantiateViewController(withIdentifier:sHomeTabBarControllerllerIdentifier)
-           // self.navigationController?.pushViewController(homeVC, animated: true)
+            // self.navigationController?.pushViewController(homeVC, animated: true)
             self.present(homeVC, animated: true, completion: nil)
-
+            
         }
     }
     //MARK:- Textfield validations And check Empty
- private func isDataValid() -> Bool {
+    private func isDataValid() -> Bool {
         var isValid = false
         var errorMsg : String?
         
