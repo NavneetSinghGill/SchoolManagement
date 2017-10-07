@@ -11,10 +11,8 @@ import UIKit
 
 //APP
 
-let baseOrange = UIColor(red: 160/255.0, green: 65/255.0, blue: 60/255, alpha: 1.0)
-let baseLightOrange = UIColor(red: 250/255.0, green: 100/255.0, blue: 90/255, alpha: 1.0)
+let baseOrange = UIColor(red: 250/255.0, green: 100/255.0, blue: 90/255, alpha: 1.0)
 let baseGreen = UIColor(red: 73/255.0, green: 128/255.0, blue: 67/255, alpha: 1.0)
-let baseLightGreen = UIColor(red: 153/255.0, green: 255/255.0, blue: 133/255, alpha: 1.0)
 
 //MARK: - ENUMs
 

@@ -15,9 +15,9 @@ class Global: NSObject {
         case .Teacher?:
             return baseGreen
         case .Parent?:
-            return baseLightOrange
+            return baseOrange
         default:
-            return baseLightOrange
+            return baseOrange
         }
     }
 

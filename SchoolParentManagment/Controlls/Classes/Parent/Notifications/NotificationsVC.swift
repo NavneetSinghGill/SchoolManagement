@@ -23,10 +23,6 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         
         let notificationNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForNotification.register(notificationNIB, forCellReuseIdentifier: "NotificationTableViewCell")
-        
-        tableViewForNotification.estimatedRowHeight = 49
-        tableViewForNotification.rowHeight = UITableViewAutomaticDimension
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +43,7 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-        //cell.accessoryType = .disclosureIndicator
+        cell.dividerView.isHidden = indexPath.row == 0
         
         // Cell Selection Clear color
         let bgColorView = UIView()
@@ -62,7 +58,8 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
-    //func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    //        return 49
-    //    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
+    }
 }

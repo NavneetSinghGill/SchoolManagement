@@ -169,7 +169,7 @@
         <!--NotificationsVC-->
         <scene sceneID="1vD-vh-Oq1">
             <objects>
-                <viewController storyboardIdentifier="sNotificationsVC" id="hwy-eh-Pj2" customClass="NotificationsVC" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sNotificationsVC" automaticallyAdjustsScrollViewInsets="NO" id="hwy-eh-Pj2" customClass="NotificationsVC" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9dN-xT-CG3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

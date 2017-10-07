@@ -100,7 +100,4 @@ class EventVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
         eventDetailVC.eventDetils = events[indexPath.row]
         self.navigationController?.pushViewController(eventDetailVC, animated: true)
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 68 ;
-    }
 }
