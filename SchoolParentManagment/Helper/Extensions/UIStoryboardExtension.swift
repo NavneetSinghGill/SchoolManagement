@@ -53,13 +53,21 @@ extension UIStoryboard {
         let mainStoryboard = self.getMainStoryboard()
         return mainStoryboard.instantiateViewController(withIdentifier: sChatViewControllerIdentifier) as! ChatViewController
     }
+    class func getSigunUpController() -> SignUpViewController {
+        let mainStoryboard = self.getMainStoryboard()
+        return mainStoryboard.instantiateViewController(withIdentifier: sSignUpViewControllerIdentifier) as! SignUpViewController
+    }
+    class func getForgotPassController() -> FotgotPasswordViewController {
+        let mainStoryboard = self.getMainStoryboard()
+        return mainStoryboard.instantiateViewController(withIdentifier: sFotgotPasswordViewControllerIdentifier) as! FotgotPasswordViewController
+    }
     
     //MARK:-  Get Event Details Controller
     class func getEventDetailController() -> EventDetailsViewController {
         let eventStoryboard = self.getMainStoryboard()
         return eventStoryboard.instantiateViewController(withIdentifier: sEventDetailsViewControllerIdentifier) as! EventDetailsViewController
-        
     }
+    
     //MARK: - Get Storyboard Methods
     
     class func getMainStoryboard() -> UIStoryboard {

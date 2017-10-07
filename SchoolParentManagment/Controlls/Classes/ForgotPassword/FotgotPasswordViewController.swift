@@ -10,6 +10,7 @@ import UIKit
 
 class FotgotPasswordViewController: BaseViewController ,UITextFieldDelegate{
     
+    @IBOutlet weak var btnSubmit: UIButton!
     @IBOutlet weak var txtEmailId: UITextField!
     @IBAction func btnSubmitAction(_ sender: Any) {
         self.performLogIn()
@@ -25,6 +26,15 @@ class FotgotPasswordViewController: BaseViewController ,UITextFieldDelegate{
        // addBackButton()
         
         self.title = "Forgot Password"
+        let str: Int  = UserDefaults.standard.integer(forKey: "SignUpType")
+        switch str {
+        case 1:
+            self.btnSubmit.backgroundColor = baseGreen
+        case 2:
+            self.btnSubmit.backgroundColor = baseOrange
+        default:
+            self.btnSubmit.backgroundColor = baseGreen
+        }
     }
     
     override func didReceiveMemoryWarning() {

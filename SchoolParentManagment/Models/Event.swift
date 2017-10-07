@@ -17,7 +17,7 @@ class Event: NSObject {
     var eventImages: [String]!
     
     func fakeData(for index: Int) {
-        let index1 = index%2
+        let index1 = index%11
         if index1 == 0 {
             eventName = "‘sh’ sound Activity"
             eventTimeAndDate = "2017-11-04 22:45:00"

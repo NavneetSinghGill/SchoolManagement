@@ -36,7 +36,6 @@
 		23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */; };
 		53474ECF1F864EF3009F92A1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EB41F864EF0009F92A1 /* BaseViewController.swift */; };
 		53474ED01F864EF3009F92A1 /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EB61F864EF0009F92A1 /* EventTableViewController.swift */; };
-		53474ED11F864EF3009F92A1 /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EB81F864EF0009F92A1 /* ForgotPassViewController.swift */; };
 		53474ED21F864EF3009F92A1 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EB91F864EF0009F92A1 /* HomeTabBarController.swift */; };
 		53474ED31F864EF3009F92A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EBA1F864EF0009F92A1 /* LoginViewController.swift */; };
 		53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EBD1F864EF0009F92A1 /* AboutSchoolViewController.swift */; };
@@ -101,7 +100,6 @@
 		4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolParentManagment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53474EB41F864EF0009F92A1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		53474EB61F864EF0009F92A1 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
-		53474EB81F864EF0009F92A1 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		53474EB91F864EF0009F92A1 /* HomeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		53474EBA1F864EF0009F92A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		53474EBD1F864EF0009F92A1 /* AboutSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSchoolViewController.swift; sourceTree = "<group>"; };
@@ -326,7 +324,7 @@
 		53474EB71F864EF0009F92A1 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				53474EB81F864EF0009F92A1 /* ForgotPassViewController.swift */,
+				53474EC61F864EF0009F92A1 /* FotgotPasswordViewController.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -378,7 +376,6 @@
 		53474EC51F864EF0009F92A1 /* SignUpAndForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
-				53474EC61F864EF0009F92A1 /* FotgotPasswordViewController.swift */,
 				53474EC71F864EF0009F92A1 /* SignUpViewController.swift */,
 			);
 			path = SignUpAndForgotPassword;
@@ -566,7 +563,6 @@
 				23748A861F8790CE0061E24D /* ZHPhotoItem.swift in Sources */,
 				53474EDD1F864EF3009F92A1 /* StudentChildDetailsViewController.swift in Sources */,
 				23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */,
-				53474ED11F864EF3009F92A1 /* ForgotPassViewController.swift in Sources */,
 				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */,
 				53474ECF1F864EF3009F92A1 /* BaseViewController.swift in Sources */,

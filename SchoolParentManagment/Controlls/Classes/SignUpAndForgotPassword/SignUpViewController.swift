@@ -37,6 +37,15 @@ class SignUpViewController: BaseViewController {
         setupView()
         // Register View Controller as Observer
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: Notification.Name.UITextFieldTextDidChange, object: nil)
+        let str: Int  = UserDefaults.standard.integer(forKey: "SignUpType")
+        switch str {
+        case 1:
+            self.saveButton.backgroundColor = baseGreen
+        case 2:
+            self.saveButton.backgroundColor = baseOrange
+        default:
+            self.saveButton.backgroundColor = baseGreen
+        }
     }
     
     override func didReceiveMemoryWarning() {

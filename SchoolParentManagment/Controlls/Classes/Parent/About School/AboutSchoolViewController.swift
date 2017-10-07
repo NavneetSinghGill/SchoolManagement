@@ -58,11 +58,8 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       //Utility.showAlertWith(title: "School Managment", message: "This app feature is under working", inController: self)
-        
-        let alert = UIAlertController(title: "School Managment", message: "This app feature is under working", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        let chatVC = UIStoryboard.getChatController()
+        self.navigationController?.pushViewController(chatVC, animated: true)
     }
     //func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
     //        return 49

@@ -68,4 +68,8 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
             self.navigationController?.pushViewController(chatVC, animated: true)
         }
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
+    }
 }
