@@ -71,6 +71,7 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
     //MARK: Tableview delegate methods
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if segmentControl.selectedSegmentIndex == 0 { // ChildStudents
             let studentChildDetailsVC = getStudentChildsVC()
             studentChildDetailsVC.shouldShowBackButton = true
@@ -81,29 +82,6 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
             
         }
     }
-    
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let blueView = UIView()
-//        blueView.backgroundColor = blueColor
-//        blueView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 40)
-//
-//        let whiteLabel = UILabel()
-//        whiteLabel.textColor = UIColor.white
-//        if segmentControl.selectedSegmentIndex == 0 {
-//            whiteLabel.text = "Students"
-//        } else {
-//            whiteLabel.text = "Parents"
-//        }
-//        whiteLabel.sizeToFit()
-//        whiteLabel.center = blueView.center
-//        blueView.addSubview(whiteLabel)
-//
-//        return blueView
-//    }
-//
-//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-//        return 40
-//    }
     
     //MARK: Search bar delegate methods
     

@@ -15,22 +15,10 @@ class Global: NSObject {
         case .Teacher?:
             return baseGreen
         case .Parent?:
-            return baseOrange
+            return baseLightOrange
         default:
-            return baseOrange
+            return baseLightOrange
         }
-    }
-    class func getLightColorForCurrentEnvironmentType() -> UIColor {
-        let color: UIColor?
-        switch appDelegate.environmentCharacterType {
-        case .Teacher?:
-            color = baseLightGreen
-        case .Parent?:
-            color = baseLightOrange
-        default:
-            color = baseLightOrange
-        }
-        return color!
     }
 
 }

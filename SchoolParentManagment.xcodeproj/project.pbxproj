@@ -50,6 +50,7 @@
 		53474EDD1F864EF3009F92A1 /* StudentChildDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474ECD1F864EF1009F92A1 /* StudentChildDetailsViewController.swift */; };
 		53474EDE1F864EF3009F92A1 /* TeacherSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */; };
 		5359D5EE1F860B7D0005DD7B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5359D5ED1F860B7D0005DD7B /* Global.swift */; };
+		535B511C1F87AE8E00BC5F92 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B511B1F87AE8D00BC5F92 /* extensions.swift */; };
 		538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */; };
 		538F79311F86456F009B2B66 /* TeacherActionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */; };
 		5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
@@ -114,6 +115,7 @@
 		53474ECD1F864EF1009F92A1 /* StudentChildDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentChildDetailsViewController.swift; sourceTree = "<group>"; };
 		53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSearchViewController.swift; sourceTree = "<group>"; };
 		5359D5ED1F860B7D0005DD7B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		535B511B1F87AE8D00BC5F92 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherActionsTableViewCell.swift; sourceTree = "<group>"; };
 		538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherActionsTableViewCell.xib; sourceTree = "<group>"; };
 		5396C0141F850EFB0077C7C0 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				234D72361F83569C0040AF39 /* Controlls */,
 				234D72351F8356960040AF39 /* View */,
 				234D72341F83568D0040AF39 /* Models */,
+				535B511B1F87AE8D00BC5F92 /* extensions.swift */,
 				234D72221F8356870040AF39 /* AppDelegate.swift */,
 				234D72261F8356870040AF39 /* Main.storyboard */,
 				539F60E71F84A9AF003E6B81 /* Teacher.storyboard */,
@@ -299,13 +302,13 @@
 			isa = PBXGroup;
 			children = (
 				53474EB41F864EF0009F92A1 /* BaseViewController.swift */,
-				53474EB51F864EF0009F92A1 /* Event */,
+				53474EC51F864EF0009F92A1 /* SignUpAndForgotPassword */,
 				53474EB71F864EF0009F92A1 /* ForgotPassword */,
 				53474EB91F864EF0009F92A1 /* HomeTabBarController.swift */,
 				53474EBA1F864EF0009F92A1 /* LoginViewController.swift */,
 				53474EBB1F864EF0009F92A1 /* Parent */,
-				53474EC51F864EF0009F92A1 /* SignUpAndForgotPassword */,
 				53474EC81F864EF0009F92A1 /* Teacher */,
+				53474EB51F864EF0009F92A1 /* Event */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -393,8 +396,8 @@
 		53474EC91F864EF0009F92A1 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
-				53474ECA1F864EF0009F92A1 /* HomeWorkViewController.swift */,
 				53474ECB1F864EF0009F92A1 /* TeacherActionsViewController.swift */,
+				53474ECA1F864EF0009F92A1 /* HomeWorkViewController.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -402,8 +405,8 @@
 		53474ECC1F864EF0009F92A1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				53474ECD1F864EF1009F92A1 /* StudentChildDetailsViewController.swift */,
 				53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */,
+				53474ECD1F864EF1009F92A1 /* StudentChildDetailsViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */,
 				538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */,
 				53474ECF1F864EF3009F92A1 /* BaseViewController.swift in Sources */,
+				535B511C1F87AE8E00BC5F92 /* extensions.swift in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
 				23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */,

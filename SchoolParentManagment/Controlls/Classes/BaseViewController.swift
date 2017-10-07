@@ -61,7 +61,7 @@ class BaseViewController: UIViewController {
         }
 
         navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
-        navigationTitleLabel.text = title
+        navigationTitleLabel.text = title.uppercased()
         navigationTitleLabel.sizeToFit()
         navigationTitleLabel.textColor = UIColor.black// Global.getLightColorForCurrentEnvironmentType()
         

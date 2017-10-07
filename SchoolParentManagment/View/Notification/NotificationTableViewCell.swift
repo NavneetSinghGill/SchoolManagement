@@ -8,11 +8,21 @@
 
 import UIKit
 
+protocol NotificationCellProtocol {
+    func cellTapped(with index: Int)
+}
+
 class NotificationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imgCell: UIImageView!
-    
+    @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var lblNotificationType: UILabel!
+    @IBOutlet weak var selectButton: UIButton!
+    @IBOutlet weak var dividerView: UIView!
+    @IBOutlet weak var disclosure: UIImageView!
+    
+    var index: Int!
+    var notificationDelegate: NotificationCellProtocol?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -27,7 +37,13 @@ class NotificationTableViewCell: UITableViewCell {
     func setUIFor(strNotificationType: String!, strCellImage: String) {
         if (strNotificationType) != nil {
             lblNotificationType.text = strNotificationType
-            imageView?.image = UIImage(named: strCellImage)
+            if strCellImage.characters.count > 0 {
+                imgView?.image = UIImage(named: strCellImage)
+            }
         }
+    }
+    
+    @IBAction func selectButtonTapped() {
+        notificationDelegate?.cellTapped(with: index)
     }
 }
