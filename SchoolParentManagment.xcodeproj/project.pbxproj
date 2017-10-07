@@ -13,6 +13,14 @@
 		234D72281F8356870040AF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D72261F8356870040AF39 /* Main.storyboard */; };
 		234D722A1F8356870040AF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D72291F8356870040AF39 /* Assets.xcassets */; };
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
+		23748A751F875A770061E24D /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A741F875A770061E24D /* EventDetailsViewController.swift */; };
+		23748A781F8766850061E24D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A771F8766850061E24D /* ChatViewController.swift */; };
+		23748A7B1F8790730061E24D /* ZHChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23748A7C1F8790730061E24D /* ZHChat.framework */; };
+		23748A831F8790CE0061E24D /* ZHCDemoMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */; };
+		23748A841F8790CE0061E24D /* ZHCPublicStucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */; };
+		23748A851F8790CE0061E24D /* ZHModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A801F8790CE0061E24D /* ZHModelData.swift */; };
+		23748A861F8790CE0061E24D /* ZHPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A811F8790CE0061E24D /* ZHPhotoItem.swift */; };
+		23748A871F8790CE0061E24D /* ZHUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A821F8790CE0061E24D /* ZHUserModel.swift */; };
 		23AA25461F8662650095AA04 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25451F8662650095AA04 /* Event.swift */; };
 		23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25491F866D7D0095AA04 /* EventVC.swift */; };
 		23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA254E1F866E690095AA04 /* EventTableViewCell.swift */; };
@@ -33,7 +41,6 @@
 		53474ED31F864EF3009F92A1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EBA1F864EF0009F92A1 /* LoginViewController.swift */; };
 		53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EBD1F864EF0009F92A1 /* AboutSchoolViewController.swift */; };
 		53474ED51F864EF3009F92A1 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EBF1F864EF0009F92A1 /* ActionViewController.swift */; };
-		53474ED61F864EF3009F92A1 /* ChildrenDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EC11F864EF0009F92A1 /* ChildrenDetail.swift */; };
 		53474ED71F864EF3009F92A1 /* ChildrensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EC21F864EF0009F92A1 /* ChildrensTableViewController.swift */; };
 		53474ED81F864EF3009F92A1 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EC41F864EF0009F92A1 /* NotificationsVC.swift */; };
 		53474ED91F864EF3009F92A1 /* FotgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474EC61F864EF0009F92A1 /* FotgotPasswordViewController.swift */; };
@@ -53,9 +60,11 @@
 		539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 23C845361F83CC73000D16B9 /* SearchTableViewCell.xib */; };
 		539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EB1F84C934003E6B81 /* ParentTableViewCell.swift */; };
 		539F60EE1F84C934003E6B81 /* ParentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
+		D3CD1342F8CDA8EA9045AB8C /* Pods_SchoolParentManagment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ABC0895FD7483CE709DD13A /* Pods-SchoolParentManagment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolParentManagment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment.debug.xcconfig"; sourceTree = "<group>"; };
 		2319FBAF1F836BBB00C4D8FA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2319FBB11F836C1800C4D8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		234D721F1F8356870040AF39 /* SchoolParentManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolParentManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +73,15 @@
 		234D72291F8356870040AF39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		234D722C1F8356870040AF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		234D722E1F8356870040AF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23748A741F875A770061E24D /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		23748A771F8766850061E24D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		23748A7A1F8769780061E24D /* MMChatFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMChatFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23748A7C1F8790730061E24D /* ZHChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZHChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHCDemoMessagesViewController.swift; sourceTree = "<group>"; };
+		23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHCPublicStucture.swift; sourceTree = "<group>"; };
+		23748A801F8790CE0061E24D /* ZHModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHModelData.swift; sourceTree = "<group>"; };
+		23748A811F8790CE0061E24D /* ZHPhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHPhotoItem.swift; sourceTree = "<group>"; };
+		23748A821F8790CE0061E24D /* ZHUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHUserModel.swift; sourceTree = "<group>"; };
 		23AA25451F8662650095AA04 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		23AA25491F866D7D0095AA04 /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		23AA254E1F866E690095AA04 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -78,6 +96,8 @@
 		23FF1B9D1F8370C00071B200 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		23FF1B9E1F8370C00071B200 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		23FF1BAC1F837DF80071B200 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		41A7099EAB4DBC0DF2FCD65E /* Pods-SchoolParentManagment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolParentManagment.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment.release.xcconfig"; sourceTree = "<group>"; };
+		4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchoolParentManagment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53474EB41F864EF0009F92A1 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		53474EB61F864EF0009F92A1 /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
 		53474EB81F864EF0009F92A1 /* ForgotPassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +105,6 @@
 		53474EBA1F864EF0009F92A1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		53474EBD1F864EF0009F92A1 /* AboutSchoolViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutSchoolViewController.swift; sourceTree = "<group>"; };
 		53474EBF1F864EF0009F92A1 /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
-		53474EC11F864EF0009F92A1 /* ChildrenDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildrenDetail.swift; sourceTree = "<group>"; };
 		53474EC21F864EF0009F92A1 /* ChildrensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildrensTableViewController.swift; sourceTree = "<group>"; };
 		53474EC41F864EF0009F92A1 /* NotificationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		53474EC61F864EF0009F92A1 /* FotgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -110,12 +129,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23748A7B1F8790730061E24D /* ZHChat.framework in Frameworks */,
+				D3CD1342F8CDA8EA9045AB8C /* Pods_SchoolParentManagment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		012A80E2629393227C365AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23748A7C1F8790730061E24D /* ZHChat.framework */,
+				23748A7A1F8769780061E24D /* MMChatFramework.framework */,
+				4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +160,8 @@
 			children = (
 				234D72211F8356870040AF39 /* SchoolParentManagment */,
 				234D72201F8356870040AF39 /* Products */,
+				8263B952BC3A68E87220B228 /* Pods */,
+				012A80E2629393227C365AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,12 +231,33 @@
 		234D72371F8356A30040AF39 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				23748A7D1F8790CE0061E24D /* ZHChatClasses */,
 				23FF1B9C1F836FAA0071B200 /* Extensions */,
 				2319FBAF1F836BBB00C4D8FA /* Utility.swift */,
 				2319FBB11F836C1800C4D8FA /* Constants.swift */,
 				5359D5ED1F860B7D0005DD7B /* Global.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		23748A761F87666A0061E24D /* ChatVC */ = {
+			isa = PBXGroup;
+			children = (
+				23748A771F8766850061E24D /* ChatViewController.swift */,
+			);
+			path = ChatVC;
+			sourceTree = "<group>";
+		};
+		23748A7D1F8790CE0061E24D /* ZHChatClasses */ = {
+			isa = PBXGroup;
+			children = (
+				23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */,
+				23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */,
+				23748A801F8790CE0061E24D /* ZHModelData.swift */,
+				23748A811F8790CE0061E24D /* ZHPhotoItem.swift */,
+				23748A821F8790CE0061E24D /* ZHUserModel.swift */,
+			);
+			path = ZHChatClasses;
 			sourceTree = "<group>";
 		};
 		23AA254B1F866E370095AA04 /* EventCell */ = {
@@ -259,8 +313,9 @@
 		53474EB51F864EF0009F92A1 /* Event */ = {
 			isa = PBXGroup;
 			children = (
-				53474EB61F864EF0009F92A1 /* EventTableViewController.swift */,
 				23AA25491F866D7D0095AA04 /* EventVC.swift */,
+				23748A741F875A770061E24D /* EventDetailsViewController.swift */,
+				53474EB61F864EF0009F92A1 /* EventTableViewController.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -295,6 +350,7 @@
 		53474EBE1F864EF0009F92A1 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				23748A761F87666A0061E24D /* ChatVC */,
 				53474EBF1F864EF0009F92A1 /* ActionViewController.swift */,
 			);
 			path = Actions;
@@ -303,7 +359,6 @@
 		53474EC01F864EF0009F92A1 /* Children */ = {
 			isa = PBXGroup;
 			children = (
-				53474EC11F864EF0009F92A1 /* ChildrenDetail.swift */,
 				53474EC21F864EF0009F92A1 /* ChildrensTableViewController.swift */,
 			);
 			path = Children;
@@ -353,6 +408,15 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		8263B952BC3A68E87220B228 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ABC0895FD7483CE709DD13A /* Pods-SchoolParentManagment.debug.xcconfig */,
+				41A7099EAB4DBC0DF2FCD65E /* Pods-SchoolParentManagment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,9 +424,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 234D72311F8356870040AF39 /* Build configuration list for PBXNativeTarget "SchoolParentManagment" */;
 			buildPhases = (
+				5176993C4762516047F598C0 /* [CP] Check Pods Manifest.lock */,
 				234D721B1F8356870040AF39 /* Sources */,
 				234D721C1F8356870040AF39 /* Frameworks */,
 				234D721D1F8356870040AF39 /* Resources */,
+				5E463A237AE8D5FDAE79E95F /* [CP] Embed Pods Frameworks */,
+				B17A7489B98C940B00B1E5FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,6 +493,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5176993C4762516047F598C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SchoolParentManagment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E463A237AE8D5FDAE79E95F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
+				"${BUILT_PRODUCTS_DIR}/ZHChat/ZHChat.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHChat.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B17A7489B98C940B00B1E5FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		234D721B1F8356870040AF39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -433,9 +556,11 @@
 			files = (
 				23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */,
 				5396C0181F850F900077C7C0 /* HomeWorkTableViewCell.swift in Sources */,
+				23748A871F8790CE0061E24D /* ZHUserModel.swift in Sources */,
 				53474ED21F864EF3009F92A1 /* HomeTabBarController.swift in Sources */,
 				53474ED91F864EF3009F92A1 /* FotgotPasswordViewController.swift in Sources */,
 				53474ED31F864EF3009F92A1 /* LoginViewController.swift in Sources */,
+				23748A861F8790CE0061E24D /* ZHPhotoItem.swift in Sources */,
 				53474EDD1F864EF3009F92A1 /* StudentChildDetailsViewController.swift in Sources */,
 				23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */,
 				53474ED11F864EF3009F92A1 /* ForgotPassViewController.swift in Sources */,
@@ -453,21 +578,25 @@
 				5396C0151F850EFB0077C7C0 /* HomeWork.swift in Sources */,
 				23AA25461F8662650095AA04 /* Event.swift in Sources */,
 				2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */,
+				23748A781F8766850061E24D /* ChatViewController.swift in Sources */,
 				23C845391F83CD88000D16B9 /* Parent.swift in Sources */,
 				23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */,
+				23748A851F8790CE0061E24D /* ZHModelData.swift in Sources */,
 				53474ED01F864EF3009F92A1 /* EventTableViewController.swift in Sources */,
 				53474EDB1F864EF3009F92A1 /* HomeWorkViewController.swift in Sources */,
 				53474ED81F864EF3009F92A1 /* NotificationsVC.swift in Sources */,
 				234D72231F8356870040AF39 /* AppDelegate.swift in Sources */,
 				23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */,
+				23748A841F8790CE0061E24D /* ZHCPublicStucture.swift in Sources */,
 				23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */,
+				23748A751F875A770061E24D /* EventDetailsViewController.swift in Sources */,
 				53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */,
 				53474EDA1F864EF3009F92A1 /* SignUpViewController.swift in Sources */,
 				53474ED51F864EF3009F92A1 /* ActionViewController.swift in Sources */,
 				23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */,
-				53474ED61F864EF3009F92A1 /* ChildrenDetail.swift in Sources */,
 				539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */,
 				23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */,
+				23748A831F8790CE0061E24D /* ZHCDemoMessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +739,7 @@
 		};
 		234D72321F8356870040AF39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABC0895FD7483CE709DD13A /* Pods-SchoolParentManagment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +754,7 @@
 		};
 		234D72331F8356870040AF39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A7099EAB4DBC0DF2FCD65E /* Pods-SchoolParentManagment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -11,22 +11,58 @@ import UIKit
 class EventVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var tableViewForEvent: UITableView!
-    //    let arrNotificationsType: [String] = ["Teacher feedback of child", "Transportation updates", "Fees status updates"]
-    //    let arrCellImages: [String] =  ["Send feedback", "Transportation", "Fees"]
-    //
+    var events: [Event] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
-        setNavigationTitle(title: "Event")
+        setNavigationTitle(title: "EVENT")
         
         let notificationNIB = UINib(nibName: "EventTableViewCell", bundle: nil)
         tableViewForEvent.register(notificationNIB, forCellReuseIdentifier: "EventTableViewCell")
         
-        tableViewForEvent.estimatedRowHeight = 90
+        tableViewForEvent.estimatedRowHeight = 68
         tableViewForEvent.rowHeight = UITableViewAutomaticDimension
         
+        //Fake data
+        let eventFake1 = Event()
+        eventFake1.fakeData(for: 0)
+        events.append(eventFake1)
+        let eventFake2 = Event()
+        eventFake2.fakeData(for: 1)
+        events.append(eventFake2)
+        let eventFake3 = Event()
+        eventFake3.fakeData(for: 2)
+        events.append(eventFake3)
+        let eventFake4 = Event()
+        eventFake4.fakeData(for: 3)
+        events.append(eventFake4)
+        let eventFake5 = Event()
+        eventFake5.fakeData(for: 4)
+        events.append(eventFake5)
+        let eventFake6 = Event()
+        eventFake6.fakeData(for: 5)
+        events.append(eventFake6)
+        let eventFake7 = Event()
+        eventFake7.fakeData(for: 6)
+        events.append(eventFake7)
+        let eventFake8 = Event()
+        eventFake8.fakeData(for: 7)
+        events.append(eventFake8)
+        let eventFake9 = Event()
+        eventFake9.fakeData(for: 8)
+        events.append(eventFake9)
+        let eventFake10 = Event()
+        eventFake10.fakeData(for: 9)
+        events.append(eventFake10)
+        
+        let eventFake11 = Event()
+        eventFake11.fakeData(for: 10)
+        events.append(eventFake11)
+        
+        tableViewForEvent.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -40,19 +76,16 @@ class EventVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return events.count
         //self.arrNotificationsType.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: EventTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EventTableViewCell", for: indexPath) as! EventTableViewCell
+        let cell: EventTableViewCell = tableView.dequeueReusableCell(withIdentifier:"EventTableViewCell", for: indexPath) as! EventTableViewCell
         
-        //        cell.setUIFor(strNotificationType: self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
+        cell.setUIForEvents(strEventName: events[indexPath.row].eventName, strEventTimeDate: events[indexPath.row].eventTimeAndDate)
         
-        cell.lblEventName.text = "‘sh’ sound Activity"
-        cell.lblEventTimeDate.text =  "2017-11-04 22:45:00"
-        cell.lblEventaddress.text = "Channing School for Girls- Senior School  The Bank, Highgate, London N6 5HF, UK, Phone:+44 20 8340 2328"
-        cell.accessoryType = .disclosureIndicator
+      //  cell.accessoryType = .disclosureIndicator
         
         // Cell Selection Clear color
         let bgColorView = UIView()
@@ -63,9 +96,11 @@ class EventVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alert = UIAlertController(title: "School Managment", message: "This app feature is under working", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        let eventDetailVC = UIStoryboard.getEventDetailController()
+        eventDetailVC.eventDetils = events[indexPath.row]
+        self.navigationController?.pushViewController(eventDetailVC, animated: true)
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 68 ;
+    }
 }

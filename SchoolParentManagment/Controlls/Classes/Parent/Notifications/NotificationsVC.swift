@@ -19,7 +19,7 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
-        setNavigationTitle(title: "Notification")
+        setNavigationTitle(title: "NOTIFICATIONS")
         
         let notificationNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForNotification.register(notificationNIB, forCellReuseIdentifier: "NotificationTableViewCell")
@@ -47,7 +47,7 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-        cell.accessoryType = .disclosureIndicator
+        //cell.accessoryType = .disclosureIndicator
         
         // Cell Selection Clear color
         let bgColorView = UIView()

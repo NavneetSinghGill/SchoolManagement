@@ -47,19 +47,19 @@ extension UIStoryboard {
     }
     */
     
-//    //MARK: - Get Main storyboard Controller
-//    func getLoginViewController(<#parameters#>) -> <#return type#> {
-//        <#function body#>
-//    }
-//    
     
-    //MARK: - Get login Storyboard Controller
-    
-    class func getLoginNavigationViewController() -> UINavigationController {
-        let loginStoryboard = self.getLoginStoryboard()
-        return loginStoryboard.instantiateViewController(withIdentifier: kLoginNavigationControllerIdentifier) as! UINavigationController
+    //MARK: - Get Chat Controller
+    class func getChatController() -> ChatViewController {
+        let mainStoryboard = self.getMainStoryboard()
+        return mainStoryboard.instantiateViewController(withIdentifier: sChatViewControllerIdentifier) as! ChatViewController
     }
     
+    //MARK:-  Get Event Details Controller
+    class func getEventDetailController() -> EventDetailsViewController {
+        let eventStoryboard = self.getMainStoryboard()
+        return eventStoryboard.instantiateViewController(withIdentifier: sEventDetailsViewControllerIdentifier) as! EventDetailsViewController
+        
+    }
     //MARK: - Get Storyboard Methods
     
     class func getMainStoryboard() -> UIStoryboard {
@@ -69,10 +69,7 @@ extension UIStoryboard {
     class func getLoginStoryboard() -> UIStoryboard {
         return UIStoryboard(name: "Teacher", bundle: nil)
     }
-    
-    class func getWalkthroughStoryboard() -> UIStoryboard {
-        return UIStoryboard(name: "Student", bundle: nil)
-    }
+   
     
     
 }

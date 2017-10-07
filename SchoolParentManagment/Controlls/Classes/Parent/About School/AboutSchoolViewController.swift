@@ -19,7 +19,7 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
         
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
-        setNavigationTitle(title: "Notification")
+        setNavigationTitle(title: "ABOUT SCHOOL")
         
         let notificationNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForAboutschool.register(notificationNIB, forCellReuseIdentifier: "NotificationTableViewCell")
@@ -47,7 +47,7 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrTableview[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-        cell.accessoryType = .disclosureIndicator
+      //  cell.accessoryType = .disclosureIndicator
         
         // Cell Selection Clear color
         let bgColorView = UIView()

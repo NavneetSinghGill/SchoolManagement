@@ -19,7 +19,7 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         
         // Do any additional setup after loading the view.
         self.navigationItem.hidesBackButton = true
-        setNavigationTitle(title: "Notification")
+        setNavigationTitle(title: "ACTION")
         
         let actionNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForAction.register(actionNIB, forCellReuseIdentifier: "NotificationTableViewCell")
@@ -33,7 +33,7 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+   
     //MARK: Tableview datasource and  Delegate methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -47,7 +47,7 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrActionType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-        cell.accessoryType = .disclosureIndicator
+       // cell.accessoryType = .disclosureIndicator
         
         // Cell Selection Clear color
         let bgColorView = UIView()
@@ -57,12 +57,15 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Utility.showAlertWith(title: "School Managment", message: "This app feature is under working", inController: self)
-        let alert = UIAlertController(title: "School Managment", message: "This app feature is under working", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        // for Chating
+        if indexPath.row == 2 {
+            let messagesVC: ZHCDemoMessagesViewController = ZHCDemoMessagesViewController.init();
+            messagesVC.presentBool = false;
+            self.navigationController?.pushViewController(messagesVC, animated: true);
+        }
+        else{
+            let chatVC = UIStoryboard.getChatController()
+            self.navigationController?.pushViewController(chatVC, animated: true)
+        }
     }
-    //func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-    //        return 49
-    //    }
 }

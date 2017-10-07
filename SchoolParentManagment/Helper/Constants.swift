@@ -54,7 +54,8 @@ let sSignUpViewControllerIdentifier = "sSignUpViewController"
 let sFotgotPasswordViewControllerIdentifier = "sFotgotPasswordViewController"
 let sChildrenDetailIdentifier = "sChildrenDetail"
 let sNotificationsVCIdentifier = "sNotificationsVC"
-
+let sChatViewControllerIdentifier = "sChatViewController"
+let sEventDetailsViewControllerIdentifier = "sEventDetailsViewController"
 //MARK: Colors
 
 let blueColor = UIColor(red: 0, green: 110/255.0, blue: 190/255, alpha: 1.0)

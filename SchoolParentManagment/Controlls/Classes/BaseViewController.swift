@@ -11,15 +11,29 @@ import UIKit
 class BaseViewController: UIViewController {
 
     var backBarButton: UIBarButtonItem!
+    var rightBarButton: UIBarButtonItem!
     var navigationTitleLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
-    
-    
+    // For share button action
+    func addShareButtonRight() {
+        if rightBarButton == nil {
+            rightBarButton = UIBarButtonItem(customView: rightButton())
+            self.navigationItem.rightBarButtonItem = rightBarButton!
+        }
+    }
+    private func rightButton() -> UIButton {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        button.backgroundColor = .clear
+        button.setImage(UIImage(named: "share"), for: .normal)
+        button.addTarget(self, action: #selector(EventDetailsViewController.shareButtonPressed(sender:)), for: .touchUpInside)
+        
+        return button
+    }
+    // MARK:- Back button action
     func addBackButton() {
         if backBarButton == nil {
             backBarButton = UIBarButtonItem(customView: backButton())

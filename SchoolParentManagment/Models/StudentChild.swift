@@ -17,9 +17,10 @@ class StudentChild: NSObject {
     var standard: String!
     var rollNumber: String!
     var attendancePercent: String!
+    var avtarImage:String!
     
     func fakeData(for index: Int) {
-        let index1 = index%2
+        let index1 = index%2 
         if index1 == 0 {
             firstName = "John"
             lastName = "Ommen"
@@ -27,7 +28,8 @@ class StudentChild: NSObject {
             standard = "IX B"
             rollNumber = "1873"
             attendancePercent = ""
-            
+            avtarImage = "child1"
+
             let parent1 = Parent()
             parent1.fakeData(for: 0)
             let parent2 = Parent()
@@ -36,11 +38,12 @@ class StudentChild: NSObject {
             parents = [parent1,parent2]
         } else if index1 == 1 {
             firstName = "Brian"
-            lastName = "Ommen"
+            lastName = "Parker"
             phoneNumber = "001-001-0001"
             standard = "VI A"
             rollNumber = "1553"
             attendancePercent = ""
+            avtarImage = "child2"
             
             let parent1 = Parent()
             parent1.fakeData(for: 0)
@@ -48,6 +51,23 @@ class StudentChild: NSObject {
             parent2.fakeData(for: 1)
             
             parents = [parent1,parent2]
+        }
+        
+        else if index1 == 2 {
+            firstName = "Calvin"
+            lastName = "Harris"
+            phoneNumber = "001-001-0001"
+            standard = "VI A"
+            rollNumber = "1553"
+            attendancePercent = ""
+            avtarImage = "child3"
+            
+            let parent1 = Parent()
+            parent1.fakeData(for: 0)
+            let parent2 = Parent()
+            parent2.fakeData(for: 1)
+            parents = [parent1,parent2]
+            
         }
     }
     

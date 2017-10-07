@@ -27,6 +27,11 @@ class Parent: NSObject {
             lastName = "Ommen"
             relationToStudentChild = "Mother"
         }
+        else if index1 == 1 { 
+            firstName = "Peeter"
+            lastName = "Ritso"
+            relationToStudentChild = "Father"
+        }
     }
     
 }

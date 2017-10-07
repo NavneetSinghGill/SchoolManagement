@@ -18,7 +18,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
     
     //@IBOutlet weak var lblLoginUserType: UILabel!
+    @IBOutlet weak var btnLogin: UIButton!
     
+    @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     
