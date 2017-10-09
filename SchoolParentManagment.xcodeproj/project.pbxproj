@@ -45,6 +45,10 @@
 		53474EDE1F864EF3009F92A1 /* TeacherSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */; };
 		5359D5EE1F860B7D0005DD7B /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5359D5ED1F860B7D0005DD7B /* Global.swift */; };
 		535B511C1F87AE8E00BC5F92 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535B511B1F87AE8D00BC5F92 /* extensions.swift */; };
+		5373E5871F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373E5851F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift */; };
+		5373E5881F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5373E5861F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib */; };
+		5373E58B1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373E58A1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift */; };
+		5373E58D1F8BAF59003FEBA2 /* Notificationn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5373E58C1F8BAF59003FEBA2 /* Notificationn.swift */; };
 		538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */; };
 		538F79311F86456F009B2B66 /* TeacherActionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */; };
 		5396C0131F8507080077C7C0 /* ParentTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 539F60EC1F84C934003E6B81 /* ParentTableViewCell.xib */; };
@@ -104,6 +108,10 @@
 		53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSearchViewController.swift; sourceTree = "<group>"; };
 		5359D5ED1F860B7D0005DD7B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		535B511B1F87AE8D00BC5F92 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		5373E5851F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		5373E5861F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherNotificationsTableViewCell.xib; sourceTree = "<group>"; };
+		5373E58A1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
+		5373E58C1F8BAF59003FEBA2 /* Notificationn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificationn.swift; sourceTree = "<group>"; };
 		5389E8341F8B56E800F7C362 /* Chatto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chatto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5389E8361F8B56EE00F7C362 /* ChattoAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChattoAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherActionsTableViewCell.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 				23C8453A1F83CDB3000D16B9 /* StudentChild.swift */,
 				5396C0141F850EFB0077C7C0 /* HomeWork.swift */,
 				23AA25451F8662650095AA04 /* Event.swift */,
+				5373E58C1F8BAF59003FEBA2 /* Notificationn.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +216,8 @@
 				5396C0171F850F900077C7C0 /* HomeWorkTableViewCell.xib */,
 				538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */,
 				538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */,
+				5373E5851F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift */,
+				5373E5861F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib */,
 				230BFB4C1F83BA9F008B9EE2 /* ChildrenVCCell */,
 				23FF1BAB1F837DCF0071B200 /* EventsVCCell */,
 			);
@@ -364,6 +375,7 @@
 		53474EC81F864EF0009F92A1 /* Teacher */ = {
 			isa = PBXGroup;
 			children = (
+				5373E5891F8BAD4F003FEBA2 /* Notifications */,
 				53474EC91F864EF0009F92A1 /* Actions */,
 				53474ECC1F864EF0009F92A1 /* Search */,
 			);
@@ -386,6 +398,14 @@
 				53474ECD1F864EF1009F92A1 /* StudentChildDetailsViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		5373E5891F8BAD4F003FEBA2 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				5373E58A1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		8263B952BC3A68E87220B228 /* Pods */ = {
@@ -460,6 +480,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */,
+				5373E5881F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib in Resources */,
 				538F79311F86456F009B2B66 /* TeacherActionsTableViewCell.xib in Resources */,
 				539F60E91F84A9AF003E6B81 /* Teacher.storyboard in Resources */,
 				23C929B31F86178E00093FF7 /* NotificationTableViewCell.xib in Resources */,
@@ -533,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */,
+				5373E58B1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift in Sources */,
 				5396C0181F850F900077C7C0 /* HomeWorkTableViewCell.swift in Sources */,
 				53474ED21F864EF3009F92A1 /* HomeTabBarController.swift in Sources */,
 				53474ED91F864EF3009F92A1 /* FotgotPasswordViewController.swift in Sources */,
@@ -545,6 +567,7 @@
 				53474ECF1F864EF3009F92A1 /* BaseViewController.swift in Sources */,
 				535B511C1F87AE8E00BC5F92 /* extensions.swift in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
+				5373E5871F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift in Sources */,
 				2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */,
 				23FF1BAD1F837DF80071B200 /* EventsTableViewCell.swift in Sources */,
 				53474ED71F864EF3009F92A1 /* ChildrensTableViewController.swift in Sources */,
@@ -568,6 +591,7 @@
 				53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */,
 				53474EDA1F864EF3009F92A1 /* SignUpViewController.swift in Sources */,
 				53474ED51F864EF3009F92A1 /* ActionViewController.swift in Sources */,
+				5373E58D1F8BAF59003FEBA2 /* Notificationn.swift in Sources */,
 				23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */,
 				539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */,
 				23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */,

@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,30 +20,41 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvH-7a-thT">
-                        <rect key="frame" x="5" y="5" width="310" height="19.5"/>
+                        <rect key="frame" x="55" y="5" width="260" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VZ-zx-skV">
-                        <rect key="frame" x="5" y="29.5" width="31" height="14.5"/>
+                        <rect key="frame" x="55" y="29.5" width="260" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-T4-cRq">
+                        <rect key="frame" x="10" y="7" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Pad-T4-cRq" secondAttribute="height" id="5bi-IF-Zwj"/>
+                            <constraint firstAttribute="width" constant="35" id="XXW-aU-WXj"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="LvH-7a-thT" firstAttribute="leading" secondItem="Pad-T4-cRq" secondAttribute="trailing" constant="10" id="930-U5-rpr"/>
                     <constraint firstAttribute="trailing" secondItem="LvH-7a-thT" secondAttribute="trailing" constant="5" id="A7D-39-G5H"/>
-                    <constraint firstItem="8VZ-zx-skV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="QyB-c1-9o2"/>
-                    <constraint firstItem="LvH-7a-thT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="RCD-e6-AkV"/>
                     <constraint firstItem="8VZ-zx-skV" firstAttribute="top" secondItem="LvH-7a-thT" secondAttribute="bottom" constant="5" id="cAs-d3-ZvT"/>
+                    <constraint firstAttribute="trailing" secondItem="8VZ-zx-skV" secondAttribute="trailing" constant="5" id="jjm-LC-yVy"/>
                     <constraint firstItem="LvH-7a-thT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="stu-Gi-ml0"/>
+                    <constraint firstItem="8VZ-zx-skV" firstAttribute="leading" secondItem="LvH-7a-thT" secondAttribute="leading" id="tm0-TJ-8At"/>
+                    <constraint firstItem="Pad-T4-cRq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vVv-Sa-CfU"/>
+                    <constraint firstItem="Pad-T4-cRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xeB-0a-i7H"/>
                     <constraint firstAttribute="bottom" secondItem="8VZ-zx-skV" secondAttribute="bottom" constant="5" id="zD8-NP-ZnA"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="nameLabel" destination="LvH-7a-thT" id="GLc-Y0-UWk"/>
+                <outlet property="profileImageView" destination="Pad-T4-cRq" id="F39-xy-gPq"/>
                 <outlet property="relationShipOrStandarLabel" destination="8VZ-zx-skV" id="PSn-AN-i12"/>
             </connections>
             <point key="canvasLocation" x="18" y="54.5"/>

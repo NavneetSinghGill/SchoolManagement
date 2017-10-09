@@ -9,22 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="3a9-uw-kWD">
-            <objects>
-                <viewController id="djY-ud-iH2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0d1-Iu-zc0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.63951181994818651" green="0.25840959162568278" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="SOS-WY-9z5"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Jt6-AW-WCD"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wlA-Xl-rRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3244" y="-335"/>
-        </scene>
         <!--Teacher Search View Controller-->
         <scene sceneID="oRh-Mw-5zi">
             <objects>
@@ -326,10 +310,10 @@
             </objects>
             <point key="canvasLocation" x="3986" y="1108"/>
         </scene>
-        <!--sEventTableViewController-->
+        <!--sEventVC-->
         <scene sceneID="rT3-xH-Ydb">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="sEventTableViewController" id="Etv-Nt-QcW" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="sEventVC" id="Etv-Nt-QcW" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lsg-bs-fOk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIB-h7-ItK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -465,12 +449,47 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="djY-ud-iH2" kind="relationship" relationship="rootViewController" id="Xqv-Pz-fbX"/>
+                        <segue destination="i2n-Hf-cob" kind="relationship" relationship="rootViewController" id="EAz-Yr-x6w"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVl-Yk-B0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2534" y="-334"/>
+        </scene>
+        <!--Teacher Notification View Controller-->
+        <scene sceneID="d5a-1u-p9I">
+            <objects>
+                <viewController storyboardIdentifier="TeacherNotificationViewController" id="i2n-Hf-cob" customClass="TeacherNotificationViewController" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXX-st-Xrl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VOB-AG-Ube">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="i2n-Hf-cob" id="oTR-Q0-pjT"/>
+                                    <outlet property="delegate" destination="i2n-Hf-cob" id="kAs-3c-ybE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kxa-pS-X3h" firstAttribute="trailing" secondItem="VOB-AG-Ube" secondAttribute="trailing" id="F2f-dI-XId"/>
+                            <constraint firstItem="kxa-pS-X3h" firstAttribute="bottom" secondItem="VOB-AG-Ube" secondAttribute="bottom" id="KPZ-mI-DwX"/>
+                            <constraint firstItem="VOB-AG-Ube" firstAttribute="leading" secondItem="kxa-pS-X3h" secondAttribute="leading" id="QfA-Qm-t3q"/>
+                            <constraint firstItem="VOB-AG-Ube" firstAttribute="top" secondItem="kxa-pS-X3h" secondAttribute="top" id="sv3-G0-SxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kxa-pS-X3h"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w3R-Ir-K58"/>
+                    <connections>
+                        <outlet property="notificationTableView" destination="VOB-AG-Ube" id="FKZ-Hf-pVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epy-ow-EdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3303" y="-334"/>
         </scene>
     </scenes>
     <resources>

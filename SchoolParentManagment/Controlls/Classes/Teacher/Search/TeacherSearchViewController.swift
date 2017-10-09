@@ -32,16 +32,18 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
         setNavigationTitle(title: "SEARCH")
                 
         //Fake data
-        let studentChildFake1 = StudentChild()
-        studentChildFake1.fakeData(for: 0)
-        studentChilds.append(studentChildFake1)
-        
-        let parentFake1 = Parent()
-        parentFake1.fakeData(for: 0)
-        parents.append(parentFake1)
-        let parentFake2 = Parent()
-        parentFake2.fakeData(for: 1)
-        parents.append(parentFake2)
+        for i in 0..<3 {
+            let studentChildFake = StudentChild()
+            studentChildFake.fakeData(for: i)
+            studentChilds.append(studentChildFake)
+            
+            let parentFake1 = Parent()
+            parentFake1.fakeData(for: 0)
+            parents.append(parentFake1)
+            let parentFake2 = Parent()
+            parentFake2.fakeData(for: 1)
+            parents.append(parentFake2)
+        }
         
         tableView.reloadData()
     }

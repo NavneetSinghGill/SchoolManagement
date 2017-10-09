@@ -15,6 +15,7 @@ class Parent: NSObject {
     var phoneNumber: String!
     var occupation: String!
     var relationToStudentChild: String!
+    var avtarImage:String!
     
     func fakeData(for index: Int) {
         let index1 = index%2
@@ -27,10 +28,10 @@ class Parent: NSObject {
             lastName = "Ommen"
             relationToStudentChild = "Mother"
         }
-        else if index1 == 1 { 
+        else if index1 == 2 {
             firstName = "Peeter"
             lastName = "Ritso"
-            relationToStudentChild = "Father"
+            relationToStudentChild = "Uncle"
         }
     }
     

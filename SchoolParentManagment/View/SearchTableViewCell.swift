@@ -13,6 +13,7 @@ class SearchTableViewCell: UITableViewCell {
     var characterType: CharacterType!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var relationShipOrStandarLabel: UILabel!
+    @IBOutlet var profileImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,9 +30,19 @@ class SearchTableViewCell: UITableViewCell {
         if let studentChild = character as? StudentChild {
             nameLabel.text = "\(studentChild.firstName!) \(studentChild.lastName!)"
             relationShipOrStandarLabel.text = studentChild.standard
+            setProfileImage(imageName: studentChild.avtarImage)
         } else if let parent = character as? Parent {
             nameLabel.text = "\(parent.firstName!) \(parent.lastName!)"
             relationShipOrStandarLabel.text = parent.relationToStudentChild
+            setProfileImage(imageName: parent.avtarImage)
+        }
+        
+        profileImageView.cornerRadius = profileImageView.bounds.size.width/2
+    }
+    
+    func setProfileImage(imageName: String?) {
+        if imageName != nil {
+            profileImageView.image = UIImage.init(named: imageName!)
         }
     }
     
