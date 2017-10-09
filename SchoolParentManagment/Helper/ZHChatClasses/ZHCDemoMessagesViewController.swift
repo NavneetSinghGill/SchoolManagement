@@ -17,7 +17,7 @@ class ZHCDemoMessagesViewController: ZHCMessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //demoData.loadMessages(); nsoni
+        demoData.loadMessages(); //nsoni
         self.title = "Chat with Teacher ";
         if self.automaticallyScrollsToMostRecentMessage {
             self.scrollToBottom(animated: false);
@@ -201,7 +201,8 @@ class ZHCDemoMessagesViewController: ZHCMessagesViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0; //self.demoData.messages.count; nsoni
+        print(self.demoData.messages)
+        return self.demoData.messages.count;
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

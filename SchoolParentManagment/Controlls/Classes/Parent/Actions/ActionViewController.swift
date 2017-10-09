@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource{
    
     
@@ -73,8 +72,8 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // for Chating
         if indexPath.row == 2 {
-            let messagesVC: ZHCDemoMessagesViewController = ZHCDemoMessagesViewController.init();
-            messagesVC.presentBool = false;
+           let messagesVC: ZHCDemoMessagesViewController = ZHCDemoMessagesViewController.init();
+           messagesVC.presentBool = false;
             self.navigationController?.pushViewController(messagesVC, animated: true);
         }
         else{
