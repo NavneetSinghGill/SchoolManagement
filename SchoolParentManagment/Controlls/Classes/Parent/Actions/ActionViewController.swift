@@ -59,13 +59,12 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // for Chating
         if indexPath.row == 2 {
-            let messagesVC: ZHCDemoMessagesViewController = ZHCDemoMessagesViewController.init();
-            messagesVC.presentBool = false;
+            let messagesVC: ChatViewController = ChatViewController.init();
             self.navigationController?.pushViewController(messagesVC, animated: true);
         }
         else{
-            let chatVC = UIStoryboard.getChatController()
-            self.navigationController?.pushViewController(chatVC, animated: true)
+//            let chatVC = UIStoryboard.getChatController()
+//            self.navigationController?.pushViewController(chatVC, animated: true)
         }
     }
 }

@@ -7,26 +7,25 @@
 //
 
 import UIKit
-//import MMChatFramework
-class ChatViewController: BaseViewController  {
+//import JSQMessagesViewController
+
+class ChatViewController: BaseViewController {// JSQMessagesViewController  {
     
-    @IBOutlet weak var lblMessage: UILabel!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-       // setNavigationTitle(title: "Chat")
-        addBackButton()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "chatbackground")!)
-        self.lblMessage.backgroundColor = Global.getColorForCurrentEnvironmentType()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-    }
-    
+//    override func viewWillAppear(_ animated: Bool) {
+//
+//        senderId = "33"
+//        senderDisplayName = "Abc"
+//        self.tabBarController?.tabBar.isHidden = true
+//        super.viewWillAppear(animated)
+//    }
+//
+//    override func viewWillDisappear(_ animated: Bool) {
+//        self.tabBarController?.tabBar.isHidden = false
+//        super.viewWillDisappear(animated)
+//    }
+//
+//    override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
+//
+//    }
     
 }

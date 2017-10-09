@@ -6,7 +6,11 @@ target 'SchoolParentManagment' do
     use_frameworks!
     
     # Pods for SchoolParentManagment
-    pod “ZHChat”
+#    pod “ZHChat”
     pod ”ImageSlideshow”
+#    pod 'NoChat', '~> 0.3'
+#    pod 'Chatto', '= 3.1.0'
+#    pod 'ChattoAdditions', '= 3.1.0'
+#pod 'JSQMessagesViewController'
 
 end

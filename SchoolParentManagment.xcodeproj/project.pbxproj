@@ -15,12 +15,6 @@
 		234D722D1F8356870040AF39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 234D722B1F8356870040AF39 /* LaunchScreen.storyboard */; };
 		23748A751F875A770061E24D /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A741F875A770061E24D /* EventDetailsViewController.swift */; };
 		23748A781F8766850061E24D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A771F8766850061E24D /* ChatViewController.swift */; };
-		23748A7B1F8790730061E24D /* ZHChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23748A7C1F8790730061E24D /* ZHChat.framework */; };
-		23748A831F8790CE0061E24D /* ZHCDemoMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */; };
-		23748A841F8790CE0061E24D /* ZHCPublicStucture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */; };
-		23748A851F8790CE0061E24D /* ZHModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A801F8790CE0061E24D /* ZHModelData.swift */; };
-		23748A861F8790CE0061E24D /* ZHPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A811F8790CE0061E24D /* ZHPhotoItem.swift */; };
-		23748A871F8790CE0061E24D /* ZHUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23748A821F8790CE0061E24D /* ZHUserModel.swift */; };
 		23AA25461F8662650095AA04 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25451F8662650095AA04 /* Event.swift */; };
 		23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA25491F866D7D0095AA04 /* EventVC.swift */; };
 		23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AA254E1F866E690095AA04 /* EventTableViewCell.swift */; };
@@ -77,12 +71,6 @@
 		23748A741F875A770061E24D /* EventDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		23748A771F8766850061E24D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		23748A7A1F8769780061E24D /* MMChatFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MMChatFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23748A7C1F8790730061E24D /* ZHChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZHChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHCDemoMessagesViewController.swift; sourceTree = "<group>"; };
-		23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHCPublicStucture.swift; sourceTree = "<group>"; };
-		23748A801F8790CE0061E24D /* ZHModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHModelData.swift; sourceTree = "<group>"; };
-		23748A811F8790CE0061E24D /* ZHPhotoItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHPhotoItem.swift; sourceTree = "<group>"; };
-		23748A821F8790CE0061E24D /* ZHUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHUserModel.swift; sourceTree = "<group>"; };
 		23AA25451F8662650095AA04 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		23AA25491F866D7D0095AA04 /* EventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventVC.swift; sourceTree = "<group>"; };
 		23AA254E1F866E690095AA04 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,6 +104,8 @@
 		53474ECE1F864EF1009F92A1 /* TeacherSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeacherSearchViewController.swift; sourceTree = "<group>"; };
 		5359D5ED1F860B7D0005DD7B /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		535B511B1F87AE8D00BC5F92 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		5389E8341F8B56E800F7C362 /* Chatto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chatto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5389E8361F8B56EE00F7C362 /* ChattoAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChattoAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherActionsTableViewCell.swift; sourceTree = "<group>"; };
 		538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherActionsTableViewCell.xib; sourceTree = "<group>"; };
 		5396C0141F850EFB0077C7C0 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
@@ -131,7 +121,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23748A7B1F8790730061E24D /* ZHChat.framework in Frameworks */,
 				D3CD1342F8CDA8EA9045AB8C /* Pods_SchoolParentManagment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +131,8 @@
 		012A80E2629393227C365AE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23748A7C1F8790730061E24D /* ZHChat.framework */,
+				5389E8361F8B56EE00F7C362 /* ChattoAdditions.framework */,
+				5389E8341F8B56E800F7C362 /* Chatto.framework */,
 				23748A7A1F8769780061E24D /* MMChatFramework.framework */,
 				4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */,
 			);
@@ -234,7 +224,6 @@
 		234D72371F8356A30040AF39 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				23748A7D1F8790CE0061E24D /* ZHChatClasses */,
 				23FF1B9C1F836FAA0071B200 /* Extensions */,
 				2319FBAF1F836BBB00C4D8FA /* Utility.swift */,
 				2319FBB11F836C1800C4D8FA /* Constants.swift */,
@@ -249,18 +238,6 @@
 				23748A771F8766850061E24D /* ChatViewController.swift */,
 			);
 			path = ChatVC;
-			sourceTree = "<group>";
-		};
-		23748A7D1F8790CE0061E24D /* ZHChatClasses */ = {
-			isa = PBXGroup;
-			children = (
-				23748A7E1F8790CE0061E24D /* ZHCDemoMessagesViewController.swift */,
-				23748A7F1F8790CE0061E24D /* ZHCPublicStucture.swift */,
-				23748A801F8790CE0061E24D /* ZHModelData.swift */,
-				23748A811F8790CE0061E24D /* ZHPhotoItem.swift */,
-				23748A821F8790CE0061E24D /* ZHUserModel.swift */,
-			);
-			path = ZHChatClasses;
 			sourceTree = "<group>";
 		};
 		23AA254B1F866E370095AA04 /* EventCell */ = {
@@ -523,12 +500,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
-				"${BUILT_PRODUCTS_DIR}/ZHChat/ZHChat.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHChat.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -559,11 +534,9 @@
 			files = (
 				23C929B21F86178E00093FF7 /* NotificationTableViewCell.swift in Sources */,
 				5396C0181F850F900077C7C0 /* HomeWorkTableViewCell.swift in Sources */,
-				23748A871F8790CE0061E24D /* ZHUserModel.swift in Sources */,
 				53474ED21F864EF3009F92A1 /* HomeTabBarController.swift in Sources */,
 				53474ED91F864EF3009F92A1 /* FotgotPasswordViewController.swift in Sources */,
 				53474ED31F864EF3009F92A1 /* LoginViewController.swift in Sources */,
-				23748A861F8790CE0061E24D /* ZHPhotoItem.swift in Sources */,
 				53474EDD1F864EF3009F92A1 /* StudentChildDetailsViewController.swift in Sources */,
 				23AA25501F866E690095AA04 /* EventTableViewCell.swift in Sources */,
 				53474ED11F864EF3009F92A1 /* ForgotPassViewController.swift in Sources */,
@@ -585,13 +558,11 @@
 				23748A781F8766850061E24D /* ChatViewController.swift in Sources */,
 				23C845391F83CD88000D16B9 /* Parent.swift in Sources */,
 				23C8453B1F83CDB3000D16B9 /* StudentChild.swift in Sources */,
-				23748A851F8790CE0061E24D /* ZHModelData.swift in Sources */,
 				53474ED01F864EF3009F92A1 /* EventTableViewController.swift in Sources */,
 				53474EDB1F864EF3009F92A1 /* HomeWorkViewController.swift in Sources */,
 				53474ED81F864EF3009F92A1 /* NotificationsVC.swift in Sources */,
 				234D72231F8356870040AF39 /* AppDelegate.swift in Sources */,
 				23AA254A1F866D7D0095AA04 /* EventVC.swift in Sources */,
-				23748A841F8790CE0061E24D /* ZHCPublicStucture.swift in Sources */,
 				23FF1B9F1F8370C00071B200 /* UIColorExtension.swift in Sources */,
 				23748A751F875A770061E24D /* EventDetailsViewController.swift in Sources */,
 				53474ED41F864EF3009F92A1 /* AboutSchoolViewController.swift in Sources */,
@@ -600,7 +571,6 @@
 				23C8453D1F83CDF2000D16B9 /* SearchTableViewCell.swift in Sources */,
 				539F60ED1F84C934003E6B81 /* ParentTableViewCell.swift in Sources */,
 				23FF1BA01F8370C00071B200 /* UIStoryboardExtension.swift in Sources */,
-				23748A831F8790CE0061E24D /* ZHCDemoMessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
