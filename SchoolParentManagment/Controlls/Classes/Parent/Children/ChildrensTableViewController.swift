@@ -13,7 +13,6 @@ class ChildrensTableViewController: BaseViewController, UITableViewDataSource,UI
     var studentChilds: [StudentChild] = []
     
     @IBOutlet var tableView: UITableView!
-    // @IBOutlet var childTableViewHeightConstraint: NSLayoutConstraint!
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "ChildrensTableViewController"
@@ -59,12 +58,6 @@ class ChildrensTableViewController: BaseViewController, UITableViewDataSource,UI
         // refreshHeightOfTableView()
     }
     
-    //MARK: Private methods
-    
-    func refreshHeightOfTableView() {
-        let height = tableView.contentSize.height
-        //childTableViewHeightConstraint.constant = height
-    }
     // MARK: - Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {

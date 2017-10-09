@@ -347,8 +347,8 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="wlC-uM-nTE" id="M9T-Uy-l0S"/>
-                                    <outlet property="delegate" destination="wlC-uM-nTE" id="zcK-t8-wsd"/>
+                                    <outlet property="dataSource" destination="wlC-uM-nTE" id="bC7-y9-CXI"/>
+                                    <outlet property="delegate" destination="wlC-uM-nTE" id="6BL-4k-taF"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -364,7 +364,7 @@
                     <navigationItem key="navigationItem" id="7lY-7j-J4m"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableViewForAction" destination="7Lc-L1-fRu" id="q80-6z-Nf2"/>
+                        <outlet property="tableViewForAction" destination="7Lc-L1-fRu" id="xCe-x2-GUc"/>
                         <segue destination="Uov-JC-t47" kind="show" identifier="toActionViewFromChatVC" id="E9K-Jn-BZd"/>
                     </connections>
                 </viewController>

@@ -22,15 +22,6 @@ class EventTableViewController: BaseViewController,UITableViewDelegate,UITableVi
         //addBackButton()
         self.navigationItem.hidesBackButton = true
         setNavigationTitle(title: "EVENT")
-        let barButton = UIBarButtonItem(image: UIImage(named: "add"), style: .plain, target: self, action: #selector(logoutTapped))
-        self.navigationController?.topViewController?.navigationItem.rightBarButtonItem = barButton
-        
-//        self.navigationController?.navigationBar.topItem?.title = "School Events"
-//        let nav = self.navigationController?.navigationBar
-//        nav?.barStyle = UIBarStyle.black
-//        nav?.tintColor = UIColor.white
-//        nav?.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.appDarkBlueColor]
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -56,9 +47,7 @@ class EventTableViewController: BaseViewController,UITableViewDelegate,UITableVi
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell  = tableview.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as! EventsTableViewCell!
-        //  let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as PlacesTableViewCell
-        // Configure the cell...
-        
+               
         let events = self.arrEventImges[indexPath.row]
        // cell.textLabel?.text = fruitName
         //cell.detailTextLabel?.text = "Event Is!"

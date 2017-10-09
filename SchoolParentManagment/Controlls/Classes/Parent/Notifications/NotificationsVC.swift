@@ -8,11 +8,14 @@
 
 import UIKit
 
-class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
+class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource,NotificationCellProtocol {
+   
     
     @IBOutlet weak var tableViewForNotification: UITableView!
     let arrNotificationsType: [String] = ["Teacher feedback of child", "Transportation updates", "Fees status updates"]
     let arrCellImages: [String] =  ["Send feedback", "Transportation", "Fees"]
+    
+    let heightOfHeader: CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +26,17 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         
         let notificationNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForNotification.register(notificationNIB, forCellReuseIdentifier: "NotificationTableViewCell")
+        
+        tableViewForNotification.estimatedRowHeight = 40
+        tableViewForNotification.rowHeight = UITableViewAutomaticDimension
+        tableViewForNotification.tableFooterView = UIView()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-   
+    
     //MARK: Tableview datasource and  Delegate methods
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -43,13 +50,22 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrNotificationsType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-        cell.dividerView.isHidden = indexPath.row == 0
+        //cell.dividerView.isHidden = indexPath.row == 0
+        cell.notificationDelegate = self
+        
+        //Fills color all over the image
+        let templateImage = cell.imgView.image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        cell.imgView.image = templateImage
+        cell.imgView.tintColor = Global.getColorForCurrentEnvironmentType()
+        
+        cell.frame.size.width = tableView.frame.size.width
+        cell.frame.size.height = heightOfHeader
+       // cell.selectButton.isHidden = false
         
         // Cell Selection Clear color
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.clear
-        cell.selectedBackgroundView = bgColorView
-        self.tableViewForNotification.separatorStyle = .none
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+        
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -58,6 +74,13 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return heightOfHeader
     }
+    
+    func cellTapped(with index: Int) {
+//        let chatVC = UIStoryboard.getChatController()
+//        self.navigationController?.pushViewController(chatVC, animated: true)
+
+    }
+    
 }

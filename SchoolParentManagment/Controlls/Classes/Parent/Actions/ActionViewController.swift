@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource {
+class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource{
+   
     
     @IBOutlet weak var tableViewForAction: UITableView!
     let arrActionType: [String] = [" Leave management", "Application to teacher", "Chat with teacher"]
-    let arrCellImages: [String] =  ["leaveApplication", "leaveApplication", "chat"]
+    let arrCellImages: [String] =  ["leave", "application", "chat"]
+    
+    let heightOfHeader: CGFloat = 50.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +27,9 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         let actionNIB = UINib(nibName: "NotificationTableViewCell", bundle: nil)
         tableViewForAction.register(actionNIB, forCellReuseIdentifier: "NotificationTableViewCell")
         
-        tableViewForAction.estimatedRowHeight = 49
+        tableViewForAction.estimatedRowHeight = 40
         tableViewForAction.rowHeight = UITableViewAutomaticDimension
+        tableViewForAction.tableFooterView = UIView()
         
     }
     
@@ -47,13 +51,23 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         let cell: NotificationTableViewCell = tableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as! NotificationTableViewCell
         
         cell.setUIFor(strNotificationType: self.arrActionType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
-       // cell.accessoryType = .disclosureIndicator
+        
+        cell.disclosure.isHidden = false
+        cell.dividerView.isHidden = true
+      //  cell.notificationDelegate = self
+        //Fills color all over the image
+        let templateImage = cell.imgView.image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        cell.imgView.image = templateImage
+        cell.imgView.tintColor = Global.getColorForCurrentEnvironmentType()
+        
+        cell.frame.size.width = tableView.frame.size.width
+        cell.frame.size.height = heightOfHeader
+        //cell.selectButton.isHidden = false
         
         // Cell Selection Clear color
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.clear
-        cell.selectedBackgroundView = bgColorView
-        self.tableViewForAction.separatorStyle = .none
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -69,7 +83,14 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         }
     }
     
+   
+//    // MARK:- Notification Delegate Method
+//    func cellTapped(with index: Int) {
+//        let chatVC = UIStoryboard.getChatController()
+//        self.navigationController?.pushViewController(chatVC, animated: true)
+//    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+        return heightOfHeader
     }
 }

@@ -80,7 +80,7 @@ class EventDetailsViewController: BaseViewController {
     @IBAction func shareButtonPressed(sender: AnyObject) {
         let myWebsite = NSURL(string:"http://www.bestpeers.com/")
         
-        let img: UIImage = UIImage(named: self.arraryImage[self.pageNo])!
+        let img: UIImage = UIImage(named: self.arraryImage[0])!
         
         guard let url = myWebsite else {
             print("nothing found")
