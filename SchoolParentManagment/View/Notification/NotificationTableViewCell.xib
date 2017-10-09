@@ -33,7 +33,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9L-Td-x9u">
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9L-Td-x9u" userLabel="Select Button(Used if cell is header)">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
                         <connections>
                             <action selector="selectButtonTapped" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Tza-FU-xQq"/>
