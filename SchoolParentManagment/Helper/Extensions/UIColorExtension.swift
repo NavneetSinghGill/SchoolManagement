@@ -1,10 +1,9 @@
 //
 //  UIColorExtension.swift
-//  BuildingsGenie
+//  SchoolParentManagment
 //
-//  Created by Cibirix on 2/2/17.
-//  Copyright © 2017 Cibirix. All rights reserved.
-//
+//  Created by Bestpeers on 04/10/17.
+//  Copyright © 2017 Bestpeers. All rights reserved.
 
 import UIKit
 
@@ -37,5 +36,21 @@ extension UIImageView {
     func setRounded() {
         self.layer.cornerRadius = (self.frame.width / 2) //instead of let radius = CGRectGetWidth(self.frame) / 2
         self.layer.masksToBounds = true
+    }
+}
+
+extension String {
+    var isPhoneNumber: Bool {
+        do {
+            let detector = try NSDataDetector(types: NSTextCheckingResult.CheckingType.phoneNumber.rawValue)
+            let matches = detector.matches(in: self, options: [], range: NSMakeRange(0, self.characters.count))
+            if let res = matches.first {
+                return res.resultType == .phoneNumber && res.range.location == 0 && res.range.length == self.characters.count && self.characters.count == 10 
+            } else {
+                return false
+            }
+        } catch {
+            return false
+        }
     }
 }

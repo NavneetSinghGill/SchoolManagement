@@ -8,18 +8,18 @@
 
 import UIKit
 
-class SignUpViewController: BaseViewController {
+class SignUpViewController: BaseViewController,UITextFieldDelegate {
 
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     @IBOutlet weak var textFieldMobile: UITextField!
-    @IBOutlet weak var passwordValidationLabel: UILabel!
     
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet var textFields: [UITextField]!
     
     @IBAction func saveAction(_ sender: Any) {
+        self.performLogIn()
     }
     
     @IBAction func btnBackAction(_ sender: Any) {
@@ -28,15 +28,12 @@ class SignUpViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-          addBackButton()
+        addBackButton()
         self.textFieldName.delegate = self
         self.textFieldEmail.delegate = self
         self.textFieldPassword.delegate = self
         self.textFieldMobile.delegate = self
         
-        setupView()
-        // Register View Controller as Observer
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: Notification.Name.UITextFieldTextDidChange, object: nil)
         let str: Int  = UserDefaults.standard.integer(forKey: "SignUpType")
         switch str {
         case 1:
@@ -52,77 +49,71 @@ class SignUpViewController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // MARK: - View Methods
-    fileprivate func setupView() {
-        // Configure Save Button
-        saveButton.isEnabled = false
-        
-        // Configure Password Validation Label
-        passwordValidationLabel.isHidden = true
-    }
-    // MARK: - Notification Handling
-    
-    @objc private func textDidChange(_ notification: Notification) {
-        var formIsValid = true
-        
-        for textField in textFields {
-            // Validate Text Field
-            let (valid, _) = validate(textField)
-            
-            guard valid else {
-                formIsValid = false
-                break
-            }
-        }
-        
-        // Update Save Button
-        saveButton.isEnabled = formIsValid
-    }
-    
-    // MARK: - Helper Methods
-    
-    fileprivate func validate(_ textField: UITextField) -> (Bool, String?) {
-        guard let text = textField.text else {
-            return (false, nil)
-        }
-        
-        if textField == textFieldPassword {
-            return (text.characters.count >= 6, "Your password is too short.")
-        }
-        
-        return (text.characters.count > 0, "This field cannot be empty.")
-    }
-}
-
-extension SignUpViewController: UITextFieldDelegate {
-    
+    //MARK:- TextField Delegate Method
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        switch textField {
-        case textFieldName:
-            textFieldEmail.becomeFirstResponder()
-        case textFieldEmail:
-            textFieldPassword.becomeFirstResponder()
-        case textFieldPassword:
-            // Validate Text Field
-            let (valid, message) = validate(textField)
-            
-            if valid {
-                textFieldMobile.becomeFirstResponder()
-            }
-            
-            // Update Password Validation Label
-            self.passwordValidationLabel.text = message
-            
-            // Show/Hide Password Validation Label
-            UIView.animate(withDuration: 0.25, animations: {
-                self.passwordValidationLabel.isHidden = valid
-            })
-        default:
-            textFieldMobile.resignFirstResponder()
-        }
-        
+        textField.resignFirstResponder()
         return true
     }
-
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if textField == self.textFieldMobile{
+            let acceptedCharsters = self.textFieldMobile.text
+            let newLength: Int = (textField.text?.count ?? 0) + (string.count ) - range.length
+            return (newLength > 10) ? false : true
+            let cs = CharacterSet(charactersIn: acceptedCharsters!).inverted
+            let filtered: String = string.components(separatedBy: cs).joined(separator: "")
+            return string == filtered
+            return true
+        }
+        else{
+        return true
+        }
+        
+    }
+    //MARK:- Textfield validations And check Empty
+    private func isDataValid() -> Bool {
+        var isValid = false
+        var errorMsg : String?
+        
+        
+        if ((self.textFieldName?.text?.characters.count)! < 1)
+        {
+            errorMsg = "Please enter name"
+        }
+        else if ((self.textFieldEmail?.text?.characters.count)! < 1)
+        {
+            errorMsg = "Please enter email id"
+        }
+        else if ((self.textFieldPassword?.text?.characters.count)! < 1)
+        {
+            errorMsg = "Please enter password"
+        }
+        else if ((self.textFieldMobile?.text?.count)! < 1)
+        {
+            errorMsg = "Please enter password"
+        }
+        else if !(Utility.isValid(email: (self.textFieldEmail?.text)!))
+        {
+            errorMsg = "Please enter valid email id"
+        }
+            //        else if !(((self.textFieldEmail?.text)?.isPhoneNumber)!)
+            //        {
+            //            errorMsg = "Please enter 10 Digit"
+            //        }
+        else {
+            isValid = true
+            
+        }
+        if(!isValid && errorMsg!.characters.count > 0) {
+            //self.textFieldPassword?.text = ""
+            Utility.showAlertWith(title: "Oops!", message: errorMsg!, inController: self)
+        }
+        return isValid
+    }
+    
+    func performLogIn() -> Void {
+        if isDataValid() {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
 }

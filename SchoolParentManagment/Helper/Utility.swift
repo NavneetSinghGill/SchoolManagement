@@ -42,7 +42,7 @@ class Utility: NSObject {
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
         
         let okAction = UIAlertAction.init(title: "OK", style: .cancel, handler: { response in
-            inController.dismiss(animated: true, completion: nil)
+            //inController.dismiss(animated: true, completion: nil)
         })
         
         alert.addAction(okAction)

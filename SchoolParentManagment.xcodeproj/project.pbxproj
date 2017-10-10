@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2319FBB01F836BBB00C4D8FA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBAF1F836BBB00C4D8FA /* Utility.swift */; };
 		2319FBB21F836C1800C4D8FA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2319FBB11F836C1800C4D8FA /* Constants.swift */; };
+		2334677B1F8CD303008D36A6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2334677A1F8CD303008D36A6 /* MessageUI.framework */; };
+		2334677D1F8CD77A008D36A6 /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2334677C1F8CD77A008D36A6 /* ContactUsViewController.swift */; };
 		233FE5781F8BB18D00EFD950 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 233FE5641F8BB18D00EFD950 /* data.json */; };
 		233FE5791F8BB18D00EFD950 /* chat_bar_icons_camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 233FE5661F8BB18D00EFD950 /* chat_bar_icons_camera.png */; };
 		233FE57A1F8BB18D00EFD950 /* chat_bar_icons_camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 233FE5671F8BB18D00EFD950 /* chat_bar_icons_camera@2x.png */; };
@@ -84,6 +86,8 @@
 		0ABC0895FD7483CE709DD13A /* Pods-SchoolParentManagment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchoolParentManagment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchoolParentManagment/Pods-SchoolParentManagment.debug.xcconfig"; sourceTree = "<group>"; };
 		2319FBAF1F836BBB00C4D8FA /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		2319FBB11F836C1800C4D8FA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2334677A1F8CD303008D36A6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		2334677C1F8CD77A008D36A6 /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
 		233FE5641F8BB18D00EFD950 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		233FE5661F8BB18D00EFD950 /* chat_bar_icons_camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_bar_icons_camera.png; sourceTree = "<group>"; };
 		233FE5671F8BB18D00EFD950 /* chat_bar_icons_camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_bar_icons_camera@2x.png"; sourceTree = "<group>"; };
@@ -148,8 +152,6 @@
 		5373E5861F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherNotificationsTableViewCell.xib; sourceTree = "<group>"; };
 		5373E58A1F8BAD87003FEBA2 /* TeacherNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherNotificationViewController.swift; sourceTree = "<group>"; };
 		5373E58C1F8BAF59003FEBA2 /* Notificationn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificationn.swift; sourceTree = "<group>"; };
-		5389E8341F8B56E800F7C362 /* Chatto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chatto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5389E8361F8B56EE00F7C362 /* ChattoAdditions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ChattoAdditions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538F792E1F86456F009B2B66 /* TeacherActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherActionsTableViewCell.swift; sourceTree = "<group>"; };
 		538F792F1F86456F009B2B66 /* TeacherActionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeacherActionsTableViewCell.xib; sourceTree = "<group>"; };
 		5396C0141F850EFB0077C7C0 /* HomeWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWork.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2334677B1F8CD303008D36A6 /* MessageUI.framework in Frameworks */,
 				23748A7B1F8790730061E24D /* ZHChat.framework in Frameworks */,
 				D3CD1342F8CDA8EA9045AB8C /* Pods_SchoolParentManagment.framework in Frameworks */,
 			);
@@ -176,6 +179,7 @@
 		012A80E2629393227C365AE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2334677A1F8CD303008D36A6 /* MessageUI.framework */,
 				23748A7C1F8790730061E24D /* ZHChat.framework */,
 				23748A7A1F8769780061E24D /* MMChatFramework.framework */,
 				4FCDB3AC8F888A8B568DBBEF /* Pods_SchoolParentManagment.framework */,
@@ -436,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				53474EBD1F864EF0009F92A1 /* AboutSchoolViewController.swift */,
+				2334677C1F8CD77A008D36A6 /* ContactUsViewController.swift */,
 			);
 			path = "About School";
 			sourceTree = "<group>";
@@ -684,6 +689,7 @@
 				538F79301F86456F009B2B66 /* TeacherActionsTableViewCell.swift in Sources */,
 				53474ECF1F864EF3009F92A1 /* BaseViewController.swift in Sources */,
 				535B511C1F87AE8E00BC5F92 /* extensions.swift in Sources */,
+				2334677D1F8CD77A008D36A6 /* ContactUsViewController.swift in Sources */,
 				539F60EA1F84AA06003E6B81 /* SearchTableViewCell.xib in Sources */,
 				233FE58F1F8BB75A00EFD950 /* ZHCDemoMessagesViewController.swift in Sources */,
 				5373E5871F8BAB45003FEBA2 /* TeacherNotificationsTableViewCell.swift in Sources */,

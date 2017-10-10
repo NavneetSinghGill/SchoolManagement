@@ -52,7 +52,7 @@ class FotgotPasswordViewController: BaseViewController ,UITextFieldDelegate{
     func performLogIn() -> Void {
         
         if isDataValid() {
-            self.navigationController?.popToRootViewController(animated: false)
+            self.dismiss(animated: true, completion: nil)
         }
     }
     //MARK:- Textfield validations And check Empty

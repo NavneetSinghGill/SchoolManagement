@@ -54,6 +54,9 @@ let sChildrenDetailIdentifier = "sChildrenDetail"
 let sNotificationsVCIdentifier = "sNotificationsVC"
 let sChatViewControllerIdentifier = "sChatViewController"
 let sEventDetailsViewControllerIdentifier = "sEventDetailsViewController"
+let sContactUsViewControllerIdentifier = "sContactUsViewController"
+//let sHolidayViewControllerIdentifier = "sHolidayViewController"
+
 //MARK: Colors
 
 let blueColor = UIColor(red: 0, green: 110/255.0, blue: 190/255, alpha: 1.0)

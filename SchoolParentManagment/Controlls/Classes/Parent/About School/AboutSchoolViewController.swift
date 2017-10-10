@@ -133,9 +133,9 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
         case 1:
             isGallerySectionExpanded = !isGallerySectionExpanded
         case 2:
-           openHomeListViewController()
+             openHomeListViewController()
         case 3:
-            openHomeListViewController()
+            openContactUsVC()
         case 4:
             openHomeListViewController()
         default:
@@ -153,6 +153,15 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
         self.navigationController?.pushViewController(chatVC, animated: true)
     }
     
+    func openContactUsVC() -> Void {
+        let contactUsVC = UIStoryboard.getContactUs()
+        self.navigationController?.pushViewController(contactUsVC, animated: true)
+    }
+    /*func openHolidays() -> Void {
+        let holidays = UIStoryboard.getHolidays()
+        self.navigationController?.pushViewController(holidays, animated: true)
+        
+    }*/
     func shouldSetAccessory(should: Bool, of cell:NotificationTableViewCell?) {
         if should {
             cell?.disclosure.isHidden = false

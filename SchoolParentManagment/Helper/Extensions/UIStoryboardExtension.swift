@@ -1,58 +1,32 @@
 //
 //  UIStoryboardExtension.swift
-//  BuildingsGenie
+//  SchoolParentManagment
 //
-//  Created by Cibirix on 2/2/17.
-//  Copyright © 2017 Cibirix. All rights reserved.
-//
+//  Created by Bestpeers on 04/10/17.
+//  Copyright © 2017 Bestpeers. All rights reserved.
+
 
 import UIKit
 
 extension UIStoryboard {
-
-    //MARK: - More Storyboard Methods
-    
-  /*  class func getMySalesTeamController() -> MySalesTeamViewController
-    {
-        let moreStoryboard = self.getMoreStoryboard()
-        return moreStoryboard.instantiateViewController(withIdentifier: kMySalesTeamControllerIdentifier) as! MySalesTeamViewController
-    }
-    
-    class func getUserDetailsController() -> UserDetailsViewController {
-        let moreStoryboard = self.getMoreStoryboard()
-        return moreStoryboard.instantiateViewController(withIdentifier:kUserDetailControllerIdentifier ) as! UserDetailsViewController
-    }
-    
-    class func getFeedbackController() -> FeedbackViewController {
-        
-        let moreStoryboard = self.getMoreStoryboard()
-       return  moreStoryboard.instantiateViewController(withIdentifier: kToFeedbackViewControllerIdentifier) as! FeedbackViewController
-    }
-
-    
-    //MARK: - Get Main storyboard Controller
-    
-     
-    class func getCreateEstimateController() -> CreateYourEstimateViewController {
-        
-        let mainStoryboard = self.getMainStoryboard()
-        return mainStoryboard.instantiateViewController(withIdentifier: kToCreateEstimateIdentifier) as! CreateYourEstimateViewController
-    }
-    //MARK: - Get Walkthrough Controller 
-    
-    class func getWalkthroughNavController() -> UINavigationController {
-    
-        let walkthroughStoryboard = self.getWalkthroughStoryboard()
-        return walkthroughStoryboard.instantiateViewController(withIdentifier: kWalkthroughNavigationControllerIdentifier) as! UINavigationController
-    }
-    */
-    
     
     //MARK: - Get Chat Controller
     class func getChatController() -> ChatViewController {
         let mainStoryboard = self.getMainStoryboard()
         return mainStoryboard.instantiateViewController(withIdentifier: sChatViewControllerIdentifier) as! ChatViewController
     }
+    
+    //MARK: - Get ContactUS Controller
+    class func getContactUs() -> ContactUsViewController {
+        let mainStoryboard = self.getMainStoryboard()
+        return mainStoryboard.instantiateViewController(withIdentifier: sContactUsViewControllerIdentifier) as! ContactUsViewController
+    }
+    //MARK: - Get Holidays Controller
+//    class func getHolidays() -> HolidayViewController {
+//        let mainStoryboard = self.getMainStoryboard()
+//        return mainStoryboard.instantiateViewController(withIdentifier: sHolidayViewControllerIdentifier) as! HolidayViewController
+//    }
+    //MARK: - Get SignUp Controller
     class func getSigunUpController() -> SignUpViewController {
         let mainStoryboard = self.getMainStoryboard()
         return mainStoryboard.instantiateViewController(withIdentifier: sSignUpViewControllerIdentifier) as! SignUpViewController
