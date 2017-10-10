@@ -276,8 +276,8 @@
 				234D72221F8356870040AF39 /* AppDelegate.swift */,
 				234D72261F8356870040AF39 /* Main.storyboard */,
 				539F60E71F84A9AF003E6B81 /* Teacher.storyboard */,
-				234D72291F8356870040AF39 /* Assets.xcassets */,
 				234D722B1F8356870040AF39 /* LaunchScreen.storyboard */,
+				234D72291F8356870040AF39 /* Assets.xcassets */,
 				234D722E1F8356870040AF39 /* Info.plist */,
 			);
 			path = SchoolParentManagment;

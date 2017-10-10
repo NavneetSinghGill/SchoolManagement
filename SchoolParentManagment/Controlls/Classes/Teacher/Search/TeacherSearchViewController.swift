@@ -9,6 +9,8 @@
 import UIKit
 
 class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
+    
+    let heightOfCell: CGFloat = 66
 
     @IBOutlet var tableView: UITableView!
     @IBOutlet var searchBar: UISearchBar!
@@ -23,9 +25,6 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
         let searchNIB = UINib(nibName: "SearchTableViewCell", bundle: nil)
         tableView.register(searchNIB, forCellReuseIdentifier: "SearchTableViewCell")
         
-        tableView.estimatedRowHeight = 40
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
         searchBar.barTintColor = Global.getColorForCurrentEnvironmentType()
         segmentControl.tintColor = Global.getColorForCurrentEnvironmentType()
         
@@ -36,14 +35,18 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
             let studentChildFake = StudentChild()
             studentChildFake.fakeData(for: i)
             studentChilds.append(studentChildFake)
-            
-            let parentFake1 = Parent()
-            parentFake1.fakeData(for: 0)
-            parents.append(parentFake1)
-            let parentFake2 = Parent()
-            parentFake2.fakeData(for: 1)
-            parents.append(parentFake2)
         }
+        for i in 0..<3 {
+            let parentFake = Parent()
+            parentFake.fakeData(for: i)
+            parents.append(parentFake)
+        }
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         tableView.reloadData()
     }
@@ -67,6 +70,9 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
             cell.setUIFor(characterType: .Parent, with: parents[indexPath.row])
         }
         
+        cell.frame.size.height = heightOfCell
+        cell.layoutIfNeeded()
+        cell.backGroundCurveView.cornerRadius = cell.backGroundCurveView.frame.size.height/2
         return cell
     }
     
@@ -83,6 +89,10 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
         } else { //Parents
             
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return heightOfCell
     }
     
     //MARK: Search bar delegate methods

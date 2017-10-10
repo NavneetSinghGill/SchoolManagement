@@ -11,12 +11,11 @@ import MessageUI
 
 class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSource,NotificationCellProtocol, MFMailComposeViewControllerDelegate {
    
+    let heightOfCell: CGFloat = 70
     
     @IBOutlet weak var tableViewForNotification: UITableView!
     let arrNotificationsType: [String] = ["Teacher feedback of child", "Transportation updates", "Fees status updates"]
     let arrCellImages: [String] =  ["Send feedback", "Transportation", "Fees"]
-    
-    let heightOfHeader: CGFloat = 50
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,14 +58,6 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
         cell.imgView.image = templateImage
         cell.imgView.tintColor = Global.getColorForCurrentEnvironmentType()
         
-        cell.frame.size.width = tableView.frame.size.width
-        cell.frame.size.height = heightOfHeader
-       // cell.selectButton.isHidden = false
-        
-        // Cell Selection Clear color
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
-        
-        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -92,7 +83,7 @@ class NotificationsVC: BaseViewController ,UITableViewDelegate,UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return heightOfHeader
+        return heightOfCell
     }
     
     func cellTapped(with index: Int) {

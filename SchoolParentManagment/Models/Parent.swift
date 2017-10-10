@@ -18,7 +18,7 @@ class Parent: NSObject {
     var avtarImage:String!
     
     func fakeData(for index: Int) {
-        let index1 = index%2
+        let index1 = index%3
         if index1 == 0 {
             firstName = "Mike"
             lastName = "Ommen"

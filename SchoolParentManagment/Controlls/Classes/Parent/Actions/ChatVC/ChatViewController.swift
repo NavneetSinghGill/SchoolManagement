@@ -10,14 +10,14 @@ import UIKit
 //import MMChatFramework
 class ChatViewController: BaseViewController  {
     
-    @IBOutlet weak var lblMessage: UILabel!
+    @IBOutlet weak var backgroundCurveView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
        // setNavigationTitle(title: "Chat")
         addBackButton()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "chatbackground")!)
-        self.lblMessage.backgroundColor = Global.getColorForCurrentEnvironmentType()
+        backgroundCurveView.backgroundColor = Global.getColorForCurrentEnvironmentType()
     }
     
     override func didReceiveMemoryWarning() {

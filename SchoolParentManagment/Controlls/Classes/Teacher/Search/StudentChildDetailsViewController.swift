@@ -10,6 +10,8 @@ import UIKit
 
 class StudentChildDetailsViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
+    let heightOfCell: CGFloat = 66
+    
     @IBOutlet var parentsTableView: UITableView!
     @IBOutlet var parentsTableViewHeightConstraint: NSLayoutConstraint!
     
@@ -31,9 +33,6 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
         let parentNIB = UINib(nibName: "ParentTableViewCell", bundle: nil)
         parentsTableView.register(parentNIB, forCellReuseIdentifier: "ParentTableViewCell")
         
-        parentsTableView.estimatedRowHeight = 49
-        parentsTableView.rowHeight = UITableViewAutomaticDimension
-        
         if shouldShowBackButton {
             addBackButton()
         }
@@ -50,6 +49,8 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
         } else {
             setNavigationTitle(title: "")
         }
+        
+        parentsTableView.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,7 +68,7 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
     //MARK: Private methods
     
     func refreshHeightOfTableView() {
-        let height = parentsTableView.contentSize.height
+        let height = heightOfCell*CGFloat(parents.count)
         parentsTableViewHeightConstraint.constant = height
 //        self.view.layoutIfNeeded()
     }
@@ -95,7 +96,15 @@ class StudentChildDetailsViewController: BaseViewController, UITableViewDataSour
         
         cell.setUIFor(characterType: .Parent, with: parents[indexPath.row])
         
+        cell.frame.size.height = heightOfCell
+        cell.layoutIfNeeded()
+        cell.backGroundCurveView.cornerRadius = cell.backGroundCurveView.frame.size.height/2
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return heightOfCell
     }
 
 }

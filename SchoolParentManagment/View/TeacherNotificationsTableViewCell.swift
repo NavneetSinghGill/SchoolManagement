@@ -13,6 +13,7 @@ class TeacherNotificationsTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var notificationImageView: UIImageView!
+    @IBOutlet var backGroundCurveView: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,6 +30,10 @@ class TeacherNotificationsTableViewCell: UITableViewCell {
         titleLabel.text = notification.title
         descriptionLabel.text = notification.notificationDescription
         notificationImageView.image = UIImage.init(named: notification.profileImage!)
+        
+        notificationImageView.layer.cornerRadius = notificationImageView.frame.size.width/2
+        
+        backGroundCurveView.layer.cornerRadius = 25
     }
     
 }

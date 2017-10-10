@@ -12,6 +12,7 @@ class EventTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblEventName: UILabel!
     @IBOutlet weak var lblEventTimeDate: UILabel!
+    @IBOutlet var backGroundCurveView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,5 +35,7 @@ class EventTableViewCell: UITableViewCell {
             lblEventName.text = strEventName
             lblEventTimeDate.text = strEventTimeDate
         }
+        
+        backGroundCurveView.layer.cornerRadius = 25
     }
 }

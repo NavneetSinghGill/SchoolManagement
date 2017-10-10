@@ -10,7 +10,8 @@ import UIKit
 
 class TeacherActionsViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource, NotificationCellProtocol {
 
-    let heightOfHeader: CGFloat = 50
+    let heightOfHeader: CGFloat = 70
+    let heightOfCell: CGFloat = 54
     
     let actions: NSArray = ["Home work", "Children management", "Attendance management", "Leave management", "Application management"]
     let actionImages: NSArray = ["homework", "children", "attendance", "leave", "application"]
@@ -38,7 +39,11 @@ class TeacherActionsViewController: BaseViewController, UITableViewDelegate, UIT
         setNavigationTitle(title: "ACTIONS")
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        actionsTableView.reloadData()
+    }
     
     //MARK: Tableview datasource methods
     
@@ -68,15 +73,20 @@ class TeacherActionsViewController: BaseViewController, UITableViewDelegate, UIT
         
         cell.setUIFor(strNotificationType: (actionOptions[indexPath.section] as! NSArray)[indexPath.row] as? String, strCellImage: "")
         cell.disclosure.isHidden = false
-        cell.dividerView.isHidden = true
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return heightOfCell
     }
     
     //MARK: Tableview delegate methods
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell: NotificationTableViewCell? = (Bundle.main.loadNibNamed("NotificationTableViewCell", owner: self, options: nil)![0] as? UIView) as? NotificationTableViewCell
+        cell?.frame.size.height = heightOfHeader
+        cell?.layoutIfNeeded()
         
         cell?.index = section
         cell?.notificationDelegate = self
@@ -100,7 +110,6 @@ class TeacherActionsViewController: BaseViewController, UITableViewDelegate, UIT
         } else { // == 0
             shouldSetAccessory(should: true, of: cell)
         }
-        cell?.dividerView.isHidden = section == 0
         
         return cell
     }

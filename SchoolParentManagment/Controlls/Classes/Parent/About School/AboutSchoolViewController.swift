@@ -10,6 +10,8 @@ import UIKit
 
 class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITableViewDelegate, NotificationCellProtocol{
    
+    let heightOfHeader: CGFloat = 70
+    let heightOfCell: CGFloat = 54
     
     @IBOutlet weak var tableViewForAboutschool: UITableView!
    
@@ -17,8 +19,6 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
     let arrAboutSchoolImages: [String] =  ["Transportation", "Gallery", "Holiday", "Contact", "Send feedback"]
     let arrAboutSchoolOptions: NSArray = [[], ["Photo", "Video"], [], [], []]
     
-    let heightOfHeader: CGFloat = 50
-
     var isTransportationSectionExpanded: Bool = false
     var isGallerySectionExpanded: Bool = false
     var isHolidaySectionExpanded: Bool = false
@@ -81,8 +81,14 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
     }
      //MARK: Tableview Delegate Method
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return heightOfCell
+    }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let cell: NotificationTableViewCell? = (Bundle.main.loadNibNamed("NotificationTableViewCell", owner: self, options: nil)![0] as? UIView) as? NotificationTableViewCell
+        cell?.frame.size.height = heightOfHeader
+        cell?.layoutIfNeeded()
         
         cell?.index = section
         cell?.notificationDelegate = self
@@ -106,7 +112,6 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
         } else { // == 0
             shouldSetAccessory(should: true, of: cell)
         }
-        cell?.dividerView.isHidden = section == 0
         
         return cell
     }
@@ -114,13 +119,6 @@ class AboutSchoolViewController: BaseViewController ,UITableViewDataSource, UITa
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return heightOfHeader
     }
-    
-    
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let chatVC = UIStoryboard.getChatController()
-//        self.navigationController?.pushViewController(chatVC, animated: true)
-//    }
    
     //MARK: Notification cell protocol methods
     func cellTapped(with index: Int) {

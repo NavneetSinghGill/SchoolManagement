@@ -9,12 +9,11 @@
 import UIKit
 class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource{
    
+    let heightOfCell: CGFloat = 70
     
     @IBOutlet weak var tableViewForAction: UITableView!
     let arrActionType: [String] = [" Leave management", "Application to teacher", "Chat with teacher"]
     let arrCellImages: [String] =  ["leave", "application", "chat"]
-    
-    let heightOfHeader: CGFloat = 50.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,20 +51,11 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         cell.setUIFor(strNotificationType: self.arrActionType[indexPath.row], strCellImage: self.arrCellImages[indexPath.row])
         
         cell.disclosure.isHidden = false
-        cell.dividerView.isHidden = true
-      //  cell.notificationDelegate = self
+
         //Fills color all over the image
         let templateImage = cell.imgView.image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         cell.imgView.image = templateImage
         cell.imgView.tintColor = Global.getColorForCurrentEnvironmentType()
-        
-        cell.frame.size.width = tableView.frame.size.width
-        cell.frame.size.height = heightOfHeader
-        //cell.selectButton.isHidden = false
-        
-        // Cell Selection Clear color
-        cell.selectionStyle = UITableViewCellSelectionStyle.none
-
         
         return cell
     }
@@ -82,14 +72,7 @@ class ActionViewController: BaseViewController ,UITableViewDelegate,UITableViewD
         }
     }
     
-   
-//    // MARK:- Notification Delegate Method
-//    func cellTapped(with index: Int) {
-//        let chatVC = UIStoryboard.getChatController()
-//        self.navigationController?.pushViewController(chatVC, animated: true)
-//    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return heightOfHeader
+        return heightOfCell
     }
 }

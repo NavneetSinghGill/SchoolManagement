@@ -13,11 +13,69 @@ class BaseViewController: UIViewController {
     var backBarButton: UIBarButtonItem!
     var rightBarButton: UIBarButtonItem!
     var navigationTitleLabel: UILabel!
+    
+    var backGroundView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addGradient()
     }
+    
+    func addGradient() {
+        //This method is separately created because in case if we dont want gradient in a controller then just ovverride this method leaving it blank
+        addGradientView(withImageIndex: tabBarController?.selectedIndex ?? -1)
+    }
+    
+    func addGradientView(withImageIndex imageIndex: Int! = -1) {
+        if backGroundView == nil {
+            let backgroundImageView = UIImageView()
+            if appDelegate.environmentCharacterType == .Teacher {
+                switch imageIndex {
+                case 0:
+                    backgroundImageView.image = UIImage(named: "wall0")
+                case 1:
+                    backgroundImageView.image = UIImage(named: "wall1")
+                case 2:
+                    backgroundImageView.image = UIImage(named: "wall2")
+                case 3:
+                    backgroundImageView.image = UIImage(named: "wall3")
+                default:
+                    backgroundImageView.image = UIImage(named: "wall2")
+                }
+            } else if appDelegate.environmentCharacterType == .Parent {
+                switch imageIndex {
+                case 0:
+                    backgroundImageView.image = UIImage(named: "wall0")
+                case 1:
+                    backgroundImageView.image = UIImage(named: "wall1")
+                case 2:
+                    backgroundImageView.image = UIImage(named: "wall2")
+                case 3:
+                    backgroundImageView.image = UIImage(named: "wall3")
+                case 4:
+                    backgroundImageView.image = UIImage(named: "wall4")
+                default:
+                    backgroundImageView.image = UIImage(named: "wall2")
+                }
+            }
+            backgroundImageView.frame = view.frame
+            
+            let visualEffect = UIBlurEffect(style: .dark)
+            let visualView = UIVisualEffectView(effect: visualEffect)
+            visualView.frame = view.bounds
+            visualView.alpha = 0.7
+            
+            backGroundView = UIView(frame: view.frame)
+            backGroundView.addSubview(backgroundImageView)
+            backGroundView.addSubview(visualView)
+            backGroundView.bringSubview(toFront: visualView)
+            
+            view.addSubview(backGroundView)
+            view.sendSubview(toBack: backGroundView)
+        }
+    }
+    
     // For share button action
     func addShareButtonRight() {
         if rightBarButton == nil {

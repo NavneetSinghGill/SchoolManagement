@@ -74,10 +74,10 @@ class ChildrensTableViewController: BaseViewController, UITableViewDataSource,UI
         let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier, for: indexPath) as! ChildrensTableViewCell
         
         cell.setUIFor(characterType: .StudentChild, with: studentChilds[indexPath.row])
-        // Cell Selection Clear color
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.clear
-        cell.selectedBackgroundView = bgColorView
+//        // Cell Selection Clear color
+//        let bgColorView = UIView()
+//        bgColorView.backgroundColor = UIColor.clear
+//        cell.selectedBackgroundView = bgColorView
         return cell
     }
     

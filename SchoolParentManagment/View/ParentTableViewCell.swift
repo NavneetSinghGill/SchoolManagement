@@ -13,6 +13,8 @@ class ParentTableViewCell: UITableViewCell {
     var characterType: CharacterType!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var relationShipOrStandarLabel: UILabel!
+    @IBOutlet var profilePicImageView: UIImageView!
+    @IBOutlet var backGroundCurveView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +32,7 @@ class ParentTableViewCell: UITableViewCell {
             nameLabel.text = "\(parent.firstName!) \(parent.lastName!)"
             relationShipOrStandarLabel.text = parent.relationToStudentChild
         }
+        
+        profilePicImageView.layer.cornerRadius = profilePicImageView.frame.size.width/2
     }
 }

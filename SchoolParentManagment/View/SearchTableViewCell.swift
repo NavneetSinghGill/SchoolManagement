@@ -14,6 +14,7 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var relationShipOrStandarLabel: UILabel!
     @IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var backGroundCurveView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -36,9 +37,10 @@ class SearchTableViewCell: UITableViewCell {
             relationShipOrStandarLabel.text = parent.relationToStudentChild
             setProfileImage(imageName: parent.avtarImage)
         }
-        
         profileImageView.cornerRadius = profileImageView.bounds.size.width/2
     }
+    
+    
     
     func setProfileImage(imageName: String?) {
         if imageName != nil {

@@ -34,8 +34,10 @@ class StudentChild: NSObject {
             parent1.fakeData(for: 0)
             let parent2 = Parent()
             parent2.fakeData(for: 1)
+            let parent3 = Parent()
+            parent3.fakeData(for: 2)
             
-            parents = [parent1,parent2]
+            parents = [parent1,parent2,parent3]
         } else if index1 == 1 {
             firstName = "Brian"
             lastName = "Parker"
