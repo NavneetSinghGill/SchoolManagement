@@ -13,7 +13,6 @@ class EventDetailsViewController: BaseViewController {
     
     @IBOutlet weak var lblEventName: UILabel!
     var pageNo: Int!
-    
     @IBOutlet weak var lblDescription: UILabel!
     let localSource = [ImageSource(imageString: "event0")!, ImageSource(imageString: "event1")!, ImageSource(imageString: "event2")!, ImageSource(imageString: "event3")!, ImageSource(imageString: "event4")!, ImageSource(imageString: "event5")!, ImageSource(imageString: "event6")!, ImageSource(imageString: "event7")!, ImageSource(imageString: "event8")!, ImageSource(imageString: "event9")!, ImageSource(imageString: "event10")!,ImageSource(imageString: "event11")!]
     let arraryImage: [String] = ["event0", "event1","event3", "event4", "event5", "event6", "event7", "event8", "event9", "event10", "event11"]
@@ -75,7 +74,7 @@ class EventDetailsViewController: BaseViewController {
         lblDescription.text = eventDetils?.eventDescription
     }
     //MARK:- Share Action
-   
+    
     
     @IBAction func shareButtonPressed(sender: AnyObject) {
         let myWebsite = NSURL(string:"http://www.bestpeers.com/")
@@ -92,18 +91,18 @@ class EventDetailsViewController: BaseViewController {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-//    @IBAction func share(_ sender: AnyObject) {
-//        guard let detailBeer = detailBeer,
-//            let url = detailBeer.exportToFileURL() else {
-//                return
-//        }
-//
-//        let activityViewController = UIActivityViewController(
-//            activityItems: ["Check out this beer I liked using Beer Tracker.", url],
-//            applicationActivities: nil)
-//        if let popoverPresentationController = activityViewController.popoverPresentationController {
-//            popoverPresentationController.barButtonItem = (sender as! UIBarButtonItem)
-//        }
-//        present(activityViewController, animated: true, completion: nil)
-//    }
+    //    @IBAction func share(_ sender: AnyObject) {
+    //        guard let detailBeer = detailBeer,
+    //            let url = detailBeer.exportToFileURL() else {
+    //                return
+    //        }
+    //
+    //        let activityViewController = UIActivityViewController(
+    //            activityItems: ["Check out this beer I liked using Beer Tracker.", url],
+    //            applicationActivities: nil)
+    //        if let popoverPresentationController = activityViewController.popoverPresentationController {
+    //            popoverPresentationController.barButtonItem = (sender as! UIBarButtonItem)
+    //        }
+    //        present(activityViewController, animated: true, completion: nil)
+    //    }
 }

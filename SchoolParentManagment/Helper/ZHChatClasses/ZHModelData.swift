@@ -25,8 +25,8 @@ class ZHModelData: NSObject {
     
     func loadMessages() -> Void {
         let avatarFactory: ZHCMessagesAvatarImageFactory = ZHCMessagesAvatarImageFactory.init(diameter: UInt(kZHCMessagesTableViewCellAvatarSizeDefault));
-        let cookImage: ZHCMessagesAvatarImage = avatarFactory.avatarImage(with: UIImage.init(named: "child1"))
-        let jobsImage: ZHCMessagesAvatarImage = avatarFactory.avatarImage(with: UIImage.init(named: "children"))
+        let cookImage: ZHCMessagesAvatarImage = avatarFactory.avatarImage(with: UIImage.init(named: "user"))
+        let jobsImage: ZHCMessagesAvatarImage = avatarFactory.avatarImage(with: UIImage.init(named: "child1"))
         //@"demo_avatar_cook"  "demo_avatar_jobs"
         avatars = [kZHCDemoAvatarIdCook : cookImage,kZHCDemoAvatarIdJobs : jobsImage];
         users = [kZHCDemoAvatarIdJobs : kZHCDemoAvatarDisplayNameJobs,kZHCDemoAvatarIdCook : kZHCDemoAvatarDisplayNameCook];
