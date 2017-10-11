@@ -40,12 +40,9 @@ class Utility: NSObject {
     public class func showAlertWith(title:String, message:String, inController:UIViewController) -> Void {
         
         let alert = UIAlertController.init(title: title, message: message, preferredStyle: .alert)
-        
-        let okAction = UIAlertAction.init(title: "OK", style: .cancel, handler: { response in
-            //inController.dismiss(animated: true, completion: nil)
-        })
-        
+        let okAction = UIAlertAction.init(title: "OK", style: .cancel, handler: nil)
         alert.addAction(okAction)
+        
         inController.present(alert, animated: true, completion: nil)
     }
     

@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SignUpViewController: BaseViewController,UITextFieldDelegate {
-
+class SignUpViewController: BaseViewController, UITextFieldDelegate {
+    
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldEmail: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
@@ -54,7 +54,7 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == self.textFieldMobile{
             let acceptedCharsters = self.textFieldMobile.text
