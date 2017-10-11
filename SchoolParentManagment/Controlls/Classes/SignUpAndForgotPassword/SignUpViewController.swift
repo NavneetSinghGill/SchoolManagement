@@ -54,6 +54,7 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if textField == self.textFieldMobile{
             let acceptedCharsters = self.textFieldMobile.text
@@ -65,7 +66,7 @@ class SignUpViewController: BaseViewController,UITextFieldDelegate {
             return true
         }
         else{
-        return true
+            return true
         }
         
     }

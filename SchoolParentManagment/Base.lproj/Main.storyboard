@@ -48,15 +48,15 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG3-hF-SZ1">
-                                <rect key="frame" x="10" y="458" width="130" height="29"/>
+                                <rect key="frame" x="10" y="458" width="118" height="29"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="BuE-Rw-YvZ"/>
+                                    <constraint firstAttribute="width" constant="118" id="BuE-Rw-YvZ"/>
                                     <constraint firstAttribute="height" constant="29" id="jag-K8-aEq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                 <state key="normal" title="Forget Password ?">
-                                    <color key="titleColor" red="0.28772130608558655" green="0.4998442530632019" blue="0.26479089260101318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnForgotPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ITN-Fu-3E9"/>
@@ -69,9 +69,9 @@
                                     <constraint firstAttribute="width" constant="85" id="0Ls-dE-MWb"/>
                                     <constraint firstAttribute="height" constant="29" id="cad-e7-Nug"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.28772130608558655" green="0.4998442530632019" blue="0.26479089260101318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnSignUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7j-Pn-Mcg"/>
@@ -80,7 +80,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxC-J1-gor">
                                 <rect key="frame" x="10" y="405" width="355" height="45"/>
                                 <color key="backgroundColor" red="0.28510698676109314" green="0.49981647729873657" blue="0.26481771469116211" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -711,9 +711,9 @@ Principal: Cathleen Miles</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tca-Il-tg4">
-                                <rect key="frame" x="10" y="95" width="425" height="35"/>
+                                <rect key="frame" x="10" y="90" width="385" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="ifS-MJ-ffd"/>
+                                    <constraint firstAttribute="height" constant="35" id="cLC-DR-ez3"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -731,7 +731,7 @@ Principal: Cathleen Miles</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7F-Mb-pNY">
-                                <rect key="frame" x="10" y="140" width="425" height="35"/>
+                                <rect key="frame" x="10" y="135" width="385" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -748,7 +748,7 @@ Principal: Cathleen Miles</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dmU-Fa-4hi">
-                                <rect key="frame" x="10" y="185" width="425" height="35"/>
+                                <rect key="frame" x="10" y="180" width="385" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -765,7 +765,7 @@ Principal: Cathleen Miles</string>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Mobile No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWh-2U-Ylk">
-                                <rect key="frame" x="10" y="230" width="425" height="35"/>
+                                <rect key="frame" x="10" y="225" width="385" height="35"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -782,13 +782,12 @@ Principal: Cathleen Miles</string>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlS-jF-w3a">
-                                <rect key="frame" x="10" y="325" width="385" height="40"/>
+                                <rect key="frame" x="10" y="310" width="385" height="40"/>
                                 <color key="backgroundColor" red="0.28772130610000002" green="0.49984425310000002" blue="0.26479089259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="ceA-ti-yXF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="titleEdgeInsets" minX="-18" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -818,26 +817,26 @@ Principal: Cathleen Miles</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97753184829999995" blue="0.97378770780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MlS-jF-w3a" firstAttribute="top" secondItem="CWh-2U-Ylk" secondAttribute="bottom" constant="60" id="0RP-wN-Jwq"/>
-                            <constraint firstItem="Tca-Il-tg4" firstAttribute="leading" secondItem="UlY-9h-OCQ" secondAttribute="leading" constant="10" id="15v-0S-CNd"/>
-                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="trailing" secondItem="F7F-Mb-pNY" secondAttribute="trailing" id="7w3-Ts-REC"/>
-                            <constraint firstItem="Tca-Il-tg4" firstAttribute="top" secondItem="0Xe-g7-Rwr" secondAttribute="bottom" constant="40" id="8xo-CD-8iT"/>
-                            <constraint firstItem="Tca-Il-tg4" firstAttribute="height" secondItem="dmU-Fa-4hi" secondAttribute="height" id="Bxs-Qy-EL4"/>
-                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="top" secondItem="Tca-Il-tg4" secondAttribute="bottom" constant="10" id="C0H-ix-4zh"/>
-                            <constraint firstItem="MlS-jF-w3a" firstAttribute="leading" secondItem="UlY-9h-OCQ" secondAttribute="leading" constant="10" id="EFk-Zc-nE8"/>
+                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" id="3dy-ne-sI9"/>
+                            <constraint firstItem="Tca-Il-tg4" firstAttribute="top" secondItem="0Xe-g7-Rwr" secondAttribute="bottom" constant="35" id="4zG-Sf-buC"/>
+                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="height" secondItem="Tca-Il-tg4" secondAttribute="height" id="57Y-7n-so6"/>
+                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="top" secondItem="dmU-Fa-4hi" secondAttribute="bottom" constant="10" id="5fa-DN-Xgf"/>
+                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="leading" secondItem="Tca-Il-tg4" secondAttribute="leading" id="7L0-dl-qle"/>
+                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="leading" secondItem="Tca-Il-tg4" secondAttribute="leading" id="7cM-dp-GrS"/>
+                            <constraint firstItem="Tca-Il-tg4" firstAttribute="leading" secondItem="UlY-9h-OCQ" secondAttribute="leading" constant="10" id="Gvv-Tn-4hd"/>
+                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="leading" secondItem="Tca-Il-tg4" secondAttribute="leading" id="HHZ-Hp-6cO"/>
                             <constraint firstItem="0Xe-g7-Rwr" firstAttribute="leading" secondItem="UlY-9h-OCQ" secondAttribute="leading" constant="8" id="KYy-Jt-3Sw"/>
-                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="leading" secondItem="F7F-Mb-pNY" secondAttribute="leading" id="LAX-gB-pWY"/>
-                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" id="Llt-O9-RCd"/>
-                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="leading" secondItem="dmU-Fa-4hi" secondAttribute="leading" id="M5l-0j-y2a"/>
-                            <constraint firstItem="UlY-9h-OCQ" firstAttribute="trailing" secondItem="MlS-jF-w3a" secondAttribute="trailing" constant="-20" id="PeO-k9-nmO"/>
-                            <constraint firstItem="Tca-Il-tg4" firstAttribute="height" secondItem="F7F-Mb-pNY" secondAttribute="height" id="TGO-uU-3ge"/>
+                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="top" secondItem="F7F-Mb-pNY" secondAttribute="bottom" constant="10" id="PBE-h2-qg5"/>
+                            <constraint firstItem="UlY-9h-OCQ" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" constant="-20" id="Teb-5D-uCm"/>
+                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" id="VAH-dB-nUK"/>
+                            <constraint firstItem="MlS-jF-w3a" firstAttribute="leading" secondItem="CWh-2U-Ylk" secondAttribute="leading" id="WON-zm-0Nd"/>
                             <constraint firstItem="0Xe-g7-Rwr" firstAttribute="top" secondItem="1cp-H6-NEs" secondAttribute="top" constant="13" id="YVw-Sa-QoF"/>
-                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="leading" secondItem="Tca-Il-tg4" secondAttribute="leading" id="dRP-zd-Dag"/>
-                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="top" secondItem="dmU-Fa-4hi" secondAttribute="bottom" constant="10" id="dsf-wp-zQh"/>
-                            <constraint firstItem="UlY-9h-OCQ" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" constant="-60" id="gk5-XL-HRQ"/>
-                            <constraint firstItem="Tca-Il-tg4" firstAttribute="height" secondItem="CWh-2U-Ylk" secondAttribute="height" id="hOR-R4-Scx"/>
-                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="trailing" secondItem="dmU-Fa-4hi" secondAttribute="trailing" id="lv4-cX-xl6"/>
-                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="top" secondItem="F7F-Mb-pNY" secondAttribute="bottom" constant="10" id="qkG-sZ-ga1"/>
+                            <constraint firstItem="dmU-Fa-4hi" firstAttribute="height" secondItem="Tca-Il-tg4" secondAttribute="height" id="Zu6-EL-b7i"/>
+                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="height" secondItem="Tca-Il-tg4" secondAttribute="height" id="av3-eu-1Bb"/>
+                            <constraint firstItem="CWh-2U-Ylk" firstAttribute="trailing" secondItem="Tca-Il-tg4" secondAttribute="trailing" id="kGd-t5-yHa"/>
+                            <constraint firstItem="F7F-Mb-pNY" firstAttribute="top" secondItem="Tca-Il-tg4" secondAttribute="bottom" constant="10" id="pgu-sE-hab"/>
+                            <constraint firstItem="MlS-jF-w3a" firstAttribute="top" secondItem="CWh-2U-Ylk" secondAttribute="bottom" constant="50" id="z8M-SK-U7K"/>
+                            <constraint firstItem="MlS-jF-w3a" firstAttribute="trailing" secondItem="CWh-2U-Ylk" secondAttribute="trailing" id="zpc-pK-fYo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UlY-9h-OCQ"/>
                     </view>
@@ -866,12 +865,12 @@ Principal: Cathleen Miles</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kG-u2-ubL">
-                                <rect key="frame" x="10" y="346" width="385" height="35"/>
+                                <rect key="frame" x="10" y="316" width="385" height="35"/>
                                 <color key="backgroundColor" red="0.28772130610000002" green="0.49984425310000002" blue="0.26479089259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ucC-CJ-z0w"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -888,7 +887,7 @@ Principal: Cathleen Miles</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your mail Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tby-Hk-36z">
-                                <rect key="frame" x="10" y="281" width="385" height="35"/>
+                                <rect key="frame" x="10" y="251" width="385" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Vd6-Ir-Pjp"/>
                                 </constraints>
@@ -924,11 +923,11 @@ Principal: Cathleen Miles</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.97753184829999995" blue="0.97378770780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Tby-Hk-36z" firstAttribute="centerY" secondItem="VVX-Qp-PnJ" secondAttribute="centerY" constant="-35" id="FYP-4K-jWL"/>
-                            <constraint firstItem="7kG-u2-ubL" firstAttribute="leading" secondItem="IgC-hS-u3c" secondAttribute="leading" constant="10" id="JhA-u4-fMu"/>
+                            <constraint firstItem="7kG-u2-ubL" firstAttribute="leading" secondItem="IgC-hS-u3c" secondAttribute="leading" constant="10" id="KO5-69-WEi"/>
+                            <constraint firstItem="IgC-hS-u3c" firstAttribute="trailing" secondItem="7kG-u2-ubL" secondAttribute="trailing" constant="-20" id="N9A-Zr-UX3"/>
                             <constraint firstItem="7kG-u2-ubL" firstAttribute="top" secondItem="Tby-Hk-36z" secondAttribute="bottom" constant="30" id="bXy-iW-9LW"/>
                             <constraint firstItem="IgC-hS-u3c" firstAttribute="trailing" secondItem="Tby-Hk-36z" secondAttribute="trailing" constant="-20" id="dGD-Ub-VTI"/>
-                            <constraint firstItem="IgC-hS-u3c" firstAttribute="trailing" secondItem="7kG-u2-ubL" secondAttribute="trailing" constant="-20" id="lTL-Oo-iq8"/>
+                            <constraint firstItem="7kG-u2-ubL" firstAttribute="centerY" secondItem="VVX-Qp-PnJ" secondAttribute="centerY" id="m1i-nh-AQ0"/>
                             <constraint firstItem="Tby-Hk-36z" firstAttribute="leading" secondItem="IgC-hS-u3c" secondAttribute="leading" constant="10" id="oU9-yG-JDU"/>
                             <constraint firstItem="2i1-Da-IIl" firstAttribute="leading" secondItem="IgC-hS-u3c" secondAttribute="leading" constant="13" id="tw4-lT-USe"/>
                             <constraint firstItem="2i1-Da-IIl" firstAttribute="top" secondItem="VVX-Qp-PnJ" secondAttribute="top" constant="8" id="wMy-Xz-pMl"/>

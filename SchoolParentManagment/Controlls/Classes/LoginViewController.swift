@@ -48,16 +48,16 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             print("segmentindex 0")
             self.segment.tintColor = baseGreen
             self.btnLogin.backgroundColor = baseGreen
-            btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
-            self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
+//            btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
+//            self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
             defaults.set(1, forKey: "SignUpType")
 
         case 1:
             print("segmentindex 1")
             self.segment.tintColor = baseOrange
             self.btnLogin.backgroundColor = baseOrange
-            btnSignUp.setTitleColor(baseOrange, for: UIControlState.normal)
-            self.btnForgotPassword.setTitleColor(baseOrange, for: UIControlState.normal)
+//            btnSignUp.setTitleColor(baseOrange, for: UIControlState.normal)
+//            self.btnForgotPassword.setTitleColor(baseOrange, for: UIControlState.normal)
             defaults.set(2, forKey: "SignUpType")
 
         default:
@@ -65,8 +65,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
             self.segment.tintColor = baseGreen
             self.segment.tintColor = baseGreen
             self.btnLogin.backgroundColor = baseGreen
-            btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
-            self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
+//            btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
+//            self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
             defaults.set(1, forKey: "SignUpType")
 
         }
@@ -89,8 +89,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         self.segment.selectedSegmentIndex = 0
         self.segment.tintColor = baseGreen
         self.btnLogin.backgroundColor = baseGreen
-        btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
-        self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
+//        btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
+//        self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
         updateEnvironmentCharacterType()
         defaults.set(1, forKey: "SignUpType")
     }
@@ -102,8 +102,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         // self.tabBarController!.tabBar.isHidden = true
         self.segment.tintColor = baseGreen
         self.btnLogin.backgroundColor = baseGreen
-        btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
-        self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
+//        btnSignUp.setTitleColor(baseGreen, for: UIControlState.normal)
+//        self.btnForgotPassword.setTitleColor(baseGreen, for: UIControlState.normal)
         defaults.set(1, forKey: "SignUpType")
     }
     override func viewWillDisappear(_ animated: Bool) {
