@@ -26,7 +26,7 @@ class TeacherNotificationViewController: BaseViewController, UITabBarDelegate, U
         setNavigationTitle(title: "Notifications")
 
         //Fake data
-        for i in 0..<3 {
+        for i in 0..<2 {
             let notificationFake = Notificationn()
             notificationFake.fakeData(for: i)
             notifications.append(notificationFake)

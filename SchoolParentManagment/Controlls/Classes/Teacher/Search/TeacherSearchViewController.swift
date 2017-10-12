@@ -25,8 +25,8 @@ class TeacherSearchViewController: BaseViewController, UITableViewDataSource, UI
         let searchNIB = UINib(nibName: "SearchTableViewCell", bundle: nil)
         tableView.register(searchNIB, forCellReuseIdentifier: "SearchTableViewCell")
         
-        searchBar.barTintColor = Global.getColorForCurrentEnvironmentType()
-        segmentControl.tintColor = Global.getColorForCurrentEnvironmentType()
+        searchBar.barTintColor = UIColor(red: 25/255.0, green: 25/255.0, blue: 25/255.0, alpha: 1)
+        segmentControl.tintColor = UIColor(red: 25/255.0, green: 25/255.0, blue: 25/255.0, alpha: 1)
         
         setNavigationTitle(title: "SEARCH")
                 

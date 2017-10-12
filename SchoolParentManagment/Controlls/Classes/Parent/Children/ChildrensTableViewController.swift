@@ -34,9 +34,9 @@ class ChildrensTableViewController: BaseViewController, UITableViewDataSource,UI
         studentChildFake2.fakeData(for: 1)
         studentChilds.append(studentChildFake2)
     
-        let studentChildFake3 = StudentChild()
-        studentChildFake3.fakeData(for: 2)
-        studentChilds.append(studentChildFake3)
+//        let studentChildFake3 = StudentChild()
+//        studentChildFake3.fakeData(for: 2)
+//        studentChilds.append(studentChildFake3)
       tableView.reloadData()
     }
     

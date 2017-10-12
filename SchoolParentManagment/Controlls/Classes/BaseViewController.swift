@@ -102,7 +102,15 @@ class BaseViewController: UIViewController {
     private func backButton() -> UIButton {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         button.backgroundColor = .clear
-        button.setImage(UIImage(named: "backIcon"), for: .normal)
+        
+        var image = UIImage(named: "backIcon")
+        //Fills color all over the image
+        let templateImage = image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        image = templateImage
+        button.imageView?.tintColor = Global.getColorForCurrentEnvironmentType()
+        
+        button.setImage(image, for: .normal)
+        
         button.addTarget(self, action: #selector(BaseViewController.backButtonTapped), for: .touchUpInside)
         
         return button
@@ -121,10 +129,10 @@ class BaseViewController: UIViewController {
         navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
         navigationTitleLabel.text = title.uppercased()
         navigationTitleLabel.sizeToFit()
-        navigationTitleLabel.textColor = UIColor.black// Global.getLightColorForCurrentEnvironmentType()
+        navigationTitleLabel.textColor = Global.getColorForCurrentEnvironmentType()
         
         navigationItem.titleView = navigationTitleLabel
-        self.navigationController?.navigationBar.barTintColor = Global.getColorForCurrentEnvironmentType()
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
     }
     
     func showAlert(title: String, msg: String) {

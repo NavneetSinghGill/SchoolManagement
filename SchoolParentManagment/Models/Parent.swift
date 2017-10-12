@@ -23,15 +23,18 @@ class Parent: NSObject {
             firstName = "Mike"
             lastName = "Ommen"
             relationToStudentChild = "Father"
+            avtarImage = "parent1"
         } else if index1 == 1 {
             firstName = "Bella"
             lastName = "Ommen"
             relationToStudentChild = "Mother"
+            avtarImage = "parent2"
         }
         else if index1 == 2 {
             firstName = "Peeter"
             lastName = "Ritso"
             relationToStudentChild = "Uncle"
+            avtarImage = "parent3"
         }
     }
     

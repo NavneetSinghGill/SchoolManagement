@@ -40,7 +40,7 @@ class StudentChild: NSObject {
             parents = [parent1,parent2,parent3]
         } else if index1 == 1 {
             firstName = "Brian"
-            lastName = "Parker"
+            lastName = "Ommen"
             phoneNumber = "001-001-0001"
             standard = "VI A"
             rollNumber = "1553"

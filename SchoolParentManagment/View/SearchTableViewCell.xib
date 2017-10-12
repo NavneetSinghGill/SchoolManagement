@@ -43,7 +43,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-T4-cRq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pad-T4-cRq">
                                 <rect key="frame" x="10" y="13" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Pad-T4-cRq" secondAttribute="height" id="5bi-IF-Zwj"/>

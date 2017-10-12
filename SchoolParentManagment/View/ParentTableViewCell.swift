@@ -31,8 +31,15 @@ class ParentTableViewCell: UITableViewCell {
         if let parent = character as? Parent {
             nameLabel.text = "\(parent.firstName!) \(parent.lastName!)"
             relationShipOrStandarLabel.text = parent.relationToStudentChild
+            setProfileImage(imageName: parent.avtarImage)
         }
         
         profilePicImageView.layer.cornerRadius = profilePicImageView.frame.size.width/2
+    }
+    
+    func setProfileImage(imageName: String?) {
+        if imageName != nil {
+            profilePicImageView.image = UIImage.init(named: imageName!)
+        }
     }
 }

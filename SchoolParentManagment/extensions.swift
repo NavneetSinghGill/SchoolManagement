@@ -85,14 +85,3 @@ extension CALayer {
         }
     }
 }
-
-//extension NSObject {
-//    func printMe() {
-//        let reflected = reflect(self)
-//        var members = [String: String]()
-//        for index in 0..<reflected.count {
-//            members[reflected[index].0] = reflected[index].1.summary
-//        }
-//        println(members)
-//    }
-//}

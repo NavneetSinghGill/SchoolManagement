@@ -24,6 +24,8 @@ class HomeTabBarController: UITabBarController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.tabBar.barTintColor = UIColor.black
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

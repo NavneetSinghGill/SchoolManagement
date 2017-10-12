@@ -48,14 +48,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SG3-hF-SZ1">
-                                <rect key="frame" x="10" y="458" width="118" height="29"/>
+                                <rect key="frame" x="10" y="458" width="128" height="29"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="118" id="BuE-Rw-YvZ"/>
+                                    <constraint firstAttribute="width" constant="128" id="BuE-Rw-YvZ"/>
                                     <constraint firstAttribute="height" constant="29" id="jag-K8-aEq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                <state key="normal" title="Forget Password ?">
+                                <state key="normal" title="Forgot Password ?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -150,14 +150,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="12"/>
+            <point key="canvasLocation" x="812" y="11.244377811094454"/>
         </scene>
         <!--NotificationsVC-->
         <scene sceneID="1vD-vh-Oq1">
             <objects>
                 <viewController storyboardIdentifier="sNotificationsVC" automaticallyAdjustsScrollViewInsets="NO" id="hwy-eh-Pj2" customClass="NotificationsVC" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9dN-xT-CG3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bQd-oK-Vbv">
@@ -192,7 +192,7 @@
             <objects>
                 <viewController storyboardIdentifier="sChildrensTableViewController" id="dkl-AU-bX2" customClass="ChildrensTableViewController" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WJS-DQ-K2B">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HQl-XL-hqi">
@@ -355,10 +355,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCf-nf-vgU">
-                                <rect key="frame" x="12" y="107.5" width="351" height="64.5"/>
-                                <string key="text">Abbottston Elementary 1300 Gorsuch Avenue
-Baltimore, MD  21218 </string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The New Hustin Elementary School, MS2 21218 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCf-nf-vgU">
+                                <rect key="frame" x="20" y="129" width="335" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -369,22 +367,22 @@ Baltimore, MD  21218 </string>
                                     <constraint firstAttribute="height" constant="80" id="0aL-N2-Gg0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="443-984-2685" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-Aj-aIH">
-                                <rect key="frame" x="112.5" y="268" width="150" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="555-555-5555" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZT-Aj-aIH">
+                                <rect key="frame" x="113.5" y="268" width="148" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cathleen@yahoo.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ts-vN-ObJ">
-                                <rect key="frame" x="94.5" y="322" width="186" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cathleen@bestpeers.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ts-vN-ObJ">
+                                <rect key="frame" x="76.5" y="322" width="222" height="22"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-3L-LW7">
-                                <rect key="frame" x="12" y="382" width="351" height="43"/>
+                                <rect key="frame" x="12" y="383" width="351" height="43"/>
                                 <string key="text">School Number: 50 
-Principal: Cathleen Miles</string>
+Principal: Cathleen Jones</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -394,14 +392,13 @@ Principal: Cathleen Miles</string>
                         <constraints>
                             <constraint firstItem="dn0-8D-ih5" firstAttribute="leading" secondItem="8wv-rD-btX" secondAttribute="leading" constant="147" id="2WU-Uu-QFa"/>
                             <constraint firstItem="8wv-rD-btX" firstAttribute="trailing" secondItem="d2e-3L-LW7" secondAttribute="trailing" constant="12" id="39R-sg-NnG"/>
-                            <constraint firstItem="MCf-nf-vgU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8wv-rD-btX" secondAttribute="leading" id="97U-gn-XY4"/>
                             <constraint firstItem="dn0-8D-ih5" firstAttribute="top" secondItem="MCf-nf-vgU" secondAttribute="bottom" constant="8" id="A75-cP-rno"/>
                             <constraint firstItem="dn0-8D-ih5" firstAttribute="top" secondItem="10r-3V-aGn" secondAttribute="top" constant="180" id="Am1-an-k8n"/>
-                            <constraint firstItem="MCf-nf-vgU" firstAttribute="centerX" secondItem="10r-3V-aGn" secondAttribute="centerX" id="JUu-2n-FE2"/>
                             <constraint firstItem="GZT-Aj-aIH" firstAttribute="top" secondItem="dn0-8D-ih5" secondAttribute="bottom" constant="8" id="M5j-SN-zxg"/>
                             <constraint firstItem="GZT-Aj-aIH" firstAttribute="centerX" secondItem="10r-3V-aGn" secondAttribute="centerX" id="Mmt-Hq-qrB"/>
-                            <constraint firstAttribute="trailing" secondItem="MCf-nf-vgU" secondAttribute="trailing" constant="12" id="OYI-6x-cyL"/>
+                            <constraint firstAttribute="trailing" secondItem="MCf-nf-vgU" secondAttribute="trailing" constant="20" id="OYI-6x-cyL"/>
                             <constraint firstItem="GZT-Aj-aIH" firstAttribute="centerX" secondItem="dn0-8D-ih5" secondAttribute="centerX" id="bSs-oh-hzX"/>
+                            <constraint firstItem="MCf-nf-vgU" firstAttribute="leading" secondItem="8wv-rD-btX" secondAttribute="leading" constant="20" id="gUK-gc-V5r"/>
                             <constraint firstItem="7Ts-vN-ObJ" firstAttribute="centerX" secondItem="GZT-Aj-aIH" secondAttribute="centerX" id="jHg-vQ-Uqh"/>
                             <constraint firstItem="7Ts-vN-ObJ" firstAttribute="top" secondItem="GZT-Aj-aIH" secondAttribute="bottom" constant="30" id="lC1-lg-lPD"/>
                             <constraint firstItem="d2e-3L-LW7" firstAttribute="leading" secondItem="8wv-rD-btX" secondAttribute="leading" constant="12" id="o0b-w0-noC"/>
@@ -557,6 +554,11 @@ Principal: Cathleen Miles</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="260" id="TbY-5J-OAa"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzl-tV-8HF" userLabel="LabelEventName">
                                 <rect key="frame" x="16" y="10" width="343" height="18"/>
@@ -567,7 +569,7 @@ Principal: Cathleen Miles</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3S-AB-tKp" userLabel="LabelEventDescription">
                                 <rect key="frame" x="16" y="363" width="343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -684,10 +686,11 @@ Principal: Cathleen Miles</string>
             <objects>
                 <tabBarController storyboardIdentifier="sHomeTabBarController" id="K1n-4t-ocN" customClass="HomeTabBarController" customModule="SchoolParentManagment" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vTL-It-MTm"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dbN-9Z-7QF">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dbN-9Z-7QF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="selectedImageTintColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>

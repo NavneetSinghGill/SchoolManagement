@@ -19,11 +19,11 @@ class Notificationn: NSObject {
         if index1 == 0 {
             title = "New event @RBA corner"
             notificationDescription = "An event has been organised at RBA corner."
-            profileImage = ""
+            profileImage = "notif1"
         } else if index1 == 1 {
             title = "Tech Fest"
             notificationDescription = "Tech Fest will be organised in next 3 days. Get ready to prize exiting prizes"
-            profileImage = ""
+            profileImage = "notif2"
         }
     }
     
